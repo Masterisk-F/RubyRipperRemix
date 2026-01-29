@@ -46,8 +46,8 @@ class RippingInfoAtStart
 private
 
   def showVersion
-    @logString << _("Rubyripper version %s") % [$rr_version]
-    @logString << _("\nWebsite:") + " https://github.com/bleskodev/rubyripper\n\n"
+    @logString << _("RubyRipperRemix version %s") % [$rr_version]
+    @logString << _("\nWebsite:") + " https://github.com/Masterisk-F/RubyRipperRemix\n\n"
   end
 
   def showBasicRipInfo
