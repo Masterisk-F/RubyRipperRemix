@@ -178,15 +178,19 @@ class AccurateRip
 
     track_count = @disc.audiotracks
     
+    # Pre-extract audio data for all tracks
+    tracks_audio_data = [nil] # index 0 is not used
+    (1..track_count).each do |track|
+      tracks_audio_data[track] = extractTrackFromImage(audio_data, track)
+    end
+
     # Process tracks in parallel
-    # audio_data (large string) is shared via COW (Copy-On-Write) in forked processes
     local_results = Parallel.map(1..track_count, in_processes: Parallel.processor_count) do |track|
       local_result = AccurateRipResult.new
       local_result.pressings = result.pressings
       
-      track_audio_data = extractTrackFromImage(audio_data, track)
-      if track_audio_data
-        verifyTrackData(track, track_audio_data, local_result)
+      if tracks_audio_data[track]
+        verifyTrackData(track, tracks_audio_data[track], local_result)
       end
       local_result
     end
