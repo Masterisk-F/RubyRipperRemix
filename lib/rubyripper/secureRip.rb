@@ -72,11 +72,12 @@ class SecureRip
     if (@prefs.accRip || @prefs.ctdb) && !@prefs.verifyEverytime && !@cancelled && !@rippedFiles.empty?
       performVerification()
     end
-    
+
     if @prefs.ctdb && !@cancelled && !@rippedFiles.empty?
       performCtdbSubmission()
     end
 
+    # De-emphasis is not performed for disk images (handled on track-basis in ripTracks)
     startEncodingForTracks()
   end
     
@@ -91,7 +92,14 @@ class SecureRip
     if (@prefs.accRip || @prefs.ctdb) && !@prefs.verifyEverytime && !@cancelled && !@rippedFiles.empty?
       performVerification()
     end
-    
+
+    # Apply de-emphasis after verification
+    unless @prefs.image
+      @rippedFiles.keys.sort.each do |track|
+        deEmphasize(track)
+      end
+    end
+
     startEncodingForTracks()
   end
   
@@ -115,7 +123,6 @@ class SecureRip
     # first check if there's enough size available in the output dir
     if sizeTest(track)
       if main(track)
-        deEmphasize(track) unless @prefs.image
         # Record file path for AccurateRip verification and encoding
         @rippedFiles[track] = @fileScheme.getTempFile(track, 1)
       else
