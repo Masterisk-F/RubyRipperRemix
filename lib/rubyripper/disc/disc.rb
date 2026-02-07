@@ -65,6 +65,7 @@ attr_reader :metadata, :cdrdao
   # helper functions for @musicbrainz
   def musicbrainzLookupPath ; @calcMusicbrainzID.musicbrainzLookupPath ; end
   def musicbrainzDiscid ; @calcMusicbrainzID.discid ; end
+  def musicbrainzSubmitURL ; @calcMusicbrainzID.musicbrainzSubmitURL ; end
 
   # this can take a while so run in background
   def startExtendedTocScan()

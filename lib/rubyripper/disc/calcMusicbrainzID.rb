@@ -42,6 +42,18 @@ class CalcMusicbrainzID
     @discid
   end
 
+  # fetch the MusicBrainz submit URL
+  def musicbrainzSubmitURL
+    getMusicBrainzLookupPath() if @musicbrainzLookupPath.nil?
+    url = String.new
+    url << 'https://musicbrainz.org/cdtoc/attach?toc='
+    url << "#{@firstTrack}+#{@lastTrack}"
+    (0..@lastTrack).each do |tracknumber|
+      url << "+#{@offsets[tracknumber]}"
+    end
+    url
+  end
+
 private
 
   # try to calculate it ourselves, prefer cd-info if available

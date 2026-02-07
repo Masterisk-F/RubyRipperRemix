@@ -79,6 +79,7 @@ private
   def showFreedb()
     showDiscInfo()
     showTrackInfo()
+    showMusicbrainzIDSubmitInfo()
   end
 
   def showDiscInfo
@@ -103,6 +104,13 @@ private
     @out.puts "TRACK INFO"
     trackInfo().each{|key, value| @out.puts "#{key}. #{value}"}
     @out.puts ""
+  end
+
+  def showMusicbrainzIDSubmitInfo
+    if discReady?
+      @out.puts _("Submit DiscID to MusicBrainz via : %s") % [@cd.musicbrainzSubmitURL]
+      @out.puts ""
+    end
   end
 
   # build the trackinfo
