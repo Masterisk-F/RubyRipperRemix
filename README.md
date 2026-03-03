@@ -4,11 +4,21 @@
 
 This project is a fork of [Rubyripper](https://github.com/bleskodev/rubyripper).
 
+### Arch User Repository
+
+If you are using Arch Linux, you can install the [`rubyripperremix`](https://aur.archlinux.org/packages/rubyripperremix) or [`rubyripperremix-git`](https://aur.archlinux.org/packages/rubyripperremix-git) package from the AUR.
+
+```bash
+yay -S rubyripperremix
+# or
+yay -S rubyripperremix-git
+```
+
 ## Key Changes in this Fork
 
 *   Migration to libcdio-paranoia: Replaced `cdparanoia` with the more actively maintained `libcdio-paranoia` (cd-paranoia).
 *   [AccurateRip](https://accuraterip.com/) support for verifying ripped data. [(detail)](https://github.com/Masterisk-F/RubyRipperRemix/pull/5)
-*   [CUETools Database(CTDB)](https://db.cue.tools/) support for verifying and submitting ripped data. [(detail)](https://github.com/Masterisk-F/RubyRipperRemix/pull/7)
+*   [CUETools Database(CTDB)](https://db.cue.tools/) support for verifying and submitting ripped data using [`ctdb-cli`](https://github.com/Masterisk-F/ctdb-cli). [(detail)](https://github.com/Masterisk-F/RubyRipperRemix/pull/7)
 *   Bug Fixes & Improvements:
     *   Removed legacy cdparanoia `-Z` workaround for better performance.
     *   Added CATALOG number (UPC/EAN) support in cuesheets.
