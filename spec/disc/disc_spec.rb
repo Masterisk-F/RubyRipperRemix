@@ -92,6 +92,11 @@ describe Disc do
       expect(musicbrainz).to receive(:discid).once.and_return true
       disc.musicbrainzDiscid()
     end
+
+    it "should forward the musicbrainzSubmitURL method to the calcMusicbrainzID object" do
+      expect(musicbrainz).to receive(:musicbrainzSubmitURL).once.and_return 'https://musicbrainz.org/cdtoc/attach?toc=...'
+      expect(disc.musicbrainzSubmitURL()).to eq('https://musicbrainz.org/cdtoc/attach?toc=...')
+    end
     
     # all unknown commands should be redirected to cdparanoia
     it "should pass any other command to cdparanoia" do

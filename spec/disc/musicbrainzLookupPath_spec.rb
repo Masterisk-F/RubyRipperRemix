@@ -48,4 +48,26 @@ describe CalcMusicbrainzID do
       expect(@musicbrainz.discid).to eq("I5l9cCSFccLKFEKS.7wqSZAorPU-")
     end
   end
+
+  context "Try to calculate MusicBrainz submit URL" do
+    before(:each) do
+      @start = {1=>0, 2=>22617, 3=>41737, 4=>58167, 5=>71952, 6=>91225,
+7=>104502, 8=>115230, 9=>132015, 10=>143782, 11=>159720, 12=>174447, 13=>267107+11400}
+      expect(disc).to receive(:advancedTocScanner).once.and_return scanner
+    end
+
+    it "should generate a valid MusicBrainz submit URL from disc TOC data" do
+      expect(scanner).to receive(:respond_to?).with(:dataTracks).at_least(:once).and_return true
+
+      expect(scanner).to receive(:dataTracks).at_least(3).and_return([13])
+      expect(scanner).to receive(:firstAudioTrack).at_least(:once).and_return(1)
+      expect(scanner).to receive(:audiotracks).at_least(:once).and_return(12)
+      (1..13).each do |number|
+        expect(scanner).to receive(:getStartSector).with(number).at_least(:once).and_return @start[number]
+      end
+
+      expected_url = "https://musicbrainz.org/cdtoc/attach?toc=1+12+267257+150+22767+41887+58317+72102+91375+104652+115380+132165+143932+159870+174597"
+      expect(@musicbrainz.musicbrainzSubmitURL).to eq(expected_url)
+    end
+  end
 end
