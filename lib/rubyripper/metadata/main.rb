@@ -28,18 +28,24 @@ module Metadata
       @no_provider = no_provider
     end
     
+    attr_reader :musicbrainz_failed
+
     # decide which metadataprovider is active
     # fall back to other metadata provider if no matches
     def get
+      @musicbrainz_failed = false
       setProvidersPriority()
       @providers.each do |provider|
         startup(provider)
-        break if provider == 'none' || @provider.status == 'ok' || @provider.status == 'multipleRecords'
+        status = @provider.status
+        stopped = provider == 'none' || status == 'ok' || status == 'multipleRecords'
+        @musicbrainz_failed = true if provider == 'musicbrainz' && !stopped
+        break if stopped
       end
-      
+
       return @provider
     end
-    
+
     private
     
     def setProvidersPriority

@@ -23,7 +23,7 @@ require 'rubyripper/preferences/main'
 
 # A helper class to hide lower level details
 class Disc
-attr_reader :metadata, :cdrdao
+attr_reader :metadata, :cdrdao, :musicbrainz_failed
 
   def initialize(cdpar=nil, freedb=nil, musicbrainz=nil, deps=nil, prefs=nil)
     @cdparanoia = cdpar ? cdpar : ScanDiscCdparanoia.new()
@@ -105,8 +105,9 @@ attr_reader :metadata, :cdrdao
   # helper function to load metadata object
   def setMetadata(metadata=nil)
     require 'rubyripper/metadata/main'
-    @metadata = metadata ? metadata : Metadata::Main.new(self)
-    @metadata = @metadata.get()
+    main = metadata ? metadata : Metadata::Main.new(self)
+    @metadata = main.get()
+    @musicbrainz_failed = main.musicbrainz_failed
   end
 end
 

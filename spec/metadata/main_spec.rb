@@ -72,7 +72,7 @@ describe Metadata::Main do
       before(:each) do
         allow(prefs).to receive(:metadataProvider).and_return("gnudb")
       end
-      
+
       it "should first fall back to Musicbrainz if Gnudb fails" do
         expect(freedb).to receive(:get)
         expect(freedb).to receive(:status).and_return 'mayday'
@@ -80,7 +80,7 @@ describe Metadata::Main do
         expect(musicbrainz).to receive(:status).and_return 'ok'
         expect(main.get).to eq(musicbrainz)
       end
-      
+
       it "should fall back to none if Musicbrainz fails as well" do
         expect(freedb).to receive(:get)
         expect(freedb).to receive(:status).and_return 'mayday'
@@ -88,6 +88,58 @@ describe Metadata::Main do
         expect(musicbrainz).to receive(:status).and_return 'mayday'
         expect(main.get).to eq(no_provider)
       end
+    end
+  end
+
+  context "When checking if MusicBrainz metadata fetching failed" do
+    it "should be false if musicbrainz is the preference and it succeeds" do
+      allow(prefs).to receive(:metadataProvider).and_return("musicbrainz")
+      expect(musicbrainz).to receive(:get)
+      expect(musicbrainz).to receive(:status).and_return 'ok'
+      main.get
+      expect(main.musicbrainz_failed).to eq(false)
+    end
+
+    it "should be true if musicbrainz is the preference and it returns noMatches" do
+      allow(prefs).to receive(:metadataProvider).and_return("musicbrainz")
+      expect(musicbrainz).to receive(:get)
+      expect(musicbrainz).to receive(:status).and_return 'noMatches'
+      allow(freedb).to receive(:get)
+      allow(freedb).to receive(:status).and_return 'ok'
+      main.get
+      expect(main.musicbrainz_failed).to eq(true)
+    end
+
+    it "should be false if musicbrainz is the preference and it returns multipleRecords" do
+      allow(prefs).to receive(:metadataProvider).and_return("musicbrainz")
+      expect(musicbrainz).to receive(:get)
+      expect(musicbrainz).to receive(:status).and_return 'multipleRecords'
+      main.get
+      expect(main.musicbrainz_failed).to eq(false)
+    end
+
+    it "should be true if gnudb fails and musicbrainz fallback also fails" do
+      allow(prefs).to receive(:metadataProvider).and_return("gnudb")
+      expect(freedb).to receive(:get)
+      expect(freedb).to receive(:status).and_return 'mayday'
+      expect(musicbrainz).to receive(:get)
+      expect(musicbrainz).to receive(:status).and_return 'noMatches'
+      main.get
+      expect(main.musicbrainz_failed).to eq(true)
+    end
+
+    it "should be false if gnudb succeeds (musicbrainz never tried)" do
+      allow(prefs).to receive(:metadataProvider).and_return("gnudb")
+      expect(freedb).to receive(:get)
+      expect(freedb).to receive(:status).and_return 'ok'
+      main.get
+      expect(main.musicbrainz_failed).to eq(false)
+    end
+
+    it "should be false if provider is none" do
+      allow(prefs).to receive(:metadataProvider).and_return("none")
+      main.get
+      expect(main.musicbrainz_failed).to eq(false)
     end
   end
 end
