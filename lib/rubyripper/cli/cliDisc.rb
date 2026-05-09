@@ -107,7 +107,7 @@ private
   end
 
   def showMusicbrainzIDSubmitInfo
-    if discReady?
+    if discReady? && @cd.musicbrainz_failed
       @out.puts _("Submit DiscID to MusicBrainz via : %s") % [@cd.musicbrainzSubmitURL]
       @out.puts ""
     end

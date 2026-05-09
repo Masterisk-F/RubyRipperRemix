@@ -104,4 +104,22 @@ describe Disc do
       disc.any_other_command()
     end
   end
+
+  context "When metadata fetching fails for MusicBrainz" do
+    let(:main_double) {double('Metadata::Main')}
+
+    it "should capture musicbrainz_failed from the metadata main class" do
+      expect(main_double).to receive(:get).once.and_return true
+      expect(main_double).to receive(:musicbrainz_failed).once.and_return true
+      disc.send(:setMetadata, main_double)
+      expect(disc.musicbrainz_failed).to eq(true)
+    end
+
+    it "should capture musicbrainz_failed as false when metadata succeeds" do
+      expect(main_double).to receive(:get).once.and_return true
+      expect(main_double).to receive(:musicbrainz_failed).once.and_return false
+      disc.send(:setMetadata, main_double)
+      expect(disc.musicbrainz_failed).to eq(false)
+    end
+  end
 end
