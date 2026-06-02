@@ -106,7 +106,7 @@ private
   # fill the Hash with consequences
   def setConsequence
     @consequence = {
-    'cd-paranoia' => _("Rubyripper can't be used without libcdio-paranoia (cd-paranoia)!"),
+    'cd-paranoia' => _("RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"),
       'ruby-gtk3' => _("You won't be able to use the gtk3 interface."),
       'ruby-gettext' => _("You won't be able to use translations."),
       'discid' => _("You won't have accurate Gnudb string \

@@ -111,14 +111,14 @@ private
 
   # Display the different options
   def showMainMenu
-    @out.puts _("* RUBYRIPPER MAIN MENU *")
+    @out.puts _("* RUBYRIPPERREMIX MAIN MENU *")
     @out.puts ""
     @out.puts ' 1) ' + _('Change preferences')
     @out.puts ' 2) ' + _('Scan drive for audio disc')
     @out.puts ' 3) ' + _('Change metadata')
     @out.puts ' 4) ' + _('Select the tracks to rip (default = all)')
     @out.puts ' 5) ' + _('Rip the disc!')
-    @out.puts '99) ' + _("Exit rubyripper...")
+    @out.puts '99) ' + _("Exit RubyRipperRemix...")
     @out.puts ""
     @int.get("Please type the number of your choice", 99)
   end
@@ -127,7 +127,7 @@ private
   def loopMainMenu
     case choice = showMainMenu()
       when 99
-        @out.puts _("Thanks for using rubyripper.")
+        @out.puts _("Thanks for using RubyRipperRemix.")
         @out.puts _("Have a nice day!")
       when 1 then @cliPrefs.show()
       when 2 then @cliDisc.show()

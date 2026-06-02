@@ -99,7 +99,7 @@ private
   # show a menu for the different settings
   def showMainMenu
     @out.puts ""
-    @out.puts "** " + _("RUBYRIPPER PREFERENCES") + " **"
+    @out.puts "** " + _("RUBYRIPPERREMIX PREFERENCES") + " **"
     @out.puts ""
     @out.puts ' 1) ' + _('Secure ripping')
     @out.puts ' 2) ' + _('Toc analysis')

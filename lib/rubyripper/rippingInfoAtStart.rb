@@ -51,7 +51,7 @@ private
   end
 
   def showBasicRipInfo
-    @logString << _("Rubyripper extraction logfile from:\n%s\n\n") % [@execute.launch("date")]
+    @logString << _("RubyRipperRemix extraction logfile from:\n%s\n\n") % [@execute.launch("date")]
     @logString << "%s / %s\n\n" % [@md.artist, @md.album]
   end
 

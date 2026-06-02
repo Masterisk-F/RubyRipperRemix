@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.7.0a1\n"
+"Project-Id-Version: RubyRipperRemixRemix 0.7.0a1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-28 19:19+0100\n"
 "Last-Translator: BleskoDev <bleskodev@ennumia.eu>\n"
@@ -25,13 +25,13 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "Einstellungen ändern? (j/n) : "
 
 #, fuzzy
-msgid "Rubyripper version %s"
+msgid "RubyRipperRemix version %s"
 msgstr ""
 "Das Protokoll wurde erstellt von Rubyripper, Version %s\n"
 
 #, fuzzy
-msgid "* RUBYRIPPER MAIN MENU *"
-msgstr "*** RUBYRIPPER EINSTELLUNGEN ***"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
+msgstr "*** RUBYRIPPERREMIX EINSTELLUNGEN ***"
 
 #, fuzzy
 msgid "Change preferences"
@@ -50,7 +50,7 @@ msgstr "1) Die zu rippenden Tracks wählen"
 msgid "Rip the disc!"
 msgstr ""
 
-msgid "Exit rubyripper..."
+msgid "Exit RubyRipperRemix..."
 msgstr ""
 
 # Einige Begriffe sollten durchgängig gehalten werden:
@@ -68,8 +68,8 @@ msgstr ""
 # Pregap, Pre-Emphasis, Thread, Track, Playlist?
 #
 #, fuzzy
-msgid "Thanks for using rubyripper."
-msgstr "Zeige aktuelle Rubyripper - Version"
+msgid "Thanks for using RubyRipperRemix."
+msgstr "Zeige aktuelle RubyRipperRemix - Version"
 
 msgid "Have a nice day!"
 msgstr ""
@@ -148,8 +148,8 @@ msgstr ""
 # Nicht übersetzte Fachbegriffe:
 # Pregap, Pre-Emphasis, Thread, Track, Playlist?
 #
-msgid "Show current version of rubyripper."
-msgstr "Zeige aktuelle Rubyripper - Version"
+msgid "Show current version of RubyRipperRemix."
+msgstr "Zeige aktuelle RubyRipperRemix - Version"
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Lade Konfiguration aus Datei <FILE>."
@@ -276,8 +276,8 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "RUBYRIPPER PREFERENCES"
-msgstr "*** RUBYRIPPER EINSTELLUNGEN ***"
+msgid "RUBYRIPPERREMIX PREFERENCES"
+msgstr "*** RUBYRIPPERREMIX EINSTELLUNGEN ***"
 
 #, fuzzy
 msgid "Secure ripping"
@@ -302,7 +302,7 @@ msgstr "99) Keine Einstellungen ändern"
 
 #, fuzzy
 msgid "SECURE RIPPING PREFERENCES"
-msgstr "*** RUBYRIPPER EINSTELLUNGEN ***"
+msgstr "*** RUBYRIPPERREMIX EINSTELLUNGEN ***"
 
 #, fuzzy
 msgid "Ripping drive"
@@ -579,7 +579,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OTHER PREFERENCES"
-msgstr "*** RUBYRIPPER EINSTELLUNGEN ***"
+msgstr "*** RUBYRIPPERREMIX EINSTELLUNGEN ***"
 
 #, fuzzy
 msgid "Base directory"
@@ -779,7 +779,7 @@ msgstr "Unbekannter Künstler"
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 "Das Verzeichnis %s existiert bereits.\n"
 "\n"
@@ -1204,10 +1204,10 @@ msgstr "Noch nicht gestartet (0%)"
 #, fuzzy
 msgid "...Scanning drive %s for an audio disc."
 msgstr ""
-"Willkommen zu Rubyripper %s.\n"
+"Willkommen zu RubyRipperRemix %s.\n"
 "Scanne Laufwerk %s nach einer Audio CD..."
 
-msgid "Welcome to rubyripper %s."
+msgid "Welcome to RubyRipperRemix %s."
 msgstr ""
 
 #, fuzzy
@@ -1419,7 +1419,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
@@ -1542,7 +1542,7 @@ msgid "WARNING: No eject utility found!"
 msgstr "Kein Auswurf-Werkzeug (eject) gefunden!"
 
 #, fuzzy
-msgid "Rubyripper can't be used without cdparanoia!"
+msgid "RubyRipperRemix can't be used without cdparanoia!"
 msgstr ""
 "Benutzter Ripper: cdparanoia %s\n"
 

@@ -1,6 +1,6 @@
-# Danish translation rubyripper.
-# Copyright (C) 2010 rubyripper & nedenstående oversættere.
-# This file is distributed under the same license as the rubyripper package.
+# Danish translation of RubyRipperRemix.
+# Copyright (C) 2010 RubyRipperRemix & nedenstående oversættere.
+# This file is distributed under the same license as the RubyRipperRemix package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010, 2018, 2023.
 #
 # base directory -> startmappe (det sted hvor mapperne til rippet bliver oprettet
@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.8.0rc3\n"
+"Project-Id-Version: RubyRipperRemixRemix 0.8.0rc3\n"
 "Report-Msgid-Bugs-To: bleskodev@ennumia.eu\n"
 "PO-Revision-Date: 2023-08-30 19:19+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
@@ -29,11 +29,11 @@ msgstr "j"
 msgid "Do you want to change your settings? (y/n) : "
 msgstr "Ønsker du at ændre din opsætning? (j/n): "
 
-msgid "Rubyripper version %s"
-msgstr "Rubyripper, version %s"
+msgid "RubyRipperRemix version %s"
+msgstr "RubyRipperRemix, version %s"
 
-msgid "* RUBYRIPPER MAIN MENU *"
-msgstr "* RUBYRIPPERs HOVEDMENU *"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
+msgstr "* RUBYRIPPERREMIXs HOVEDMENU *"
 
 msgid "Change preferences"
 msgstr "Ændr indstillinger"
@@ -50,11 +50,11 @@ msgstr "Vælg numrene der skal udtrækkes (standard = alle)"
 msgid "Rip the disc!"
 msgstr "Udtræk disken!"
 
-msgid "Exit rubyripper..."
-msgstr "Afslut rubyripper ..."
+msgid "Exit RubyRipperRemix..."
+msgstr "Afslut RubyRipperRemix ..."
 
-msgid "Thanks for using rubyripper."
-msgstr "Tak fordi du bruger rubyripper."
+msgid "Thanks for using RubyRipperRemix."
+msgstr "Tak fordi du bruger RubyRipperRemix."
 
 msgid "Have a nice day!"
 msgstr "Hav en god dag!"
@@ -117,8 +117,8 @@ msgstr "Luk bakke"
 msgid "test"
 msgstr "test"
 
-msgid "Show current version of rubyripper."
-msgstr "Vis aktuel version af rubyripper."
+msgid "Show current version of RubyRipperRemix."
+msgstr "Vis aktuel version af RubyRipperRemix."
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Indlæs konfigurationsopsætning fra fil <FIl>."
@@ -237,8 +237,8 @@ msgstr ""
 "\n"
 "Hvilken foretrækker du?"
 
-msgid "RUBYRIPPER PREFERENCES"
-msgstr "RUBYRIPPERS INDSTILLINGER"
+msgid "RUBYRIPPERREMIX PREFERENCES"
+msgstr "RUBYRIPPERREMIX INDSTILLINGER"
 
 msgid "Secure ripping"
 msgstr "Sikker udtrækning"
@@ -259,7 +259,7 @@ msgid "Don't change any setting"
 msgstr "Ændr ikke nogen indstillinger"
 
 msgid "SECURE RIPPING PREFERENCES"
-msgstr "SIKRE RUBYRIPPER-PRÆFERENCER"
+msgstr "SIKRE RUBYRIPPERREMIX-PRÆFERENCER"
 
 msgid "Ripping drive"
 msgstr "Udtræksdrev"
@@ -675,11 +675,11 @@ msgstr "Ukendt kunstner"
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 "Mappen %s findes allerede.\n"
 "\n"
-"Hvad ønsker du, at rubyripper gør?"
+"Hvad ønsker du, at RubyRipperRemix gør?"
 
 msgid "Cancel rip"
 msgstr "Afbryd udtræk"
@@ -1073,8 +1073,8 @@ msgstr "Ikke startet endnu (0 %)"
 msgid "...Scanning drive %s for an audio disc."
 msgstr "... Skanner drev %s for en lyddisk."
 
-msgid "Welcome to rubyripper %s."
-msgstr "Velkommen til rubyripper %s."
+msgid "Welcome to RubyRipperRemix %s."
+msgstr "Velkommen til RubyRipperRemix %s."
 
 msgid ""
 "No disc found in %s!\n"
@@ -1277,7 +1277,7 @@ msgstr ""
 "Hjemmeside:"
 
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
@@ -1393,8 +1393,8 @@ msgstr "Holder en pause på 2 minutter for at beskytte udstyret."
 msgid "WARNING: No eject utility found!"
 msgstr "ADVARSEL: Intet skub ud-værktøj fundet!"
 
-msgid "Rubyripper can't be used without cdparanoia!"
-msgstr "Rubyripper kan ikke bruges uden cdparanoia!"
+msgid "RubyRipperRemix can't be used without cdparanoia!"
+msgstr "RubyRipperRemix can't be used without cdparanoia!"
 
 msgid "You won't be able to use the gtk3 interface."
 msgstr "Du vil ikke kunne bruge gtk3-grænsefladen."

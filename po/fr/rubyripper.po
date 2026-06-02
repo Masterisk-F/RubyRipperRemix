@@ -1,14 +1,14 @@
-# French translations for rubyripper package
-# Traductions françaises du paquet rubyripper.
+# French translations for RubyRipperRemix package
+# Traductions françaises du paquet RubyRipperRemix.
 # Copyright (C) 2021, BleskoDev
-# This file is distributed under the same license as the rubyripper package.
+# This file is distributed under the same license as the RubyRipperRemix package.
 #
 # Rodolphe RIDEL <rodolphe.ridel@gmail.com>, 2008, 2009.
 # BleskoDev <bleskodev@ennumia.eu>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.8.0rc2\n"
+"Project-Id-Version: RubyRipperRemixRemix 0.8.0rc2\n"
 "PO-Revision-Date: 2021-04-04 19:17+0200\n"
 "Last-Translator: BleskoDev <bleskodev@ennumia.eu>\n"
 "Language-Team: French <bleskodev@ennumia.eu>\n"
@@ -25,11 +25,11 @@ msgstr "o"
 msgid "Do you want to change your settings? (y/n) : "
 msgstr "Voulez-vous changer vos préférences ? (o/n) :"
 
-msgid "Rubyripper version %s"
-msgstr "Rubyripper version %s\t"
+msgid "RubyRipperRemix version %s"
+msgstr "RubyRipperRemix version %s\t"
 
-msgid "* RUBYRIPPER MAIN MENU *"
-msgstr "* MENU PRINCIPAL RUBYRIPPER *"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
+msgstr "* MENU PRINCIPAL RUBYRIPPERREMIX *"
 
 msgid "Change preferences"
 msgstr "Changer les préférences"
@@ -46,11 +46,11 @@ msgstr "Sélectionner les pistes à extraire (défaut=toutes)"
 msgid "Rip the disc!"
 msgstr "Extraire le disque !"
 
-msgid "Exit rubyripper..."
-msgstr "Quitter rubyripper..."
+msgid "Exit RubyRipperRemix..."
+msgstr "Quitter RubyRipperRemix..."
 
-msgid "Thanks for using rubyripper."
-msgstr "Merci d'avoir utilisé rubyripper."
+msgid "Thanks for using RubyRipperRemix."
+msgstr "Merci d'avoir utilisé RubyRipperRemix."
 
 msgid "Have a nice day!"
 msgstr "Passez une bonne journée !"
@@ -112,8 +112,8 @@ msgstr "Fermer le lecteur"
 msgid "test"
 msgstr "test"
 
-msgid "Show current version of rubyripper."
-msgstr "Afficher la version actuelle de rubyripper."
+msgid "Show current version of RubyRipperRemix."
+msgstr "Afficher la version actuelle de RubyRipperRemix."
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Charger les préférences de configuration depuis le fichier <FILE>."
@@ -232,8 +232,8 @@ msgstr ""
 "\n"
 "Lequel préférez-vous ?"
 
-msgid "RUBYRIPPER PREFERENCES"
-msgstr "PRÉFÉRENCES DE RUBYRIPPER"
+msgid "RUBYRIPPERREMIX PREFERENCES"
+msgstr "PRÉFÉRENCES DE RUBYRIPPERREMIX"
 
 msgid "Secure ripping"
 msgstr "Extraction sûre"
@@ -673,11 +673,11 @@ msgstr "Artiste inconnu"
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 "Le dossier %s existe déjà.\n"
 "\n"
-"Que voulez-vous que rubyripper fasse ?"
+"Que voulez-vous que RubyRipperRemix fasse ?"
 
 msgid "Cancel rip"
 msgstr ""
@@ -1072,8 +1072,8 @@ msgstr "Pas encore commencé (0%)"
 msgid "...Scanning drive %s for an audio disc."
 msgstr "...À la recherche d'un disque audio dans %s."
 
-msgid "Welcome to rubyripper %s."
-msgstr "Bienvenue dans rubyripper %s"
+msgid "Welcome to RubyRipperRemix %s."
+msgstr "Bienvenue dans RubyRipperRemix %s"
 
 msgid ""
 "No disc found in %s!\n"
@@ -1276,11 +1276,11 @@ msgstr ""
 "Site Web :"
 
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
-"Journal d'extraction rubyripper de:\n"
+"Journal d'extraction RubyRipperRemix de:\n"
 " %s\n"
 "\n"
 
@@ -1396,8 +1396,8 @@ msgstr "Pause de 2 minutes en cours afin de protéger le matériel."
 msgid "WARNING: No eject utility found!"
 msgstr "ATTENTION : Aucun utilitaire d'éjection de trouvé !"
 
-msgid "Rubyripper can't be used without cdparanoia!"
-msgstr "rubyripper ne peut pas être utilisé sans cdparanoia !"
+msgid "RubyRipperRemix can't be used without cdparanoia!"
+msgstr "RubyRipperRemix can't be used without cdparanoia!"
 
 msgid "You won't be able to use the gtk3 interface."
 msgstr "Vous ne pourrez pas utiliser l'interface gtk3"

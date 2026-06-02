@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2021 BleskoDev
-# This file is distributed under the same license as the Rubyripper package.
+# This file is distributed under the same license as the RubyRipperRemix package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.8.0rc4\n"
+"Project-Id-Version: RubyRipperRemix 0.8.0rc4\n"
 "Report-Msgid-Bugs-To: bleskodev@ennumia.eu\n"
 "POT-Creation-Date: 2023-03-29 22:25+0200\n"
 "PO-Revision-Date: 2023-03-29 22:25+0200\n"
@@ -28,11 +28,11 @@ msgstr ""
 
 #: ../bin/rubyripper_cli:82 ../lib/rubyripper/cli/cliArguments.rb:47
 #: ../lib/rubyripper/rippingInfoAtStart.rb:49
-msgid "Rubyripper version %s"
+msgid "RubyRipperRemix version %s"
 msgstr ""
 
 #: ../bin/rubyripper_cli:97
-msgid "* RUBYRIPPER MAIN MENU *"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
 msgstr ""
 
 #: ../bin/rubyripper_cli:99
@@ -56,11 +56,11 @@ msgid "Rip the disc!"
 msgstr ""
 
 #: ../bin/rubyripper_cli:104
-msgid "Exit rubyripper..."
+msgid "Exit RubyRipperRemix..."
 msgstr ""
 
 #: ../bin/rubyripper_cli:113
-msgid "Thanks for using rubyripper."
+msgid "Thanks for using RubyRipperRemix."
 msgstr ""
 
 #: ../bin/rubyripper_cli:114
@@ -146,7 +146,7 @@ msgid "test"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliArguments.rb:45
-msgid "Show current version of rubyripper."
+msgid "Show current version of RubyRipperRemix."
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliArguments.rb:50
@@ -304,7 +304,7 @@ msgid ""
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:102
-msgid "RUBYRIPPER PREFERENCES"
+msgid "RUBYRIPPERREMIX PREFERENCES"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:104
@@ -898,7 +898,7 @@ msgstr ""
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkDirExists.rb:38
@@ -1396,7 +1396,7 @@ msgid "...Scanning drive %s for an audio disc."
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:37
-msgid "Welcome to rubyripper %s."
+msgid "Welcome to RubyRipperRemix %s."
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:46
@@ -1597,7 +1597,7 @@ msgstr ""
 
 #: ../lib/rubyripper/rippingInfoAtStart.rb:54
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
@@ -1742,7 +1742,7 @@ msgid "WARNING: No eject utility found!"
 msgstr ""
 
 #: ../lib/rubyripper/system/dependency.rb:104
-msgid "Rubyripper can't be used without cdparanoia!"
+msgid "RubyRipperRemix can't be used without cdparanoia!"
 msgstr ""
 
 #: ../lib/rubyripper/system/dependency.rb:105

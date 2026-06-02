@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.7.0a1\n"
+"Project-Id-Version: RubyRipperRemixRemix 0.7.0a1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-28 19:20+0100\n"
 "Last-Translator: BleskoDev <bleskodev@ennumia.eu>\n"
@@ -25,13 +25,13 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "Módosítani szeretnéd a beállításokat? (y/n) : "
 
 #, fuzzy
-msgid "Rubyripper version %s"
+msgid "RubyRipperRemix version %s"
 msgstr ""
-"Ez a naplófájl a Rubyripper %s verziójával készült\n"
+"This log was created by RubyRipperRemix %s verziójával készült\n"
 
 #, fuzzy
-msgid "* RUBYRIPPER MAIN MENU *"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Change preferences"
@@ -50,12 +50,12 @@ msgstr "1) Kiválasztani a másolandó számokat"
 msgid "Rip the disc!"
 msgstr ""
 
-msgid "Exit rubyripper..."
+msgid "Exit RubyRipperRemix..."
 msgstr ""
 
 #, fuzzy
-msgid "Thanks for using rubyripper."
-msgstr "A rubyripper jelenlegi verziójának mutatása."
+msgid "Thanks for using RubyRipperRemix."
+msgstr "A RubyRipperRemix jelenlegi verziójának mutatása."
 
 msgid "Have a nice day!"
 msgstr ""
@@ -120,8 +120,8 @@ msgstr "Tálca betöltése"
 msgid "test"
 msgstr ""
 
-msgid "Show current version of rubyripper."
-msgstr "A rubyripper jelenlegi verziójának mutatása."
+msgid "Show current version of RubyRipperRemix."
+msgstr "A RubyRipperRemix jelenlegi verziójának mutatása."
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Beállítások betöltése a <FILE> fájlból."
@@ -248,8 +248,8 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "RUBYRIPPER PREFERENCES"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgid "RUBYRIPPERREMIX PREFERENCES"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Secure ripping"
@@ -273,7 +273,7 @@ msgstr "99) Beállítások érintetlenül hagyása"
 
 #, fuzzy
 msgid "SECURE RIPPING PREFERENCES"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Ripping drive"
@@ -544,7 +544,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OTHER PREFERENCES"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Base directory"
@@ -731,11 +731,11 @@ msgstr ""
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 "A kimeneti mappa %s\n"
 "\n"
-"már létezik. Mit tegyen a rubyripper?"
+"már létezik. Mit tegyen a RubyRipperRemix?"
 
 msgid "Cancel rip"
 msgstr "Másolás leállítása"
@@ -1149,10 +1149,10 @@ msgstr "Még nem indult el (0%)"
 #, fuzzy
 msgid "...Scanning drive %s for an audio disc."
 msgstr ""
-"Üdvözöl a rubyripper %s.\n"
+"Üdvözöl a RubyRipperRemix %s.\n"
 "Audio lemez keresése a %s meghajtóban..."
 
-msgid "Welcome to rubyripper %s."
+msgid "Welcome to RubyRipperRemix %s."
 msgstr ""
 
 #, fuzzy
@@ -1362,7 +1362,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
@@ -1486,7 +1486,7 @@ msgid "WARNING: No eject utility found!"
 msgstr "Az eject program nem található!"
 
 #, fuzzy
-msgid "Rubyripper can't be used without cdparanoia!"
+msgid "RubyRipperRemix can't be used without cdparanoia!"
 msgstr ""
 "Használt másoló: cdparanoia %s\n"
 

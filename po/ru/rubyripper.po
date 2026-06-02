@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.7.0a1\n"
+"Project-Id-Version: RubyRipperRemixRemix 0.7.0a1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2010-01-29 18:48+0300\n"
 "Last-Translator: maksymov <maksymov.vlad@gmail.com>\n"
@@ -23,12 +23,12 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "Хотите ли вы изменить настройки? (д/н) "
 
 #, fuzzy
-msgid "Rubyripper version %s"
+msgid "RubyRipperRemix version %s"
 msgstr ""
 "Rubyripper версия %s\n"
 
 #, fuzzy
-msgid "* RUBYRIPPER MAIN MENU *"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
 msgstr "*** НАСТРОЙКИ ПРОГРАММЫ ***"
 
 #, fuzzy
@@ -48,12 +48,12 @@ msgstr "1) Выбрать дорожки для копирования"
 msgid "Rip the disc!"
 msgstr "Создать копию диска"
 
-msgid "Exit rubyripper..."
-msgstr "Выход rubyripper..."
+msgid "Exit RubyRipperRemix..."
+msgstr "Выход RubyRipperRemix..."
 
 #, fuzzy
-msgid "Thanks for using rubyripper."
-msgstr "Показать текущую версию rubyripper."
+msgid "Thanks for using RubyRipperRemix."
+msgstr "Показать текущую версию RubyRipperRemix."
 
 msgid "Have a nice day!"
 msgstr "Хорошего дня!"
@@ -118,8 +118,8 @@ msgstr "Закрыть лоток"
 msgid "test"
 msgstr "тест"
 
-msgid "Show current version of rubyripper."
-msgstr "Показать текущую версию rubyripper."
+msgid "Show current version of RubyRipperRemix."
+msgstr "Показать текущую версию RubyRipperRemix."
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Загрузить настройки из файла <FILE>."
@@ -248,7 +248,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "RUBYRIPPER PREFERENCES"
+msgid "RUBYRIPPERREMIX PREFERENCES"
 msgstr "*** НАСТРОЙКИ ПРОГРАММЫ ***"
 
 #, fuzzy
@@ -762,7 +762,7 @@ msgstr "Неизвестный Исполнитель"
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 "Директория %s уже существует.\n"
 "\n"
@@ -1204,8 +1204,8 @@ msgstr "Пока не начато (0%)"
 msgid "...Scanning drive %s for an audio disc."
 msgstr "Сканирование привода %s на наличие аудиодиска..."
 
-msgid "Welcome to rubyripper %s."
-msgstr "Добро пожаловать в rubyripper %s."
+msgid "Welcome to RubyRipperRemix %s."
+msgstr "Добро пожаловать в RubyRipperRemix %s."
 
 #, fuzzy
 msgid ""
@@ -1419,7 +1419,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
@@ -1542,7 +1542,7 @@ msgid "WARNING: No eject utility found!"
 msgstr "Не найдена утилита eject!"
 
 #, fuzzy
-msgid "Rubyripper can't be used without cdparanoia!"
+msgid "RubyRipperRemix can't be used without cdparanoia!"
 msgstr ""
 "Программа копирования: cdparanoia %s\n"
 
