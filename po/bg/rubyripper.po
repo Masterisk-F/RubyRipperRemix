@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RubyRipperRemixRemix 0.7.0a1\n"
+"Project-Id-Version: RubyRipperRemix 0.7.0a1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2009-06-14 19:40+0200\n"
 "Last-Translator: aleximilian & tolostoi <aleximilian@gmail.com> <tolostoi@gmai"
@@ -26,7 +26,7 @@ msgstr "Желаете ли да промените настройките? (y/n
 #, fuzzy
 msgid "RubyRipperRemix version %s"
 msgstr ""
-"This log was created by RubyRipperRemix версия %s\n"
+"Този лог е генериран от RubyRipperRemix версия %s\n"
 
 #, fuzzy
 msgid "* RUBYRIPPERREMIX MAIN MENU *"

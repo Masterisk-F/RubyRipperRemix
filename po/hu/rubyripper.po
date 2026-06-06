@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RubyRipperRemixRemix 0.7.0a1\n"
+"Project-Id-Version: RubyRipperRemix 0.7.0a1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-28 19:20+0100\n"
 "Last-Translator: BleskoDev <bleskodev@ennumia.eu>\n"
@@ -27,7 +27,7 @@ msgstr "Módosítani szeretnéd a beállításokat? (y/n) : "
 #, fuzzy
 msgid "RubyRipperRemix version %s"
 msgstr ""
-"This log was created by RubyRipperRemix %s verziójával készült\n"
+"Ez a naplófájl a RubyRipperRemix %s verziójával készült\n"
 
 #, fuzzy
 msgid "* RUBYRIPPERREMIX MAIN MENU *"

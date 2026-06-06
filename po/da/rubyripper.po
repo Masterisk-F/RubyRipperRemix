@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RubyRipperRemixRemix 0.8.0rc3\n"
+"Project-Id-Version: RubyRipperRemix 0.8.0rc3\n"
 "Report-Msgid-Bugs-To: bleskodev@ennumia.eu\n"
 "PO-Revision-Date: 2023-08-30 19:19+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
@@ -1281,7 +1281,7 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
-"Rubyripper-udtrækslogfil fra:\n"
+"RubyRipperRemix-udtrækslogfil fra:\n"
 "%s\n"
 "\n"
 
