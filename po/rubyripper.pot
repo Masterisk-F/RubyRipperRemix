@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: RubyRipperRemix 0.8.0rc4\n"
+"Project-Id-Version: RubyRipperRemix 0.8.0rc4_0.2.0\n"
 "Report-Msgid-Bugs-To: bleskodev@ennumia.eu\n"
-"POT-Creation-Date: 2023-03-29 22:25+0200\n"
-"PO-Revision-Date: 2023-03-29 22:25+0200\n"
+"POT-Creation-Date: 2026-06-07 01:54+0900\n"
+"PO-Revision-Date: 2026-06-07 01:54+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,126 +18,131 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../bin/rubyripper_cli:70 ../lib/rubyripper/cli/cliGetAnswer.rb:47
+#: ../bin/rubyripper_cli:87 ../lib/rubyripper/cli/cliGetAnswer.rb:47
 msgid "y"
 msgstr ""
 
-#: ../bin/rubyripper_cli:70
+#: ../bin/rubyripper_cli:87
 msgid "Do you want to change your settings? (y/n) : "
 msgstr ""
 
-#: ../bin/rubyripper_cli:82 ../lib/rubyripper/cli/cliArguments.rb:47
-#: ../lib/rubyripper/rippingInfoAtStart.rb:49
-msgid "RubyRipperRemix version %s"
-msgstr ""
-
-#: ../bin/rubyripper_cli:97
-msgid "* RUBYRIPPERREMIX MAIN MENU *"
-msgstr ""
-
 #: ../bin/rubyripper_cli:99
-msgid "Change preferences"
-msgstr ""
-
-#: ../bin/rubyripper_cli:100
-msgid "Scan drive for audio disc"
-msgstr ""
-
-#: ../bin/rubyripper_cli:101
-msgid "Change metadata"
-msgstr ""
-
-#: ../bin/rubyripper_cli:102
-msgid "Select the tracks to rip (default = all)"
-msgstr ""
-
-#: ../bin/rubyripper_cli:103
-msgid "Rip the disc!"
-msgstr ""
-
-#: ../bin/rubyripper_cli:104
-msgid "Exit RubyRipperRemix..."
-msgstr ""
-
-#: ../bin/rubyripper_cli:113
-msgid "Thanks for using RubyRipperRemix."
+msgid "RubyripperRemix version %s"
 msgstr ""
 
 #: ../bin/rubyripper_cli:114
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
+msgstr ""
+
+#: ../bin/rubyripper_cli:116
+msgid "Change preferences"
+msgstr ""
+
+#: ../bin/rubyripper_cli:117
+msgid "Scan drive for audio disc"
+msgstr ""
+
+#: ../bin/rubyripper_cli:118
+msgid "Change metadata"
+msgstr ""
+
+#: ../bin/rubyripper_cli:119
+msgid "Select the tracks to rip (default = all)"
+msgstr ""
+
+#: ../bin/rubyripper_cli:120
+msgid "Rip the disc!"
+msgstr ""
+
+#: ../bin/rubyripper_cli:121
+msgid "Exit RubyRipperRemix..."
+msgstr ""
+
+#: ../bin/rubyripper_cli:130
+msgid "Thanks for using RubyRipperRemix."
+msgstr ""
+
+#: ../bin/rubyripper_cli:131
 msgid "Have a nice day!"
 msgstr ""
 
-#: ../bin/rubyripper_cli:120 ../lib/rubyripper/cli/cliPreferences.rb:130
+#: ../bin/rubyripper_cli:137 ../lib/rubyripper/cli/cliPreferences.rb:130
 msgid "Number %s is not a valid choice, try again"
 msgstr ""
 
-#: ../bin/rubyripper_cli:139 ../bin/rubyripper_gtk3:418
+#: ../bin/rubyripper_cli:156 ../bin/rubyripper_gtk3:435
+#: ../lib/rubyripper/tui/tuiApp.rb:162
 msgid "Please solve the following configuration errors first:"
 msgstr ""
 
-#: ../bin/rubyripper_cli:146
+#: ../bin/rubyripper_cli:163
 msgid "Rip is canceled, exiting..."
 msgstr ""
 
-#: ../bin/rubyripper_cli:168
+#: ../bin/rubyripper_cli:185
 msgid "The output directory already exists. What would you like to do?"
 msgstr ""
 
-#: ../bin/rubyripper_cli:170
+#: ../bin/rubyripper_cli:187
 msgid "1) Auto rename the output directory"
 msgstr ""
 
-#: ../bin/rubyripper_cli:171
+#: ../bin/rubyripper_cli:188
 msgid "2) Overwrite the existing directory"
 msgstr ""
 
-#: ../bin/rubyripper_cli:172
+#: ../bin/rubyripper_cli:189
 msgid "3) Cancel the rip and eject the disc"
 msgstr ""
 
-#: ../bin/rubyripper_cli:175
+#: ../bin/rubyripper_cli:192
 msgid "Please enter the number of your choice: "
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:134 ../bin/rubyripper_gtk3:237
-#: ../bin/rubyripper_gtk3:345 ../bin/rubyripper_gtk3:369
+#: ../bin/rubyripper_gtk3:151 ../bin/rubyripper_gtk3:254
+#: ../bin/rubyripper_gtk3:362 ../bin/rubyripper_gtk3:386
 msgid "Open tray"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:187
+#: ../bin/rubyripper_gtk3:204
 msgid "Ehh.. There shouldn't be anything else. WTF?"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:188
+#: ../bin/rubyripper_gtk3:205
 msgid "Secret modus = %s"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:205 ../bin/rubyripper_gtk3:239
-#: ../bin/rubyripper_gtk3:275
+#: ../bin/rubyripper_gtk3:222 ../bin/rubyripper_gtk3:256
+#: ../bin/rubyripper_gtk3:292 ../lib/rubyripper/tui/tUIDisc.rb:122
+#: ../lib/rubyripper/tui/tuiDisc.rb:122
+#: ../lib/rubyripper/tui/tuiMessages.rb:115
 msgid "Exit"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:211
+#: ../bin/rubyripper_gtk3:228
 msgid "Abort"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:235 ../bin/rubyripper_gtk3:294
+#: ../bin/rubyripper_gtk3:252 ../bin/rubyripper_gtk3:311
+#: ../lib/rubyripper/tui/tUIDisc.rb:120 ../lib/rubyripper/tui/tuiDisc.rb:120
+#: ../lib/rubyripper/tui/tuiMessages.rb:114
 msgid "Preferences"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:236
+#: ../bin/rubyripper_gtk3:253 ../lib/rubyripper/tui/tuiMessages.rb:112
 msgid "Scan drive"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:238
+#: ../bin/rubyripper_gtk3:255 ../lib/rubyripper/tui/tUIDisc.rb:121
+#: ../lib/rubyripper/tui/tuiDisc.rb:121
 msgid "Rip cd now!"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:329
+#: ../bin/rubyripper_gtk3:346
 msgid "Disc info"
 msgstr ""
 
-#: ../bin/rubyripper_gtk3:364
+#: ../bin/rubyripper_gtk3:381
 msgid "Close tray"
 msgstr ""
 
@@ -147,6 +152,11 @@ msgstr ""
 
 #: ../lib/rubyripper/cli/cliArguments.rb:45
 msgid "Show current version of RubyRipperRemix."
+msgstr ""
+
+#: ../lib/rubyripper/cli/cliArguments.rb:47
+#: ../lib/rubyripper/rippingInfoAtStart.rb:49
+msgid "RubyRipperRemix version %s"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliArguments.rb:50
@@ -202,68 +212,83 @@ msgstr ""
 msgid "Total playtime: %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:93 ../lib/rubyripper/cli/cliDisc.rb:154
-#: ../lib/rubyripper/cli/cliDisc.rb:186 ../lib/rubyripper/gtk3/gtkDisc.rb:119
+#: ../lib/rubyripper/cli/cliDisc.rb:94 ../lib/rubyripper/cli/cliDisc.rb:162
+#: ../lib/rubyripper/cli/cliDisc.rb:194 ../lib/rubyripper/gtk3/gtkDisc.rb:119
+#: ../lib/rubyripper/tui/tUIDisc.rb:67 ../lib/rubyripper/tui/tUIDisc.rb:148
+#: ../lib/rubyripper/tui/tUIDisc.rb:195 ../lib/rubyripper/tui/tuiDisc.rb:67
+#: ../lib/rubyripper/tui/tuiDisc.rb:148 ../lib/rubyripper/tui/tuiDisc.rb:195
 msgid "Artist:"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:94 ../lib/rubyripper/cli/cliDisc.rb:155
-#: ../lib/rubyripper/gtk3/gtkDisc.rb:120
+#: ../lib/rubyripper/cli/cliDisc.rb:95 ../lib/rubyripper/cli/cliDisc.rb:163
+#: ../lib/rubyripper/gtk3/gtkDisc.rb:120 ../lib/rubyripper/tui/tUIDisc.rb:68
+#: ../lib/rubyripper/tui/tUIDisc.rb:150 ../lib/rubyripper/tui/tuiDisc.rb:68
+#: ../lib/rubyripper/tui/tuiDisc.rb:150
 msgid "Album:"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:95 ../lib/rubyripper/cli/cliDisc.rb:156
-#: ../lib/rubyripper/gtk3/gtkDisc.rb:121
+#: ../lib/rubyripper/cli/cliDisc.rb:96 ../lib/rubyripper/cli/cliDisc.rb:164
+#: ../lib/rubyripper/gtk3/gtkDisc.rb:121 ../lib/rubyripper/tui/tUIDisc.rb:69
+#: ../lib/rubyripper/tui/tUIDisc.rb:152 ../lib/rubyripper/tui/tuiDisc.rb:69
+#: ../lib/rubyripper/tui/tuiDisc.rb:152
 msgid "Genre:"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:96 ../lib/rubyripper/cli/cliDisc.rb:157
-#: ../lib/rubyripper/gtk3/gtkDisc.rb:122
+#: ../lib/rubyripper/cli/cliDisc.rb:97 ../lib/rubyripper/cli/cliDisc.rb:165
+#: ../lib/rubyripper/gtk3/gtkDisc.rb:122 ../lib/rubyripper/tui/tUIDisc.rb:69
+#: ../lib/rubyripper/tui/tUIDisc.rb:154 ../lib/rubyripper/tui/tuiDisc.rb:69
+#: ../lib/rubyripper/tui/tuiDisc.rb:154
 msgid "Year:"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:97 ../lib/rubyripper/cli/cliDisc.rb:158
+#: ../lib/rubyripper/cli/cliDisc.rb:98 ../lib/rubyripper/cli/cliDisc.rb:166
 msgid "Extra disc info:"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:98
+#: ../lib/rubyripper/cli/cliDisc.rb:99
 msgid "Marked as various disc? [%s]"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:122
+#: ../lib/rubyripper/cli/cliDisc.rb:111 ../lib/rubyripper/tui/tUIDisc.rb:98
+#: ../lib/rubyripper/tui/tuiDisc.rb:98
+msgid "Submit DiscID to MusicBrainz via : %s"
+msgstr ""
+
+#: ../lib/rubyripper/cli/cliDisc.rb:130
 msgid "EDIT METADATA"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:124
+#: ../lib/rubyripper/cli/cliDisc.rb:132
 msgid "Edit the disc info"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:125
+#: ../lib/rubyripper/cli/cliDisc.rb:133
 msgid "Edit the track info"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:126
+#: ../lib/rubyripper/cli/cliDisc.rb:134
 msgid "Return to main menu"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:144
+#: ../lib/rubyripper/cli/cliDisc.rb:152
 msgid "EDIT DISC INFO"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:147 ../lib/rubyripper/cli/cliDisc.rb:176
+#: ../lib/rubyripper/cli/cliDisc.rb:155 ../lib/rubyripper/cli/cliDisc.rb:184
 msgid "Back to metadata menu"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:168
+#: ../lib/rubyripper/cli/cliDisc.rb:176
 #: ../lib/rubyripper/cli/cliTracklist.rb:81
 msgid "Number %s is not a valid choice, try again."
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:173
+#: ../lib/rubyripper/cli/cliDisc.rb:181
 msgid "EDIT TRACK INFO"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliDisc.rb:188
+#: ../lib/rubyripper/cli/cliDisc.rb:196 ../lib/rubyripper/tui/tUIDisc.rb:190
+#: ../lib/rubyripper/tui/tuiDisc.rb:190
 msgid "Track name:"
 msgstr ""
 
@@ -316,18 +341,18 @@ msgid "Toc analysis"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:106
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:573
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:596
 msgid "Codecs"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:107
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:649
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:672
 msgid "Metadata"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:108
 #: ../lib/rubyripper/gtk3/gtkPreferences.rb:35
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:799
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:822
 msgid "Other"
 msgstr ""
 
@@ -340,12 +365,12 @@ msgid "SECURE RIPPING PREFERENCES"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:138
-#: ../lib/rubyripper/cli/cliPreferences.rb:159
+#: ../lib/rubyripper/cli/cliPreferences.rb:162
 msgid "Ripping drive"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:139
-#: ../lib/rubyripper/cli/cliPreferences.rb:161
+#: ../lib/rubyripper/cli/cliPreferences.rb:164
 msgid "Drive offset"
 msgstr ""
 
@@ -362,12 +387,12 @@ msgid "Pad missing lead-in/lead-out samples with zeroes %s"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:143
-#: ../lib/rubyripper/cli/cliPreferences.rb:164
-msgid "Passing extra cdparanoia parameters"
+#: ../lib/rubyripper/cli/cliPreferences.rb:167
+msgid "Passing extra cd-paranoia parameters"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:144
-#: ../lib/rubyripper/cli/cliPreferences.rb:165
+#: ../lib/rubyripper/cli/cliPreferences.rb:168
 msgid "Match all chunks"
 msgstr ""
 
@@ -376,386 +401,410 @@ msgid "Match erroneous chunks"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:146
-#: ../lib/rubyripper/cli/cliPreferences.rb:167
+#: ../lib/rubyripper/cli/cliPreferences.rb:170
 msgid "Maximum trials"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:148
-msgid "Eject disc after ripping %s"
+msgid "AccurateRip verification %s"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:149
-msgid "Only keep log when errors %s"
+msgid "CTDB verification (image rip only) %s"
 msgstr ""
 
 #: ../lib/rubyripper/cli/cliPreferences.rb:150
-#: ../lib/rubyripper/cli/cliPreferences.rb:186
-#: ../lib/rubyripper/cli/cliPreferences.rb:245
-#: ../lib/rubyripper/cli/cliPreferences.rb:321
-#: ../lib/rubyripper/cli/cliPreferences.rb:376
+msgid "Verify every trial (Finish early if verified successfully) %s"
+msgstr ""
+
+#: ../lib/rubyripper/cli/cliPreferences.rb:151
+msgid "Eject disc after ripping %s"
+msgstr ""
+
+#: ../lib/rubyripper/cli/cliPreferences.rb:152
+msgid "Only keep log when errors %s"
+msgstr ""
+
+#: ../lib/rubyripper/cli/cliPreferences.rb:153
+#: ../lib/rubyripper/cli/cliPreferences.rb:192
+#: ../lib/rubyripper/cli/cliPreferences.rb:251
+#: ../lib/rubyripper/cli/cliPreferences.rb:327
+#: ../lib/rubyripper/cli/cliPreferences.rb:382
 msgid "Back to settings main menu"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:166
+#: ../lib/rubyripper/cli/cliPreferences.rb:169
 msgid "Match erronous chunks"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:178
+#: ../lib/rubyripper/cli/cliPreferences.rb:184
 msgid "TOC ANALYSIS PREFERENCES"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:180
+#: ../lib/rubyripper/cli/cliPreferences.rb:186
 msgid "Create a cuesheet %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:181
+#: ../lib/rubyripper/cli/cliPreferences.rb:187
 msgid "Rip to single file %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:182
+#: ../lib/rubyripper/cli/cliPreferences.rb:188
 msgid "Rip hidden audio sectors %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:183
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:341
+#: ../lib/rubyripper/cli/cliPreferences.rb:189
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:364
 msgid "Mark as a hidden track when longer than"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:183
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:342
+#: ../lib/rubyripper/cli/cliPreferences.rb:189
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:365
 msgid "second(s)"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:184
+#: ../lib/rubyripper/cli/cliPreferences.rb:190
+#: ../lib/rubyripper/tui/tuiPreferences.rb:62
 msgid "Append or prepend audio"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:185
+#: ../lib/rubyripper/cli/cliPreferences.rb:191
 msgid "Way to handle pre-emphasis"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:199
+#: ../lib/rubyripper/cli/cliPreferences.rb:205
 msgid "Mark as a hidden track when bigger than <X> seconds"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:208
+#: ../lib/rubyripper/cli/cliPreferences.rb:214
 msgid "Prepend pregaps to the track"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:209
+#: ../lib/rubyripper/cli/cliPreferences.rb:215
 msgid "Append pregap to previous track"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:214
+#: ../lib/rubyripper/cli/cliPreferences.rb:220
 msgid "Write pre-emphasis tag to the cuesheet"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:222
+#: ../lib/rubyripper/cli/cliPreferences.rb:228
 msgid "CODEC PREFERENCES"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:224
+#: ../lib/rubyripper/cli/cliPreferences.rb:230
 msgid "FLAC %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:225
-#: ../lib/rubyripper/cli/cliPreferences.rb:256
+#: ../lib/rubyripper/cli/cliPreferences.rb:231
+#: ../lib/rubyripper/cli/cliPreferences.rb:262
 msgid "FLAC options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:226
+#: ../lib/rubyripper/cli/cliPreferences.rb:232
 msgid "Vorbis %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:227
-#: ../lib/rubyripper/cli/cliPreferences.rb:259
+#: ../lib/rubyripper/cli/cliPreferences.rb:233
+#: ../lib/rubyripper/cli/cliPreferences.rb:265
 msgid "Oggenc options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:228
+#: ../lib/rubyripper/cli/cliPreferences.rb:234
 msgid "LAME mp3 %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:229
+#: ../lib/rubyripper/cli/cliPreferences.rb:235
 msgid "LAME options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:230
+#: ../lib/rubyripper/cli/cliPreferences.rb:236
 msgid "Nero AAC %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:231
-#: ../lib/rubyripper/cli/cliPreferences.rb:265
+#: ../lib/rubyripper/cli/cliPreferences.rb:237
+#: ../lib/rubyripper/cli/cliPreferences.rb:271
 msgid "Nero options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:232
+#: ../lib/rubyripper/cli/cliPreferences.rb:238
 msgid "Fraunhofer AAC %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:233
-#: ../lib/rubyripper/cli/cliPreferences.rb:268
+#: ../lib/rubyripper/cli/cliPreferences.rb:239
+#: ../lib/rubyripper/cli/cliPreferences.rb:274
 msgid "Fraunhofer options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:234
+#: ../lib/rubyripper/cli/cliPreferences.rb:240
 msgid "WavPack %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:235
-#: ../lib/rubyripper/cli/cliPreferences.rb:271
+#: ../lib/rubyripper/cli/cliPreferences.rb:241
+#: ../lib/rubyripper/cli/cliPreferences.rb:277
 msgid "WavPack options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:236
+#: ../lib/rubyripper/cli/cliPreferences.rb:242
 msgid "Opus %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:237
-#: ../lib/rubyripper/cli/cliPreferences.rb:274
+#: ../lib/rubyripper/cli/cliPreferences.rb:243
+#: ../lib/rubyripper/cli/cliPreferences.rb:280
 msgid "Opus options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:238
+#: ../lib/rubyripper/cli/cliPreferences.rb:244
 msgid "WAVE %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:239
+#: ../lib/rubyripper/cli/cliPreferences.rb:245
 msgid "Other codec %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:240
-#: ../lib/rubyripper/cli/cliPreferences.rb:292
+#: ../lib/rubyripper/cli/cliPreferences.rb:246
+#: ../lib/rubyripper/cli/cliPreferences.rb:298
+#: ../lib/rubyripper/tui/tuiPreferences.rb:83
 msgid "Commandline passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:241
+#: ../lib/rubyripper/cli/cliPreferences.rb:247
 msgid "Playlist support %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:242
-#: ../lib/rubyripper/cli/cliPreferences.rb:280
+#: ../lib/rubyripper/cli/cliPreferences.rb:248
+#: ../lib/rubyripper/cli/cliPreferences.rb:286
 msgid "Maximum extra encoding threads"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:243
+#: ../lib/rubyripper/cli/cliPreferences.rb:249
+#: ../lib/rubyripper/tui/tuiPreferences.rb:86
 msgid "Normalize program"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:244
+#: ../lib/rubyripper/cli/cliPreferences.rb:250
+#: ../lib/rubyripper/tui/tuiPreferences.rb:87
 msgid "Normalize modus"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:262
+#: ../lib/rubyripper/cli/cliPreferences.rb:268
 msgid "Lame options passed"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:289
-#: ../lib/rubyripper/cli/cliPreferences.rb:408
+#: ../lib/rubyripper/cli/cliPreferences.rb:295
+#: ../lib/rubyripper/cli/cliPreferences.rb:414
 #: ../lib/rubyripper/gtk3/gtkDisc.rb:194
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:665
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:688
+#: ../lib/rubyripper/tui/tUIDisc.rb:75 ../lib/rubyripper/tui/tuiDisc.rb:75
 msgid "Artist"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:289
-#: ../lib/rubyripper/cli/cliPreferences.rb:408
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:666
+#: ../lib/rubyripper/cli/cliPreferences.rb:295
+#: ../lib/rubyripper/cli/cliPreferences.rb:414
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:689
 msgid "Album"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:289
-#: ../lib/rubyripper/cli/cliPreferences.rb:409
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:665
+#: ../lib/rubyripper/cli/cliPreferences.rb:295
+#: ../lib/rubyripper/cli/cliPreferences.rb:415
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:688
 msgid "Genre"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:289
-#: ../lib/rubyripper/cli/cliPreferences.rb:409
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:666
+#: ../lib/rubyripper/cli/cliPreferences.rb:295
+#: ../lib/rubyripper/cli/cliPreferences.rb:415
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:689
 msgid "Year"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:290
-#: ../lib/rubyripper/cli/cliPreferences.rb:411
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:665
+#: ../lib/rubyripper/cli/cliPreferences.rb:296
+#: ../lib/rubyripper/cli/cliPreferences.rb:417
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:688
 msgid "Track name"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:290
-#: ../lib/rubyripper/cli/cliPreferences.rb:410
+#: ../lib/rubyripper/cli/cliPreferences.rb:296
+#: ../lib/rubyripper/cli/cliPreferences.rb:416
 msgid "Tracknumber"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:290
+#: ../lib/rubyripper/cli/cliPreferences.rb:296
 msgid "Input file"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:291
+#: ../lib/rubyripper/cli/cliPreferences.rb:297
 msgid "Output file"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:291
+#: ../lib/rubyripper/cli/cliPreferences.rb:297
 msgid " (don't forget the extension)"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:296
+#: ../lib/rubyripper/cli/cliPreferences.rb:302
 msgid "Don't normalize the audio"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:297
+#: ../lib/rubyripper/cli/cliPreferences.rb:303
 msgid "Use replaygain"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:298
+#: ../lib/rubyripper/cli/cliPreferences.rb:304
 msgid "Use normalize"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:303
+#: ../lib/rubyripper/cli/cliPreferences.rb:309
 msgid "Use album based gain"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:304
+#: ../lib/rubyripper/cli/cliPreferences.rb:310
 msgid "Use track based gain"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:311
+#: ../lib/rubyripper/cli/cliPreferences.rb:317
 msgid "METADATA PREFERENCES"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:313
+#: ../lib/rubyripper/cli/cliPreferences.rb:319
+#: ../lib/rubyripper/tui/tuiPreferences.rb:91
 msgid "Metadata provider"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:314
+#: ../lib/rubyripper/cli/cliPreferences.rb:320
 msgid "Gnudb use first hit %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:315
-#: ../lib/rubyripper/cli/cliPreferences.rb:332
+#: ../lib/rubyripper/cli/cliPreferences.rb:321
+#: ../lib/rubyripper/cli/cliPreferences.rb:338
+#: ../lib/rubyripper/tui/tuiPreferences.rb:93
 msgid "Gnudb server"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:316
-#: ../lib/rubyripper/cli/cliPreferences.rb:334
+#: ../lib/rubyripper/cli/cliPreferences.rb:322
+#: ../lib/rubyripper/cli/cliPreferences.rb:340
+#: ../lib/rubyripper/tui/tuiPreferences.rb:94
 msgid "Gnudb username"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:317
-#: ../lib/rubyripper/cli/cliPreferences.rb:336
+#: ../lib/rubyripper/cli/cliPreferences.rb:323
+#: ../lib/rubyripper/cli/cliPreferences.rb:342
+#: ../lib/rubyripper/tui/tuiPreferences.rb:95
 msgid "Gnudb hostname"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:318
+#: ../lib/rubyripper/cli/cliPreferences.rb:324
 msgid "Musicbrainz preferred countries (1st, 2nd,...)"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:319
+#: ../lib/rubyripper/cli/cliPreferences.rb:325
 msgid "Musicbrainz preferred date"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:320
+#: ../lib/rubyripper/cli/cliPreferences.rb:326
 msgid "Musicbrainz use first known year (including LPs) %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:338
+#: ../lib/rubyripper/cli/cliPreferences.rb:344
 msgid "Prefer releases from countries (better, worse, ...)"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:348
+#: ../lib/rubyripper/cli/cliPreferences.rb:354
 msgid "Don't fetch metadata from the internet"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:349
+#: ../lib/rubyripper/cli/cliPreferences.rb:355
 msgid "Use the gnudb protocol as primary resource"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:350
+#: ../lib/rubyripper/cli/cliPreferences.rb:356
 msgid "Use the musicbrainz protocol as primary resource"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:355
+#: ../lib/rubyripper/cli/cliPreferences.rb:361
 msgid "Prefer releases with earlier dates"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:356
+#: ../lib/rubyripper/cli/cliPreferences.rb:362
 msgid "Prefer releases with later dates"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:357
+#: ../lib/rubyripper/cli/cliPreferences.rb:363
 msgid "Ignore dates when selecting releases"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:364
+#: ../lib/rubyripper/cli/cliPreferences.rb:370
 msgid "OTHER PREFERENCES"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:366
-#: ../lib/rubyripper/cli/cliPreferences.rb:385
+#: ../lib/rubyripper/cli/cliPreferences.rb:372
+#: ../lib/rubyripper/cli/cliPreferences.rb:391
+#: ../lib/rubyripper/tui/tuiPreferences.rb:102
 msgid "Base directory"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:367
+#: ../lib/rubyripper/cli/cliPreferences.rb:373
 msgid "Standard file scheme"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:368
+#: ../lib/rubyripper/cli/cliPreferences.rb:374
 msgid "Various artist file scheme"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:369
+#: ../lib/rubyripper/cli/cliPreferences.rb:375
 msgid "Single file rip file scheme"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:370
+#: ../lib/rubyripper/cli/cliPreferences.rb:376
 msgid "Replace spaces with underscores %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:371
+#: ../lib/rubyripper/cli/cliPreferences.rb:377
 msgid "Downsize all capital letters in file names %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:372
-#: ../lib/rubyripper/cli/cliPreferences.rb:392
+#: ../lib/rubyripper/cli/cliPreferences.rb:378
+#: ../lib/rubyripper/cli/cliPreferences.rb:398
+#: ../lib/rubyripper/tui/tuiPreferences.rb:108
 msgid "Log file viewer"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:373
-#: ../lib/rubyripper/cli/cliPreferences.rb:394
+#: ../lib/rubyripper/cli/cliPreferences.rb:379
+#: ../lib/rubyripper/cli/cliPreferences.rb:400
+#: ../lib/rubyripper/tui/tuiPreferences.rb:109
 msgid "File manager"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:374
+#: ../lib/rubyripper/cli/cliPreferences.rb:380
 msgid "Verbose mode %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:375
+#: ../lib/rubyripper/cli/cliPreferences.rb:381
 msgid "Debug mode %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:405
+#: ../lib/rubyripper/cli/cliPreferences.rb:411
 msgid ""
 "\n"
 "Current naming scheme: %s"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:410
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:516
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:666
+#: ../lib/rubyripper/cli/cliPreferences.rb:416
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:539
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:689
 msgid "Codec"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:411
+#: ../lib/rubyripper/cli/cliPreferences.rb:417
 msgid "Various Artist"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:413
+#: ../lib/rubyripper/cli/cliPreferences.rb:419
 msgid "New naming scheme (q to quit)"
 msgstr ""
 
-#: ../lib/rubyripper/cli/cliPreferences.rb:419
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:713
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:721
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:729
+#: ../lib/rubyripper/cli/cliPreferences.rb:425
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:736
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:744
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:752
 msgid "Example file name: "
 msgstr ""
 
@@ -779,39 +828,39 @@ msgstr ""
 msgid "Back to main menu"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdparanoia.rb:218
+#: ../lib/rubyripper/disc/scanDiscCdparanoia.rb:228
 msgid "ERROR: No audio tracks found!"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:174
+#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:179
 msgid ""
 "\n"
 "ADVANCED TOC ANALYSIS (with cdrdao)\n"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:175
+#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:180
 msgid ""
 "...please be patient, this may take a while\n"
 "\n"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:185
+#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:190
 msgid ""
 "No pregap, silence, pre-emphasis or data track detected\n"
 "\n"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:190
+#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:195
 msgid ""
 "Silence detected for disc : %s sectors\n"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:195
+#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:200
 msgid ""
 "Pregap detected for track %s : %s sectors\n"
 msgstr ""
 
-#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:203
+#: ../lib/rubyripper/disc/scanDiscCdrdao.rb:208
 msgid ""
 "Track %s is marked as a DATA track\n"
 msgstr ""
@@ -886,11 +935,11 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: ../lib/rubyripper/fileScheme.rb:269
+#: ../lib/rubyripper/fileScheme.rb:273
 msgid "Hidden Track"
 msgstr ""
 
-#: ../lib/rubyripper/fileScheme.rb:270
+#: ../lib/rubyripper/fileScheme.rb:274
 msgid "Unknown Artist"
 msgstr ""
 
@@ -902,6 +951,8 @@ msgid ""
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkDirExists.rb:38
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:94
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:157
 msgid "Cancel rip"
 msgstr ""
 
@@ -1014,11 +1065,15 @@ msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkMultipleMusicBrainzHits.rb:84
 #: ../lib/rubyripper/gtk3/gtkMultipleMusicBrainzHits.rb:115
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:32
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:46
 msgid "Unknown title"
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkMultipleMusicBrainzHits.rb:85
 #: ../lib/rubyripper/gtk3/gtkMultipleMusicBrainzHits.rb:121
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:33
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:47
 msgid "Unknown date"
 msgstr ""
 
@@ -1044,34 +1099,35 @@ msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkMultipleMusicBrainzHits.rb:90
 #: ../lib/rubyripper/gtk3/gtkMultipleMusicBrainzHits.rb:151
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:35
 msgid "Unknown barcode"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:249
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:255
 msgid "Cdrom device:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:251
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:257
 msgid "Cdrom offset:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:256
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:262
 msgid "List with offsets"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:258
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:264
 msgid ""
 "A website which lists the offset for most drives.\n"
 "Your drivename can be found in each logfile."
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:260
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:266
 msgid "Pad missing samples with zero's"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:261
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:267
 msgid ""
-"Cdparanoia can\\'t handle offsets \\\n"
+"Libcdio-paranoia (cd-paranoia) can\\'t handle offsets \\\n"
 "larger than 580 for \n"
 "first (negative offset) and last (positive offset) \\\n"
 "track.\n"
@@ -1082,295 +1138,315 @@ msgid ""
 "It is recommended to enable this option."
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:276
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:282
 msgid "Cdrom device"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:293
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:299
 msgid "Match all chunks:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:294
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:300
 msgid "Match erroneous chunks:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:295
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:301
 msgid "Maximum trials (0 = unlimited):"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:299
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:300
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:301
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:302
+msgid "AccurateRip verification"
+msgstr ""
+
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:303
+msgid "CTDB verification (image rip only)"
+msgstr ""
+
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:304
+msgid "CUETools Database verification. Requires ctdb-cli to be installed."
+msgstr ""
+
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:306
+msgid "Verify every trial (finish early on match)"
+msgstr ""
+
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:310
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:311
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:312
 msgid "times"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:314
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:332
 msgid "Ripping options"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:320
-msgid "Pass cdparanoia options:"
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:343
+msgid "Pass cd-paranoia options:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:321
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:344
 msgid "Eject cd when finished"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:322
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:345
 msgid "Only keep logfile if correction is needed"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:329
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:352
 msgid "Ripping related"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:333
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:356
 msgid "Secure Ripping"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:340
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:363
+#: ../lib/rubyripper/tui/tuiPreferences.rb:60
 msgid "Rip hidden audio sectors"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:345
-msgid "Uncheck this if cdparanoia crashes with your ripping drive."
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:368
+msgid "Uncheck this if cd-paranoia crashes with your ripping drive."
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:346
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:369
 msgid ""
 "A hidden track will rip to a seperate file if used in track modus.\n"
 "If it's smaller the sectors will be prepended to the first track."
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:356
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:379
 msgid "Audio sectors before track 1"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:362
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:385
 msgid "Create cuesheet"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:363
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:386
 msgid "Rip CD to single file"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:369
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:392
 msgid "Advanced Toc analysis"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:372
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:395
 msgid "Cdrdao installed?"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:381
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:404
 msgid "Append pregap to the previous track"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:382
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:405
 msgid "Prepend pregap to the track"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:386
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:409
 msgid "Handling pregaps other than track 1"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:393
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:416
 msgid "Correct pre-emphasis tracks with sox"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:395
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:418
 msgid "Save the pre-emphasis tag in the cuesheet."
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:399
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:422
 msgid "Handling tracks with pre-emphasis"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:405
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:428
 msgid "TOC analysis"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:451
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:474
 msgid "Active audio codecs"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:458
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:481
 msgid "No settings available"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:505
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:528
 msgid ""
 "%a=artist %g=genre %t=track name %f=codec %b=album \n"
 "%y=year %n=track %va=various artist %o=output file %i=input file"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:542
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:565
 msgid "Create m3u playlist"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:544
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:567
 msgid "Number of extra encoding threads"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:549
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:572
 msgid "Codec related"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:556
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:579
 msgid "Don't standardize volume"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:557
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:580
 msgid "Use replaygain on audio files"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:558
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:581
 msgid "Use normalize on WAVE files"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:561
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:584
 msgid "Album / Audiophile modus"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:562
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:585
 msgid "Track modus"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:569
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:592
 msgid "Normalize to standard volume"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:579
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:602
 msgid "Primary metadata provider:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:581
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:604
 msgid "Gnudb"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:582
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:605
 msgid "Musicbrainz"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:583
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:606
 msgid "Don't use a metadata provider"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:586
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:609
 msgid "Choose your metadata provider"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:592
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:615
 msgid "Always use first gnudb hit"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:593
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:616
 msgid "Gnudb server:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:594
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:617
 msgid "Username:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:595
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:618
 msgid "Hostname:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:610
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:633
 msgid "Gnudb options"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:616
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:639
 msgid "Preferred countries:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:618
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:641
 msgid "Preferred release date:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:620
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:643
 msgid "Preferred year (metadata):"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:623
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:625
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:646
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:648
 msgid "Original"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:624
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:647
 msgid "Latest available"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:626
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:649
 msgid "From release"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:636
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:659
 msgid "Musicbrainz options"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:656
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:679
 msgid "Base directory:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:657
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:680
 msgid "Standard:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:658
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:681
 msgid "Various artists:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:659
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:682
 msgid "Single file image:"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:661
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:684
 msgid "Show options for \"File naming scheme\""
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:667
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:690
 #: ../lib/rubyripper/rippingInfoAtStart.rb:101
+#: ../lib/rubyripper/tui/tUIDisc.rb:74 ../lib/rubyripper/tui/tuiDisc.rb:74
 msgid "Track"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:667
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:690
 msgid "Various artist"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:669
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:692
 msgid "Replace spaces with underscores in file names"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:670
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:693
 msgid "Downsize all capital letters in file names"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:708
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:731
 msgid "File naming scheme"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:772
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:795
 msgid "Log file viewer: "
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:773
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:796
 msgid "File manager: "
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:781
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:804
 msgid "Programs of choice"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:789
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:812
+#: ../lib/rubyripper/tui/tuiPreferences.rb:111
 msgid "Verbose mode"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:790
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:813
+#: ../lib/rubyripper/tui/tuiPreferences.rb:112
 msgid "Debug mode"
 msgstr ""
 
-#: ../lib/rubyripper/gtk3/gtkPreferences.rb:793
+#: ../lib/rubyripper/gtk3/gtkPreferences.rb:816
 msgid "Debug options"
 msgstr ""
 
@@ -1396,6 +1472,7 @@ msgid "...Scanning drive %s for an audio disc."
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:37
+#: ../lib/rubyripper/tui/tuiMessages.rb:71
 msgid "Welcome to RubyRipperRemix %s."
 msgstr ""
 
@@ -1408,14 +1485,17 @@ msgid ""
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:50
+#: ../lib/rubyripper/tui/tuiMessages.rb:80
 msgid "Opening tray of drive %s."
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:54
+#: ../lib/rubyripper/tui/tuiMessages.rb:82
 msgid "Closing tray of the drive."
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:58
+#: ../lib/rubyripper/tui/tuiMessages.rb:84
 msgid ""
 "Insert an audio-disc and press 'Close tray'.\n"
 "The drive will automatically be scanned for a disc.\n"
@@ -1424,6 +1504,7 @@ msgid ""
 msgstr ""
 
 #: ../lib/rubyripper/gtk3/gtkShortMessage.rb:62
+#: ../lib/rubyripper/tui/tuiMessages.rb:86
 msgid "The eject utility is not found on your system!"
 msgstr ""
 
@@ -1509,73 +1590,73 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:197
+#: ../lib/rubyripper/log.rb:216
 msgid ""
 "\n"
 "WARNING: ENCODING ERRORS WERE DETECTED\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:198
+#: ../lib/rubyripper/log.rb:217
 msgid ""
 "\n"
 "RIPPING SUMMARY\n"
 "\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:200
+#: ../lib/rubyripper/log.rb:219
 msgid ""
 "All chunks were tried to match at least %s times.\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:202
+#: ../lib/rubyripper/log.rb:221
 msgid "Chunks that differed after %s trials,"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:203
+#: ../lib/rubyripper/log.rb:222
 msgid ""
 "\n"
 "were tried to match %s times.\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:207
+#: ../lib/rubyripper/log.rb:226
 msgid "No errors occurred"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:208
+#: ../lib/rubyripper/log.rb:227
 msgid ""
 "None of the tracks gave any problems\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:210
+#: ../lib/rubyripper/log.rb:229
 msgid "There were errors which could not be corrected"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:211
+#: ../lib/rubyripper/log.rb:230
 msgid ""
 "Some track(s) could NOT be corrected within the maximum amount of trials\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:214
+#: ../lib/rubyripper/log.rb:233
 msgid ""
 "Track %s could NOT be corrected completely\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:218
+#: ../lib/rubyripper/log.rb:237
 msgid "There were errors which required correction"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:219
+#: ../lib/rubyripper/log.rb:238
 msgid ""
 "Some track(s) needed correction,but could\n"
 "be corrected within the maximum amount of trials\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:222
+#: ../lib/rubyripper/log.rb:241
 msgid ""
 "There were errors during encoding\n"
 msgstr ""
 
-#: ../lib/rubyripper/log.rb:225
+#: ../lib/rubyripper/log.rb:244
 msgid ""
 "The exact positions of the suspicious chunks\n"
 "can be found in the ripping log\n"
@@ -1688,6 +1769,7 @@ msgid "Start"
 msgstr ""
 
 #: ../lib/rubyripper/rippingInfoAtStart.rb:102
+#: ../lib/rubyripper/tui/tUIDisc.rb:76 ../lib/rubyripper/tui/tuiDisc.rb:76
 msgid "Length"
 msgstr ""
 
@@ -1699,41 +1781,41 @@ msgstr ""
 msgid "End sector"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:142
+#: ../lib/rubyripper/secureRip.rb:158
 msgid "Not enough disk space left! Rip aborted"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:152
+#: ../lib/rubyripper/secureRip.rb:176 ../lib/rubyripper/secureRip.rb:186
 msgid "Copy OK"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:158
+#: ../lib/rubyripper/secureRip.rb:192
 msgid "Irrecoverable sectors at the following times:"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:161
+#: ../lib/rubyripper/secureRip.rb:195
 msgid "Copy finished"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:200
+#: ../lib/rubyripper/secureRip.rb:243
 msgid ""
-"Cdparanoia doesn't output WAVE files.\n"
+"Libcdio-paranoia (cd-paranoia) doesn't output WAVE files.\n"
 "Check your settings please."
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:229
+#: ../lib/rubyripper/secureRip.rb:272
 msgid "File size is not correct! Trying another time"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:250
+#: ../lib/rubyripper/secureRip.rb:293
 msgid "Sector mismatches at the following times, requiring extra trials:"
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:364
+#: ../lib/rubyripper/secureRip.rb:407
 msgid "Drive has been spinning for more than 30 minutes."
 msgstr ""
 
-#: ../lib/rubyripper/secureRip.rb:365
+#: ../lib/rubyripper/secureRip.rb:408
 msgid "Taking a timeout of 2 minutes to protect the hardware."
 msgstr ""
 
@@ -1741,75 +1823,79 @@ msgstr ""
 msgid "WARNING: No eject utility found!"
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:104
-msgid "RubyRipperRemix can't be used without cdparanoia!"
+#: ../lib/rubyripper/system/dependency.rb:109
+msgid "RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:105
+#: ../lib/rubyripper/system/dependency.rb:110
 msgid "You won't be able to use the gtk3 interface."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:106
+#: ../lib/rubyripper/system/dependency.rb:111
 msgid "You won't be able to use translations."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:107
+#: ../lib/rubyripper/system/dependency.rb:112
 msgid ""
 "You won't have accurate Gnudb string \\\n"
 "calculation unless %s is installed."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:109
+#: ../lib/rubyripper/system/dependency.rb:114
 msgid ""
 "You won't have accurate Gnnudb string \\\n"
 "calculation unless %s is installed."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:111
+#: ../lib/rubyripper/system/dependency.rb:116
 msgid "Your disc tray can not be opened after ripping"
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:112
+#: ../lib/rubyripper/system/dependency.rb:117
 msgid "You won't be able to encode in FLAC."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:113
+#: ../lib/rubyripper/system/dependency.rb:118
 msgid "You won't be able to encode in vorbis."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:114
+#: ../lib/rubyripper/system/dependency.rb:119
 msgid "You won't be able to encode in LAME mp3."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:115
+#: ../lib/rubyripper/system/dependency.rb:120
 msgid "You won't be able to replaygain WAVE files."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:116
+#: ../lib/rubyripper/system/dependency.rb:121
 msgid "You won't be able to replaygain vorbis files."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:117
+#: ../lib/rubyripper/system/dependency.rb:122
 msgid "You won't be able to replaygain LAME mp3 files."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:118
+#: ../lib/rubyripper/system/dependency.rb:123
 msgid "You won't be able to normalize audio files."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:119
+#: ../lib/rubyripper/system/dependency.rb:124
 msgid "You won't be able to make cuesheets"
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:120
+#: ../lib/rubyripper/system/dependency.rb:125
 msgid "Cd-info helps to detect data tracks."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:121
+#: ../lib/rubyripper/system/dependency.rb:126
 msgid "Show rights in case of problems"
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:187
+#: ../lib/rubyripper/system/dependency.rb:127
+msgid "You won't be able to perform CTDB verification."
+msgstr ""
+
+#: ../lib/rubyripper/system/dependency.rb:194
 msgid ""
 "\n"
 "\n"
@@ -1817,9 +1903,400 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:189
+#: ../lib/rubyripper/system/dependency.rb:196
 msgid ""
 "\n"
 "CHECKING OPTIONAL DEPENDENCIES\n"
 "\n"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:66 ../lib/rubyripper/tui/tuiDisc.rb:66
+msgid "Disc Info"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:74 ../lib/rubyripper/tui/tuiDisc.rb:74
+msgid "Rip"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:74 ../lib/rubyripper/tui/tuiDisc.rb:74
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:29
+msgid "Title"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:118 ../lib/rubyripper/tui/tuiDisc.rb:118
+msgid "Edit Metadata"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:119 ../lib/rubyripper/tui/tuiDisc.rb:119
+msgid "Select Tracks"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:132 ../lib/rubyripper/tui/tuiDisc.rb:132
+msgid "Edit Disc Info"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:145 ../lib/rubyripper/tui/tuiDisc.rb:145
+msgid "Select field to edit:"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:175 ../lib/rubyripper/tui/tuiDisc.rb:175
+msgid "Edit Track Info"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:186 ../lib/rubyripper/tui/tuiDisc.rb:186
+msgid "Select track to edit:"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:205 ../lib/rubyripper/tui/tuiDisc.rb:205
+msgid "Select Tracks to Rip"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tUIDisc.rb:214 ../lib/rubyripper/tui/tuiDisc.rb:214
+msgid "Use Space to toggle, Enter to confirm:"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiApp.rb:217
+msgid "Goodbye!"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMessages.rb:16
+#: ../lib/rubyripper/tui/tuiMessages.rb:82
+msgid "Scanning drive %s for an audio disc..."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMessages.rb:71
+msgid "Press [F2] to start scanning the drive."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMessages.rb:77
+msgid "No disc found in %s!"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMessages.rb:78
+msgid ""
+"Please insert a disc and push 'Scan drive'.\n"
+"\n"
+"The cdrom drive can be set in 'Preferences'."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMessages.rb:92
+msgid "An unknown error occurred."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMessages.rb:113
+msgid "Open/Close Tray"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:26
+msgid "Multiple MusicBrainz releases found. Which one would you prefer?"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:29
+msgid "Date"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:29
+msgid "Country"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:29
+msgid "Barcode"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:34
+msgid "Unknown country"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:51
+msgid "Multiple Gnudb hits found. Which one would you prefer?"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiMultipleHits.rb:65
+msgid "Select release:"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:43
+msgid "CD-ROM Device"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:44
+msgid "CD-ROM Offset"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:45
+msgid "Pad missing samples with zeroes"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:46
+msgid "Match all chunks count"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:47
+msgid "Match erroneous chunks count"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:48
+msgid "Max trials (0=unlimited)"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:49
+msgid "AccurateRip validation"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:50
+msgid "CTDB verification (image only)"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:51
+msgid "Verify every trial"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:52
+msgid "Extra cd-paranoia parameters"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:53
+msgid "Eject on completion"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:54
+msgid "Only keep log when errors"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:58
+msgid "Create a cuesheet"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:59
+msgid "Rip to single file (Image)"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:61
+msgid "Min seconds to be hidden track"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:63
+msgid "Pre-emphasis handling"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:67
+msgid "FLAC"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:68
+msgid "FLAC options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:69
+msgid "Vorbis"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:70
+msgid "Oggenc options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:71
+msgid "LAME MP3"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:72
+msgid "LAME options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:73
+msgid "Nero AAC"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:74
+msgid "Nero options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:75
+msgid "Fraunhofer AAC"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:76
+msgid "Fraunhofer options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:77
+msgid "WavPack"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:78
+msgid "WavPack options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:79
+msgid "Opus"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:80
+msgid "Opus options"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:81
+msgid "WAVE"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:82
+msgid "Other codec"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:84
+msgid "Playlist support"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:85
+msgid "Max extra encoding threads"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:92
+msgid "Gnudb use first hit"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:96
+msgid "MusicBrainz preferred countries"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:97
+msgid "MusicBrainz preferred date"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:98
+msgid "MusicBrainz use earliest date"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:103
+msgid "Normal files scheme"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:104
+msgid "Various files scheme"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:105
+msgid "Image files scheme"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:106
+msgid "Replace spaces with underscores"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:107
+msgid "Downsize all capital letters"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:110
+msgid "User Interface Type"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:158
+msgid " Preferences "
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:168
+msgid "Change Tab"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:169
+msgid "Select Item"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:170
+msgid "Edit/Toggle"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:171
+msgid "Save Settings"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:172
+msgid "Back to Disc Info"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:222
+msgid ""
+"Validation Error: 'Match all chunks' count must be less than or equal to 'Matc"
+"h erroneous chunks' count!"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiPreferences.rb:227
+msgid "Preferences saved successfully."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:63
+msgid "Ripping Status"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:65
+msgid "Ripping progress"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:66
+msgid "Encoding progress"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:68
+msgid "Log Output"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:145
+msgid "Ripping cancelled by user."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:153
+msgid "The directory %s already exists."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:158
+msgid "Delete existing directory (Overwrite)"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:159
+msgid "Auto rename directory (Rename)"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiRipStatus.rb:162
+msgid "What do you want RubyRipperRemix to do?"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:25
+msgid "Open Log File"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:26
+msgid "Open Destination Directory"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:27
+msgid "Return to Main Menu"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:30
+msgid "Choose an action:"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:38
+msgid "Log file not found!"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:47
+msgid "Directory not found!"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:62
+msgid "The rip has successfully finished."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:64
+msgid "The rip had some problems. Please check the summary/log."
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:67
+msgid "Short Summary"
+msgstr ""
+
+#: ../lib/rubyripper/tui/tuiSummary.rb:82
+msgid "Select Action"
 msgstr ""

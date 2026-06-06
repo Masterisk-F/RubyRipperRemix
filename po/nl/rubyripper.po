@@ -24,7 +24,8 @@ msgstr "j"
 msgid "Do you want to change your settings? (y/n) : "
 msgstr "Wilt u de instellingen veranderen? (j/n) : "
 
-msgid "RubyRipperRemix version %s"
+#, fuzzy
+msgid "RubyripperRemix version %s"
 msgstr "RubyRipperRemix versie %s"
 
 msgid "* RUBYRIPPERREMIX MAIN MENU *"
@@ -114,6 +115,9 @@ msgstr "test"
 msgid "Show current version of RubyRipperRemix."
 msgstr "Laad huidige versie van RubyRipperRemix zien."
 
+msgid "RubyRipperRemix version %s"
+msgstr "RubyRipperRemix versie %s"
+
 msgid "Load configuration settings from file <FILE>."
 msgstr "Laad configuratie instellingen uit bestand <BESTAND>."
 
@@ -170,6 +174,10 @@ msgstr "Extra disk info:"
 
 msgid "Marked as various disc? [%s]"
 msgstr "Markeer disk als verscheide artiesten [%s]"
+
+#, fuzzy
+msgid "Submit DiscID to MusicBrainz via : %s"
+msgstr "n"
 
 msgid "EDIT METADATA"
 msgstr "WIJZIG METADATA"
@@ -270,7 +278,8 @@ msgstr "Het model van uw cdrom drive vindt u in het logbestand."
 msgid "Pad missing lead-in/lead-out samples with zeroes %s"
 msgstr "Vul missende lean-in/lead-out samples met nullen %s"
 
-msgid "Passing extra cdparanoia parameters"
+#, fuzzy
+msgid "Passing extra cd-paranoia parameters"
 msgstr "Geef extra parameters aan cdparanoia"
 
 msgid "Match all chunks"
@@ -281,6 +290,18 @@ msgstr "Match foutieve delen"
 
 msgid "Maximum trials"
 msgstr "Maximum aantal pogingen"
+
+#, fuzzy
+msgid "AccurateRip verification %s"
+msgstr "n"
+
+#, fuzzy
+msgid "CTDB verification (image rip only) %s"
+msgstr "j"
+
+#, fuzzy
+msgid "Verify every trial (Finish early if verified successfully) %s"
+msgstr "j"
 
 msgid "Eject disc after ripping %s"
 msgstr "Open de cdrom lade na het rippen %s"
@@ -834,7 +855,7 @@ msgstr "Vul missende samples met nullen"
 
 #, fuzzy
 msgid ""
-"Cdparanoia can\\'t handle offsets \\\n"
+"Libcdio-paranoia (cd-paranoia) can\\'t handle offsets \\\n"
 "larger than 580 for \n"
 "first (negative offset) and last (positive offset) \\\n"
 "track.\n"
@@ -862,13 +883,30 @@ msgstr "Match foutieve delen:"
 msgid "Maximum trials (0 = unlimited):"
 msgstr "Maximum pogingen (0 = ongelimiteerd):"
 
+#, fuzzy
+msgid "AccurateRip verification"
+msgstr "n"
+
+#, fuzzy
+msgid "CTDB verification (image rip only)"
+msgstr "j"
+
+#, fuzzy
+msgid "CUETools Database verification. Requires ctdb-cli to be installed."
+msgstr "n"
+
+#, fuzzy
+msgid "Verify every trial (finish early on match)"
+msgstr "j"
+
 msgid "times"
 msgstr "maal"
 
 msgid "Ripping options"
 msgstr "Rip opties"
 
-msgid "Pass cdparanoia options:"
+#, fuzzy
+msgid "Pass cd-paranoia options:"
 msgstr "Geef cdparanoia opties door:"
 
 msgid "Eject cd when finished"
@@ -886,7 +924,8 @@ msgstr "Veilig rippen"
 msgid "Rip hidden audio sectors"
 msgstr "Rip verborgen audio deel"
 
-msgid "Uncheck this if cdparanoia crashes with your ripping drive."
+#, fuzzy
+msgid "Uncheck this if cd-paranoia crashes with your ripping drive."
 msgstr "Schakel deze optie uit als cdparanoia problemen geeft met uw cdrom drive"
 
 msgid ""
@@ -1395,7 +1434,7 @@ msgstr "Kopie voltooid"
 
 #, fuzzy
 msgid ""
-"Cdparanoia doesn't output WAVE files.\n"
+"Libcdio-paranoia (cd-paranoia) doesn't output WAVE files.\n"
 "Check your settings please."
 msgstr ""
 "Cdparanoia geeft geen wav file als uitvoer.\n"
@@ -1417,8 +1456,8 @@ msgstr "De drive krijgt een timeout van 2 minuten om de hardware te beschermen."
 msgid "WARNING: No eject utility found!"
 msgstr "Let op: Geen lade-uitwerp programma gevonden!"
 
-msgid "RubyRipperRemix can't be used without cdparanoia!"
-msgstr "RubyRipperRemix is niet bruikbaar zonder het programma cdparanoia!"
+msgid "RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"
+msgstr "RubyRipperRemix is niet bruikbaar zonder libcdio-paranoia (cd-paranoia)!"
 
 #, fuzzy
 msgid "You won't be able to use the gtk3 interface."
@@ -1479,6 +1518,10 @@ msgstr "Cd-info helpt om data tracks te detecteren."
 msgid "Show rights in case of problems"
 msgstr "Toon rechten als er problemen optreden"
 
+#, fuzzy
+msgid "You won't be able to perform CTDB verification."
+msgstr "n"
+
 msgid ""
 "\n"
 "\n"
@@ -1498,3 +1541,385 @@ msgstr ""
 "\n"
 "CONTROLEREN VAN OPTIONELE AFHANKELIJKHEDEN\n"
 "\n"
+
+#, fuzzy
+msgid "Disc Info"
+msgstr "Disk info"
+
+msgid "Rip"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+#, fuzzy
+msgid "Edit Metadata"
+msgstr "Metadata"
+
+#, fuzzy
+msgid "Select Tracks"
+msgstr "Track"
+
+#, fuzzy
+msgid "Edit Disc Info"
+msgstr "Bewerk de disk info"
+
+msgid "Select field to edit:"
+msgstr ""
+
+#, fuzzy
+msgid "Edit Track Info"
+msgstr "Bewerk de track info"
+
+msgid "Select track to edit:"
+msgstr ""
+
+#, fuzzy
+msgid "Select Tracks to Rip"
+msgstr "Track"
+
+#, fuzzy
+msgid "Use Space to toggle, Enter to confirm:"
+msgstr "n"
+
+#, fuzzy
+msgid "Goodbye!"
+msgstr "j"
+
+#, fuzzy
+msgid "Scanning drive %s for an audio disc..."
+msgstr ""
+"...cdrom drive %s wordt gescand\n"
+"op de aanwezigheid van een audiodisk."
+
+#, fuzzy
+msgid "Press [F2] to start scanning the drive."
+msgstr "n"
+
+#, fuzzy
+msgid "No disc found in %s!"
+msgstr "Nee"
+
+#, fuzzy
+msgid ""
+"Please insert a disc and push 'Scan drive'.\n"
+"\n"
+"The cdrom drive can be set in 'Preferences'."
+msgstr ""
+"Geen disk gevonden in %s!\n"
+"Stop een disk in de lade en kies 'Scan drive'.\n"
+"\n"
+"De cdrom drive kan worden ingesteld bij 'Voorkeuren'."
+
+#, fuzzy
+msgid "An unknown error occurred."
+msgstr "nee"
+
+#, fuzzy
+msgid "Open/Close Tray"
+msgstr "j"
+
+#, fuzzy
+msgid "Multiple MusicBrainz releases found. Which one would you prefer?"
+msgstr "j"
+
+msgid "Date"
+msgstr ""
+
+#, fuzzy
+msgid "Country"
+msgstr "j"
+
+msgid "Barcode"
+msgstr ""
+
+#, fuzzy
+msgid "Unknown country"
+msgstr "Onbekend"
+
+#, fuzzy
+msgid "Multiple Gnudb hits found. Which one would you prefer?"
+msgstr "n"
+
+msgid "Select release:"
+msgstr ""
+
+#, fuzzy
+msgid "CD-ROM Device"
+msgstr "Apparaat"
+
+msgid "CD-ROM Offset"
+msgstr ""
+
+#, fuzzy
+msgid "Pad missing samples with zeroes"
+msgstr "Vul missende samples met nullen"
+
+#, fuzzy
+msgid "Match all chunks count"
+msgstr "Match alle delen"
+
+#, fuzzy
+msgid "Match erroneous chunks count"
+msgstr "Match foutieve delen"
+
+#, fuzzy
+msgid "Max trials (0=unlimited)"
+msgstr "Maximum pogingen (0 = ongelimiteerd):"
+
+#, fuzzy
+msgid "AccurateRip validation"
+msgstr "n"
+
+#, fuzzy
+msgid "CTDB verification (image only)"
+msgstr "j"
+
+#, fuzzy
+msgid "Verify every trial"
+msgstr "j"
+
+#, fuzzy
+msgid "Extra cd-paranoia parameters"
+msgstr "Geef extra parameters aan cdparanoia"
+
+#, fuzzy
+msgid "Eject on completion"
+msgstr "n"
+
+#, fuzzy
+msgid "Only keep log when errors"
+msgstr "Bewaar de log alles als er fouten zijn %s"
+
+#, fuzzy
+msgid "Create a cuesheet"
+msgstr "Maak een cuesheet aan"
+
+#, fuzzy
+msgid "Rip to single file (Image)"
+msgstr "Rip de cd naar een enkel bestand %s"
+
+#, fuzzy
+msgid "Min seconds to be hidden track"
+msgstr "n"
+
+#, fuzzy
+msgid "Pre-emphasis handling"
+msgstr "n"
+
+#, fuzzy
+msgid "FLAC"
+msgstr "FLAC %s"
+
+#, fuzzy
+msgid "FLAC options"
+msgstr "n"
+
+#, fuzzy
+msgid "Vorbis"
+msgstr "Vorbis %s"
+
+#, fuzzy
+msgid "Oggenc options"
+msgstr "Extra oggenc parameters"
+
+msgid "LAME MP3"
+msgstr ""
+
+#, fuzzy
+msgid "LAME options"
+msgstr "n"
+
+#, fuzzy
+msgid "Nero AAC"
+msgstr "Nero AAC %s"
+
+#, fuzzy
+msgid "Nero options"
+msgstr "Debug opties"
+
+#, fuzzy
+msgid "Fraunhofer AAC"
+msgstr "n"
+
+#, fuzzy
+msgid "Fraunhofer options"
+msgstr "Extra lame parameters"
+
+#, fuzzy
+msgid "WavPack"
+msgstr "Wavpack %s"
+
+#, fuzzy
+msgid "WavPack options"
+msgstr "Extra Wavpack parameters"
+
+#, fuzzy
+msgid "Opus"
+msgstr "Opus %s"
+
+#, fuzzy
+msgid "Opus options"
+msgstr "Gnudb opties"
+
+#, fuzzy
+msgid "WAVE"
+msgstr "Wav"
+
+#, fuzzy
+msgid "Other codec"
+msgstr "Andere codec %s"
+
+#, fuzzy
+msgid "Playlist support"
+msgstr "Maak afspeellijst aan %s"
+
+#, fuzzy
+msgid "Max extra encoding threads"
+msgstr "Aantal extra encodeer processen"
+
+#, fuzzy
+msgid "Gnudb use first hit"
+msgstr "Gebruik altijd de eerste Gnudb mogelijkheid %s"
+
+#, fuzzy
+msgid "MusicBrainz preferred countries"
+msgstr "Musicbrainz voorkeur datum"
+
+#, fuzzy
+msgid "MusicBrainz preferred date"
+msgstr "Musicbrainz voorkeur datum"
+
+#, fuzzy
+msgid "MusicBrainz use earliest date"
+msgstr "Musicbrainz voorkeur datum"
+
+#, fuzzy
+msgid "Normal files scheme"
+msgstr "Nee"
+
+#, fuzzy
+msgid "Various files scheme"
+msgstr "Schema voor verscheidene artiesten"
+
+msgid "Image files scheme"
+msgstr ""
+
+#, fuzzy
+msgid "Replace spaces with underscores"
+msgstr "Vervang spaties met underscores in bestandsnamen %s"
+
+#, fuzzy
+msgid "Downsize all capital letters"
+msgstr "n"
+
+#, fuzzy
+msgid "User Interface Type"
+msgstr "j"
+
+#, fuzzy
+msgid " Preferences "
+msgstr "Voorkeuren"
+
+#, fuzzy
+msgid "Change Tab"
+msgstr "n"
+
+msgid "Select Item"
+msgstr ""
+
+msgid "Edit/Toggle"
+msgstr ""
+
+#, fuzzy
+msgid "Save Settings"
+msgstr "n"
+
+#, fuzzy
+msgid "Back to Disc Info"
+msgstr "n"
+
+#, fuzzy
+msgid ""
+"Validation Error: 'Match all chunks' count must be less than or equal to 'Matc"
+"h erroneous chunks' count!"
+msgstr "Match foutieve delen"
+
+#, fuzzy
+msgid "Preferences saved successfully."
+msgstr "Voorkeuren"
+
+#, fuzzy
+msgid "Ripping Status"
+msgstr "Rip opties"
+
+#, fuzzy
+msgid "Ripping progress"
+msgstr "Voortgang rippen %s %"
+
+#, fuzzy
+msgid "Encoding progress"
+msgstr "Voortgang encoderen %s %"
+
+msgid "Log Output"
+msgstr ""
+
+#, fuzzy
+msgid "Ripping cancelled by user."
+msgstr "j"
+
+#, fuzzy
+msgid "The directory %s already exists."
+msgstr "Directory bestaat al..."
+
+#, fuzzy
+msgid "Delete existing directory (Overwrite)"
+msgstr "j"
+
+#, fuzzy
+msgid "Auto rename directory (Rename)"
+msgstr "j"
+
+#, fuzzy
+msgid "What do you want RubyRipperRemix to do?"
+msgstr "j"
+
+#, fuzzy
+msgid "Open Log File"
+msgstr "Open logbestand"
+
+#, fuzzy
+msgid "Open Destination Directory"
+msgstr "j"
+
+#, fuzzy
+msgid "Return to Main Menu"
+msgstr "Terug naar het hoofdmenu"
+
+#, fuzzy
+msgid "Choose an action:"
+msgstr "n"
+
+#, fuzzy
+msgid "Log file not found!"
+msgstr "nee"
+
+#, fuzzy
+msgid "Directory not found!"
+msgstr "nee"
+
+#, fuzzy
+msgid "The rip has successfully finished."
+msgstr "j"
+
+#, fuzzy
+msgid "The rip had some problems. Please check the summary/log."
+msgstr "j"
+
+#, fuzzy
+msgid "Short Summary"
+msgstr "j"
+
+#, fuzzy
+msgid "Select Action"
+msgstr "n"
