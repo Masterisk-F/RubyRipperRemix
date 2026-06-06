@@ -145,15 +145,15 @@ attr_reader :instances
   end
   
   # TODO cancel tocscan
-  def scanDiscResults   
+  def scanDiscResults
     if @gtkDisc.error.nil?
       @gtkDisc.refreshGui()
-      showOpenTray if @buttontext[2].text != _("Open tray")
+      showOpenTray if @buttontext[3].text != _("Open tray")
       @buttons.each{|button| button.sensitive = true}
       changeDisplay(@gtkDisc)
     else
       @shortMessage.showError(@gtkDisc.error)
-      @buttons[0..2].each{|button| button.sensitive = true} ; @buttons[4].sensitive = true
+      @buttons[0..3].each{|button| button.sensitive = true} ; @buttons[5].sensitive = true
       changeDisplay(@shortMessage)
     end
   end
@@ -219,14 +219,14 @@ attr_reader :instances
   
   # The abort button transforms into exit when the rip is finished or aborted
   def updateAbortButtonToExit
-    @buttontext[4].set_markup('_' + _("Exit"), {:use_underline => true})
-    @buttonicons[4].stock = Gtk::Stock::QUIT
+    @buttontext[5].set_markup('_' + _("Exit"), {:use_underline => true})
+    @buttonicons[5].stock = Gtk::Stock::QUIT
   end
-  
+
   # The exit button transforms into abort when the rip is started
   def updateExitButtonToAbort
-    @buttontext[4].set_markup('_' + _("Abort"), {:use_underline => true})
-    @buttonicons[4].stock = Gtk::Stock::CANCEL
+    @buttontext[5].set_markup('_' + _("Abort"), {:use_underline => true})
+    @buttonicons[5].stock = Gtk::Stock::CANCEL
   end
   
   # The central function that manages the display on the right side
@@ -247,19 +247,22 @@ attr_reader :instances
     vbuttonbox = Gtk::ButtonBox.new(:vertical)
     vbuttonbox.layout_style=Gtk::ButtonBoxStyle::START
     vbuttonbox.spacing = 5
-    @buttons = [Gtk::Button.new, Gtk::Button.new, Gtk::Button.new, Gtk::Button.new, Gtk::Button.new]
+    @buttons = [Gtk::Button.new, Gtk::Button.new, Gtk::Button.new, Gtk::Button.new, Gtk::Button.new, Gtk::Button.new]
     @buttons.each{|button| button.sensitive = false}
     @buttontext = [Gtk::Label.new('_'+_('Preferences'),{:use_underline => true}),
+                   Gtk::Label.new('_'+_('Disc info'),  {:use_underline => true}),
                    Gtk::Label.new('_'+_("Scan drive"), {:use_underline => true}),
                    Gtk::Label.new('_'+_("Open tray"),  {:use_underline => true}),
                    Gtk::Label.new('_'+_("Rip cd now!"),{:use_underline => true}),
                    Gtk::Label.new('_'+_("Exit"),       {:use_underline => true})]
     @buttonicons = [Gtk::Image.new(:stock => Gtk::Stock::PREFERENCES, :size => Gtk::IconSize::LARGE_TOOLBAR),
+                    Gtk::Image.new(:stock => Gtk::Stock::INFO,        :size => Gtk::IconSize::LARGE_TOOLBAR),
                     Gtk::Image.new(:stock => Gtk::Stock::REFRESH,     :size => Gtk::IconSize::LARGE_TOOLBAR),
                     Gtk::Image.new(:stock => Gtk::Stock::GOTO_BOTTOM, :size => Gtk::IconSize::LARGE_TOOLBAR),
                     Gtk::Image.new(:stock => Gtk::Stock::CDROM,       :size => Gtk::IconSize::LARGE_TOOLBAR),
                     Gtk::Image.new(:stock => Gtk::Stock::QUIT,        :size => Gtk::IconSize::LARGE_TOOLBAR)]
     @vboxes = [Gtk::Box.new(:vertical,5),
+               Gtk::Box.new(:vertical,5),
                Gtk::Box.new(:vertical,5),
                Gtk::Box.new(:vertical,5),
                Gtk::Box.new(:vertical,5),
@@ -280,16 +283,16 @@ attr_reader :instances
   def setButtonsLeftsideSignals
     @gtkWindow.signal_connect("destroy") {savePreferences(); exit()}
     @gtkWindow.signal_connect("delete_event") {savePreferences(); exit()}
-    @buttons[0].signal_connect("activate") {@buttons[0].signal_emit("released")}
-    @buttons[0].signal_connect("released") {savePreferences(); showDiscOrPreferences()}
-    @buttons[1].signal_connect("clicked") {savePreferences(); refreshDisc()}
-    @buttons[2].signal_connect("clicked") {savePreferences(); handleTray()}
-    @buttons[3].signal_connect("clicked") {savePreferences(); startRip()}
-    @buttons[4].signal_connect("clicked") {exitButton()}
+    @buttons[0].signal_connect("clicked") {savePreferences(); showPreferences()}
+    @buttons[1].signal_connect("clicked") {savePreferences(); showDiscInfo()}
+    @buttons[2].signal_connect("clicked") {savePreferences(); refreshDisc()}
+    @buttons[3].signal_connect("clicked") {savePreferences(); handleTray()}
+    @buttons[4].signal_connect("clicked") {savePreferences(); startRip()}
+    @buttons[5].signal_connect("clicked") {exitButton()}
   end
   
   def exitButton
-    if @buttontext[4].text == _("Exit")
+    if @buttontext[5].text == _("Exit")
       savePreferences(); exit()
     else
       Thread.new do
@@ -308,8 +311,6 @@ attr_reader :instances
 
   def savePreferences
     if @currentInstance == 'GtkPreferences'
-      @buttontext[0].set_markup('_'+_('Preferences'), {:use_underline => true})
-      @buttonicons[0].stock = Gtk::Stock::PREFERENCES
       @gtkPrefs.save
     end
   end
@@ -338,28 +339,27 @@ attr_reader :instances
     scanDisc()
   end
 
-  # Switch context between disc info and preferences
-  # The button should change to the opposite value
-  def showDiscOrPreferences
+  def showDiscInfo
     @buttons.each{|button| button.sensitive = false}
-    if @currentInstance != 'GtkPreferences'
-      @buttontext[0].set_markup('_'+_('Disc info'), {:use_underline => true})
-      @buttonicons[0].stock = Gtk::Stock::INFO
-      startupPreferences()
-      @buttons[0..2].each{|button| button.sensitive = true}
-      @buttons[3].sensitive = true if @gtkDisc && @gtkDisc.error.nil?
-      @buttons[4].sensitive = true
-    elsif @gtkDisc && @gtkDisc.error.nil?
+    if @gtkDisc && @gtkDisc.error.nil?
       changeDisplay(@gtkDisc)
       @buttons.each{|button| button.sensitive = true}
     else
       refreshDisc()
     end
   end
+
+  def showPreferences
+    @buttons.each{|button| button.sensitive = false}
+    startupPreferences()
+    @buttons[0..3].each{|button| button.sensitive = true}
+    @buttons[4].sensitive = true if @gtkDisc && @gtkDisc.error.nil?
+    @buttons[5].sensitive = true
+  end
   
   def handleTray
     @buttons.each{|button| button.sensitive = false}
-    if @buttontext[2].text == _("Open tray")
+    if @buttontext[3].text == _("Open tray")
       cancelTocScan()
       openDrive()
       askForDisc()
@@ -378,20 +378,20 @@ attr_reader :instances
   end
   
   def showClosedTray
-    @buttontext[2].set_markup('_'+_("Close tray"), {:use_underline => true})
-    @buttonicons[2].stock = Gtk::Stock::GOTO_TOP
+    @buttontext[3].set_markup('_'+_("Close tray"), {:use_underline => true})
+    @buttonicons[3].stock = Gtk::Stock::GOTO_TOP
   end
-  
+
   def showOpenTray
-    @buttontext[2].set_markup('_'+_("Open tray"), {:use_underline => true})
-    @buttonicons[2].stock = Gtk::Stock::GOTO_BOTTOM
+    @buttontext[3].set_markup('_'+_("Open tray"), {:use_underline => true})
+    @buttonicons[3].stock = Gtk::Stock::GOTO_BOTTOM
   end
-  
+
   def askForDisc
     showClosedTray()
     @shortMessage.askForDisc()
-    @buttons[0..2].each{|button| button.sensitive = true}
-    @buttons[4].sensitive = true
+    @buttons[0..3].each{|button| button.sensitive = true}
+    @buttons[5].sensitive = true
   end
   
   # close the drive again
@@ -403,24 +403,24 @@ attr_reader :instances
   end
 
   def startRip
-    @buttons[0..3].each{|button| button.sensitive = false}
+    @buttons[0..4].each{|button| button.sensitive = false}
     @gtkDisc.save()
-    
+
     require 'rubyripper/rubyripper'
     @rubyripper = Rubyripper.new(self, @gtkDisc.disc, @gtkDisc.selection)
 
-    errors = @rubyripper.checkConfiguration()  
+    errors = @rubyripper.checkConfiguration()
     if errors.empty?
       updateInterfaceAndStartRip()
     else
-      @buttons[0..3].each{|button| button.sensitive = true}
+      @buttons[0..4].each{|button| button.sensitive = true}
       showErrors(errors)
     end
   end
-  
+
   def updateInterfaceAndStartRip
     require 'rubyripper/gtk3/gtkRipStatus'
-    @buttons[0..3].each{|button| button.sensitive = false}
+    @buttons[0..4].each{|button| button.sensitive = false}
     @ripStatus = RipStatus.new(self)
     changeDisplay(@ripStatus)
 
@@ -441,9 +441,10 @@ attr_reader :instances
   
   def showSummary(succes)
     @buttons[0].sensitive = true
-    @buttons[1].sensitive = true unless @prefs.eject == true 
-    @buttons[2].sensitive = true
-    @buttons[3].sensitive = true unless @prefs.eject == true
+    @buttons[1].sensitive = true
+    @buttons[2].sensitive = true unless @prefs.eject == true
+    @buttons[3].sensitive = true
+    @buttons[4].sensitive = true unless @prefs.eject == true
     require 'rubyripper/gtk3/gtkSummary'
     @gtkSummary = GtkSummary.new(@rubyripper.fileScheme, @rubyripper.summary, succes)
     changeDisplay(@gtkSummary)
