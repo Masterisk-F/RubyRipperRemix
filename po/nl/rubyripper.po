@@ -175,9 +175,8 @@ msgstr "Extra disk info:"
 msgid "Marked as various disc? [%s]"
 msgstr "Markeer disk als verscheide artiesten [%s]"
 
-#, fuzzy
 msgid "Submit DiscID to MusicBrainz via : %s"
-msgstr "n"
+msgstr ""
 
 msgid "EDIT METADATA"
 msgstr "WIJZIG METADATA"
@@ -215,15 +214,13 @@ msgstr "nee"
 msgid "n"
 msgstr "n"
 
-#, fuzzy
 msgid ""
 "Please answer %s or %s. Try again.\n"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "Please enter an integer value. Try again.\n"
-msgstr "j"
+msgstr ""
 
 msgid ""
 "\n"
@@ -278,9 +275,8 @@ msgstr "Het model van uw cdrom drive vindt u in het logbestand."
 msgid "Pad missing lead-in/lead-out samples with zeroes %s"
 msgstr "Vul missende lean-in/lead-out samples met nullen %s"
 
-#, fuzzy
 msgid "Passing extra cd-paranoia parameters"
-msgstr "Geef extra parameters aan cdparanoia"
+msgstr "Geef extra parameters aan cd-paranoia"
 
 msgid "Match all chunks"
 msgstr "Match alle delen"
@@ -291,17 +287,14 @@ msgstr "Match foutieve delen"
 msgid "Maximum trials"
 msgstr "Maximum aantal pogingen"
 
-#, fuzzy
 msgid "AccurateRip verification %s"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "CTDB verification (image rip only) %s"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "Verify every trial (Finish early if verified successfully) %s"
-msgstr "j"
+msgstr ""
 
 msgid "Eject disc after ripping %s"
 msgstr "Open de cdrom lade na het rippen %s"
@@ -381,9 +374,8 @@ msgstr "Nero AAC %s"
 msgid "Nero options passed"
 msgstr "Extra nero parameters"
 
-#, fuzzy
 msgid "Fraunhofer AAC %s"
-msgstr "n"
+msgstr ""
 
 #, fuzzy
 msgid "Fraunhofer options passed"
@@ -403,9 +395,8 @@ msgstr "Opus %s"
 msgid "Opus options passed"
 msgstr "Extra Opus parameters"
 
-#, fuzzy
 msgid "WAVE %s"
-msgstr "Wav"
+msgstr ""
 
 msgid "Other codec %s"
 msgstr "Andere codec %s"
@@ -637,23 +628,20 @@ msgstr "%s herkent de meegegeven parameters niet."
 msgid "The device %s doesn't exist on your system!"
 msgstr "Het apparaat %s bestaat niet op uw systeem!"
 
-#, fuzzy
 msgid ""
 "No read permission for drive %s!\n"
 "This is required to scan the disc."
-msgstr "Nee"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "No write permission for drive %s!\n"
 "This is required to scan the disc."
-msgstr "Nee"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "No read + write permissions for drive %s!\n"
 "These are required to rip the disc."
-msgstr "Nee"
+msgstr ""
 
 msgid "Please select at least one track."
 msgstr "Selecteer a.u.b. tenminste 1 track."
@@ -883,21 +871,17 @@ msgstr "Match foutieve delen:"
 msgid "Maximum trials (0 = unlimited):"
 msgstr "Maximum pogingen (0 = ongelimiteerd):"
 
-#, fuzzy
 msgid "AccurateRip verification"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "CTDB verification (image rip only)"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "CUETools Database verification. Requires ctdb-cli to be installed."
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "Verify every trial (finish early on match)"
-msgstr "j"
+msgstr ""
 
 msgid "times"
 msgstr "maal"
@@ -905,9 +889,8 @@ msgstr "maal"
 msgid "Ripping options"
 msgstr "Rip opties"
 
-#, fuzzy
 msgid "Pass cd-paranoia options:"
-msgstr "Geef cdparanoia opties door:"
+msgstr "Geef cd-paranoia opties door:"
 
 msgid "Eject cd when finished"
 msgstr "Open lade na het rippen"
@@ -924,9 +907,8 @@ msgstr "Veilig rippen"
 msgid "Rip hidden audio sectors"
 msgstr "Rip verborgen audio deel"
 
-#, fuzzy
 msgid "Uncheck this if cd-paranoia crashes with your ripping drive."
-msgstr "Schakel deze optie uit als cdparanoia problemen geeft met uw cdrom drive"
+msgstr "Schakel deze optie uit als cd-paranoia problemen geeft met uw cdrom drive"
 
 msgid ""
 "A hidden track will rip to a seperate file if used in track modus.\n"
@@ -1113,13 +1095,11 @@ msgstr "Debug modus"
 msgid "Debug options"
 msgstr "Debug opties"
 
-#, fuzzy
 msgid "Encoding progress %s %%"
-msgstr "Voortgang encoderen %s %"
+msgstr ""
 
-#, fuzzy
 msgid "Ripping progress %s %%"
-msgstr "Voortgang rippen %s %"
+msgstr ""
 
 msgid "<b>Ripping status</b>"
 msgstr "<b>Rip status</b>"
@@ -1200,9 +1180,8 @@ msgstr ""
 msgid "All chunks matched!"
 msgstr "Alle"
 
-#, fuzzy
 msgid "Corrected all sector mismatches! (%s matches found for each chunk)"
-msgstr "n"
+msgstr ""
 
 msgid ""
 "Disc Image\n"
@@ -1231,9 +1210,8 @@ msgstr ""
 msgid "Peak level %.1f %%"
 msgstr ""
 
-#, fuzzy
 msgid "Trial %s (Copy) CRC %s"
-msgstr "j"
+msgstr ""
 
 msgid "Trial %s (Test) CRC %s"
 msgstr ""
@@ -1354,9 +1332,8 @@ msgstr "Apparaat"
 msgid "Used ripper"
 msgstr "Gebruikte ripper"
 
-#, fuzzy
 msgid "Selected options"
-msgstr "n"
+msgstr ""
 
 msgid "Matches required for all chunks"
 msgstr "Vereiste aantal matches voor alle delen"
@@ -1518,9 +1495,8 @@ msgstr "Cd-info helpt om data tracks te detecteren."
 msgid "Show rights in case of problems"
 msgstr "Toon rechten als er problemen optreden"
 
-#, fuzzy
 msgid "You won't be able to perform CTDB verification."
-msgstr "n"
+msgstr ""
 
 msgid ""
 "\n"
@@ -1578,9 +1554,8 @@ msgstr ""
 msgid "Select Tracks to Rip"
 msgstr "Track"
 
-#, fuzzy
 msgid "Use Space to toggle, Enter to confirm:"
-msgstr "n"
+msgstr ""
 
 #, fuzzy
 msgid "Goodbye!"
@@ -1592,36 +1567,26 @@ msgstr ""
 "...cdrom drive %s wordt gescand\n"
 "op de aanwezigheid van een audiodisk."
 
-#, fuzzy
 msgid "Press [F2] to start scanning the drive."
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "No disc found in %s!"
-msgstr "Nee"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "Please insert a disc and push 'Scan drive'.\n"
 "\n"
 "The cdrom drive can be set in 'Preferences'."
 msgstr ""
-"Geen disk gevonden in %s!\n"
-"Stop een disk in de lade en kies 'Scan drive'.\n"
-"\n"
-"De cdrom drive kan worden ingesteld bij 'Voorkeuren'."
 
-#, fuzzy
 msgid "An unknown error occurred."
-msgstr "nee"
+msgstr ""
 
-#, fuzzy
 msgid "Open/Close Tray"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "Multiple MusicBrainz releases found. Which one would you prefer?"
-msgstr "j"
+msgstr ""
 
 msgid "Date"
 msgstr ""
@@ -1637,9 +1602,8 @@ msgstr ""
 msgid "Unknown country"
 msgstr "Onbekend"
 
-#, fuzzy
 msgid "Multiple Gnudb hits found. Which one would you prefer?"
-msgstr "n"
+msgstr ""
 
 msgid "Select release:"
 msgstr ""
@@ -1667,57 +1631,46 @@ msgstr "Match foutieve delen"
 msgid "Max trials (0=unlimited)"
 msgstr "Maximum pogingen (0 = ongelimiteerd):"
 
-#, fuzzy
 msgid "AccurateRip validation"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "CTDB verification (image only)"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "Verify every trial"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "Extra cd-paranoia parameters"
-msgstr "Geef extra parameters aan cdparanoia"
+msgstr "Geef extra parameters aan cd-paranoia"
 
-#, fuzzy
 msgid "Eject on completion"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "Only keep log when errors"
-msgstr "Bewaar de log alles als er fouten zijn %s"
+msgstr ""
 
 #, fuzzy
 msgid "Create a cuesheet"
 msgstr "Maak een cuesheet aan"
 
-#, fuzzy
 msgid "Rip to single file (Image)"
-msgstr "Rip de cd naar een enkel bestand %s"
+msgstr ""
 
-#, fuzzy
 msgid "Min seconds to be hidden track"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "Pre-emphasis handling"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "FLAC"
-msgstr "FLAC %s"
+msgstr ""
 
 #, fuzzy
 msgid "FLAC options"
 msgstr "n"
 
-#, fuzzy
 msgid "Vorbis"
-msgstr "Vorbis %s"
+msgstr ""
 
 #, fuzzy
 msgid "Oggenc options"
@@ -1730,9 +1683,8 @@ msgstr ""
 msgid "LAME options"
 msgstr "n"
 
-#, fuzzy
 msgid "Nero AAC"
-msgstr "Nero AAC %s"
+msgstr ""
 
 #, fuzzy
 msgid "Nero options"
@@ -1746,17 +1698,15 @@ msgstr "n"
 msgid "Fraunhofer options"
 msgstr "Extra lame parameters"
 
-#, fuzzy
 msgid "WavPack"
-msgstr "Wavpack %s"
+msgstr ""
 
 #, fuzzy
 msgid "WavPack options"
 msgstr "Extra Wavpack parameters"
 
-#, fuzzy
 msgid "Opus"
-msgstr "Opus %s"
+msgstr ""
 
 #, fuzzy
 msgid "Opus options"
@@ -1766,21 +1716,18 @@ msgstr "Gnudb opties"
 msgid "WAVE"
 msgstr "Wav"
 
-#, fuzzy
 msgid "Other codec"
-msgstr "Andere codec %s"
+msgstr ""
 
-#, fuzzy
 msgid "Playlist support"
-msgstr "Maak afspeellijst aan %s"
+msgstr ""
 
 #, fuzzy
 msgid "Max extra encoding threads"
 msgstr "Aantal extra encodeer processen"
 
-#, fuzzy
 msgid "Gnudb use first hit"
-msgstr "Gebruik altijd de eerste Gnudb mogelijkheid %s"
+msgstr ""
 
 #, fuzzy
 msgid "MusicBrainz preferred countries"
@@ -1794,9 +1741,8 @@ msgstr "Musicbrainz voorkeur datum"
 msgid "MusicBrainz use earliest date"
 msgstr "Musicbrainz voorkeur datum"
 
-#, fuzzy
 msgid "Normal files scheme"
-msgstr "Nee"
+msgstr ""
 
 #, fuzzy
 msgid "Various files scheme"
@@ -1805,17 +1751,14 @@ msgstr "Schema voor verscheidene artiesten"
 msgid "Image files scheme"
 msgstr ""
 
-#, fuzzy
 msgid "Replace spaces with underscores"
-msgstr "Vervang spaties met underscores in bestandsnamen %s"
+msgstr ""
 
-#, fuzzy
 msgid "Downsize all capital letters"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "User Interface Type"
-msgstr "j"
+msgstr ""
 
 #, fuzzy
 msgid " Preferences "
@@ -1835,9 +1778,8 @@ msgstr ""
 msgid "Save Settings"
 msgstr "n"
 
-#, fuzzy
 msgid "Back to Disc Info"
-msgstr "n"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -1853,68 +1795,55 @@ msgstr "Voorkeuren"
 msgid "Ripping Status"
 msgstr "Rip opties"
 
-#, fuzzy
 msgid "Ripping progress"
-msgstr "Voortgang rippen %s %"
+msgstr ""
 
-#, fuzzy
 msgid "Encoding progress"
-msgstr "Voortgang encoderen %s %"
+msgstr ""
 
 msgid "Log Output"
 msgstr ""
 
-#, fuzzy
 msgid "Ripping cancelled by user."
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "The directory %s already exists."
-msgstr "Directory bestaat al..."
+msgstr ""
 
-#, fuzzy
 msgid "Delete existing directory (Overwrite)"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "Auto rename directory (Rename)"
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "What do you want RubyRipperRemix to do?"
-msgstr "j"
+msgstr ""
 
 #, fuzzy
 msgid "Open Log File"
 msgstr "Open logbestand"
 
-#, fuzzy
 msgid "Open Destination Directory"
-msgstr "j"
+msgstr ""
 
 #, fuzzy
 msgid "Return to Main Menu"
 msgstr "Terug naar het hoofdmenu"
 
-#, fuzzy
 msgid "Choose an action:"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "Log file not found!"
-msgstr "nee"
+msgstr ""
 
-#, fuzzy
 msgid "Directory not found!"
-msgstr "nee"
+msgstr ""
 
-#, fuzzy
 msgid "The rip has successfully finished."
-msgstr "j"
+msgstr ""
 
-#, fuzzy
 msgid "The rip had some problems. Please check the summary/log."
-msgstr "j"
+msgstr ""
 
 #, fuzzy
 msgid "Short Summary"

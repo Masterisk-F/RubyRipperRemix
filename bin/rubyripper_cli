@@ -45,7 +45,7 @@ begin
   require 'rubyripper/cli/cliDisc'
   require 'rubyripper/cli/cliTracklist'
 rescue LoadError
-  puts 'The rubyripper lib files can\'t be found!'
+  puts 'The RubyRipperRemix lib files can\'t be found!'
   puts 'Perhaps you need to add the directory to the RUBYLIB variable?'
   exit()
 end

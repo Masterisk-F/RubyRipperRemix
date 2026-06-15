@@ -214,7 +214,7 @@ calculation unless %s is installed.") % ['Discid'],
   def forceDepsRuntime
     if not @deps['cd-paranoia']
       puts "Libcdio-paranoia (cd-paranoia) not found on your system."
-      puts "This is required to run rubyripper. Exiting..."
+      puts "This is required to run RubyRipperRemix. Exiting..."
       exit()
     end
   end

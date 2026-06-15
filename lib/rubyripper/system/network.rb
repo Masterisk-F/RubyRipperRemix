@@ -59,7 +59,7 @@ class Network
   # configure correctly user agent field of the GET request header
   def configureGetRequest(query)
     request = Net::HTTP::Get.new(query)
-    request['User-Agent'] = "rubyripper/#{$rr_version} (#{$rr_url})"
+    request['User-Agent'] = "RubyRipperRemix/#{$rr_version} (#{$rr_url})"
     return request
   end
 

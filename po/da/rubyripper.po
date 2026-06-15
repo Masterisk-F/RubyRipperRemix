@@ -29,7 +29,8 @@ msgstr "j"
 msgid "Do you want to change your settings? (y/n) : "
 msgstr "Ønsker du at ændre din opsætning? (j/n): "
 
-msgid "RubyRipperRemix version %s"
+#, fuzzy
+msgid "RubyripperRemix version %s"
 msgstr "RubyRipperRemix, version %s"
 
 msgid "* RUBYRIPPERREMIX MAIN MENU *"
@@ -120,6 +121,9 @@ msgstr "test"
 msgid "Show current version of RubyRipperRemix."
 msgstr "Vis aktuel version af RubyRipperRemix."
 
+msgid "RubyRipperRemix version %s"
+msgstr "RubyRipperRemix, version %s"
+
 msgid "Load configuration settings from file <FILE>."
 msgstr "Indlæs konfigurationsopsætning fra fil <FIl>."
 
@@ -176,6 +180,9 @@ msgstr "Ekstra diskinfo:"
 
 msgid "Marked as various disc? [%s]"
 msgstr "Markeret som disk med forskellige kunstnere? [%s]"
+
+msgid "Submit DiscID to MusicBrainz via : %s"
+msgstr ""
 
 msgid "EDIT METADATA"
 msgstr "REDIGER METADATA"
@@ -276,8 +283,8 @@ msgstr "Din drevmodel er vist i logfilen."
 msgid "Pad missing lead-in/lead-out samples with zeroes %s"
 msgstr "Pad mangler lead-in/lead-out-prøver med nul'er %s"
 
-msgid "Passing extra cdparanoia parameters"
-msgstr "Videresender ekstra cdparanoia-parametre"
+msgid "Passing extra cd-paranoia parameters"
+msgstr "Videresender ekstra cd-paranoia-parametre"
 
 msgid "Match all chunks"
 msgstr "Match alle stykker"
@@ -287,6 +294,15 @@ msgstr "Match fejlbehæftede stykker"
 
 msgid "Maximum trials"
 msgstr "Maksimalt antal forsøg"
+
+msgid "AccurateRip verification %s"
+msgstr ""
+
+msgid "CTDB verification (image rip only) %s"
+msgstr ""
+
+msgid "Verify every trial (Finish early if verified successfully) %s"
+msgstr ""
 
 msgid "Eject disc after ripping %s"
 msgstr "Skub disk ud efter udtrækning %s"
@@ -816,8 +832,9 @@ msgstr ""
 msgid "Pad missing samples with zero's"
 msgstr "Pad mangler prøver med nul'er"
 
+#, fuzzy
 msgid ""
-"Cdparanoia can\\'t handle offsets \\\n"
+"Libcdio-paranoia (cd-paranoia) can\\'t handle offsets \\\n"
 "larger than 580 for \n"
 "first (negative offset) and last (positive offset) \\\n"
 "track.\n"
@@ -848,14 +865,26 @@ msgstr "Match fejlbehæftede stykker:"
 msgid "Maximum trials (0 = unlimited):"
 msgstr "Maksimalt antal forsøg (0 = ubegrænset):"
 
+msgid "AccurateRip verification"
+msgstr ""
+
+msgid "CTDB verification (image rip only)"
+msgstr ""
+
+msgid "CUETools Database verification. Requires ctdb-cli to be installed."
+msgstr ""
+
+msgid "Verify every trial (finish early on match)"
+msgstr ""
+
 msgid "times"
 msgstr "gange"
 
 msgid "Ripping options"
 msgstr "Ripningsindstillinger"
 
-msgid "Pass cdparanoia options:"
-msgstr "Videresend cdparanoiaindstillinger:"
+msgid "Pass cd-paranoia options:"
+msgstr "Videresend cd-paranoiaindstillinger:"
 
 msgid "Eject cd when finished"
 msgstr "Skub cd ud når færdig"
@@ -872,8 +901,8 @@ msgstr "Sikker ripning"
 msgid "Rip hidden audio sectors"
 msgstr "Rip skjulte lydsektorer"
 
-msgid "Uncheck this if cdparanoia crashes with your ripping drive."
-msgstr "Fjern afkrydsning hvis cdparanoia går ned med dit ripningsdrev."
+msgid "Uncheck this if cd-paranoia crashes with your ripping drive."
+msgstr "Fjern afkrydsning hvis cd-paranoia går ned med dit ripningsdrev."
 
 msgid ""
 "A hidden track will rip to a seperate file if used in track modus.\n"
@@ -1371,8 +1400,9 @@ msgstr "Sektorer kan ikke læses på følgende tidspunkter:"
 msgid "Copy finished"
 msgstr "Kopi er færdig"
 
+#, fuzzy
 msgid ""
-"Cdparanoia doesn't output WAVE files.\n"
+"Libcdio-paranoia (cd-paranoia) doesn't output WAVE files.\n"
 "Check your settings please."
 msgstr ""
 "Cdparanoia laver ikke WAVE-filer.\n"
@@ -1393,8 +1423,8 @@ msgstr "Holder en pause på 2 minutter for at beskytte udstyret."
 msgid "WARNING: No eject utility found!"
 msgstr "ADVARSEL: Intet skub ud-værktøj fundet!"
 
-msgid "RubyRipperRemix can't be used without cdparanoia!"
-msgstr "RubyRipperRemix can't be used without cdparanoia!"
+msgid "RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"
+msgstr "RubyRipperRemix can't be used without cd-paranoia!"
 
 msgid "You won't be able to use the gtk3 interface."
 msgstr "Du vil ikke kunne bruge gtk3-grænsefladen."
@@ -1445,6 +1475,9 @@ msgstr "Cd-info hjælper med at registrere dataspor."
 msgid "Show rights in case of problems"
 msgstr "Vis rettigheder i tilfælde af problemer"
 
+msgid "You won't be able to perform CTDB verification."
+msgstr ""
+
 msgid ""
 "\n"
 "\n"
@@ -1464,3 +1497,342 @@ msgstr ""
 "\n"
 "KONTROLLERER VALGFRIE AFHÆNGIGHEDER\n"
 "\n"
+
+#, fuzzy
+msgid "Disc Info"
+msgstr "Diskinfo"
+
+msgid "Rip"
+msgstr ""
+
+#, fuzzy
+msgid "Title"
+msgstr "Titel:"
+
+#, fuzzy
+msgid "Edit Metadata"
+msgstr "Metadata"
+
+#, fuzzy
+msgid "Select Tracks"
+msgstr "Nummer"
+
+#, fuzzy
+msgid "Edit Disc Info"
+msgstr "Rediger diskinfoen"
+
+msgid "Select field to edit:"
+msgstr ""
+
+#, fuzzy
+msgid "Edit Track Info"
+msgstr "Rediger nummerinfoen"
+
+msgid "Select track to edit:"
+msgstr ""
+
+#, fuzzy
+msgid "Select Tracks to Rip"
+msgstr "Nummer"
+
+msgid "Use Space to toggle, Enter to confirm:"
+msgstr ""
+
+#, fuzzy
+msgid "Goodbye!"
+msgstr "j"
+
+#, fuzzy
+msgid "Scanning drive %s for an audio disc..."
+msgstr "... Skanner drev %s for en lyddisk."
+
+msgid "Press [F2] to start scanning the drive."
+msgstr ""
+
+msgid "No disc found in %s!"
+msgstr ""
+
+msgid ""
+"Please insert a disc and push 'Scan drive'.\n"
+"\n"
+"The cdrom drive can be set in 'Preferences'."
+msgstr ""
+
+#, fuzzy
+msgid "An unknown error occurred."
+msgstr "nej"
+
+msgid "Open/Close Tray"
+msgstr ""
+
+msgid "Multiple MusicBrainz releases found. Which one would you prefer?"
+msgstr ""
+
+#, fuzzy
+msgid "Date"
+msgstr "Dato:"
+
+#, fuzzy
+msgid "Country"
+msgstr "Land:"
+
+#, fuzzy
+msgid "Barcode"
+msgstr "Stregkode:"
+
+#, fuzzy
+msgid "Unknown country"
+msgstr "Ukendt landekode"
+
+#, fuzzy
+msgid "Multiple Gnudb hits found. Which one would you prefer?"
+msgstr "Gnudb"
+
+msgid "Select release:"
+msgstr ""
+
+#, fuzzy
+msgid "CD-ROM Device"
+msgstr "Enhed"
+
+msgid "CD-ROM Offset"
+msgstr ""
+
+#, fuzzy
+msgid "Pad missing samples with zeroes"
+msgstr "Pad mangler prøver med nul'er"
+
+#, fuzzy
+msgid "Match all chunks count"
+msgstr "Match alle stykker"
+
+#, fuzzy
+msgid "Match erroneous chunks count"
+msgstr "Match fejlbehæftede stykker"
+
+#, fuzzy
+msgid "Max trials (0=unlimited)"
+msgstr "Maksimalt antal forsøg (0 = ubegrænset):"
+
+msgid "AccurateRip validation"
+msgstr ""
+
+msgid "CTDB verification (image only)"
+msgstr ""
+
+msgid "Verify every trial"
+msgstr ""
+
+msgid "Extra cd-paranoia parameters"
+msgstr "Videresender ekstra cd-paranoia-parametre"
+
+msgid "Eject on completion"
+msgstr ""
+
+msgid "Only keep log when errors"
+msgstr ""
+
+#, fuzzy
+msgid "Create a cuesheet"
+msgstr "Opret cuesheet (diskaftryk)"
+
+msgid "Rip to single file (Image)"
+msgstr ""
+
+msgid "Min seconds to be hidden track"
+msgstr ""
+
+msgid "Pre-emphasis handling"
+msgstr ""
+
+msgid "FLAC"
+msgstr ""
+
+#, fuzzy
+msgid "FLAC options"
+msgstr "n"
+
+msgid "Vorbis"
+msgstr ""
+
+#, fuzzy
+msgid "Oggenc options"
+msgstr "Oggenc-indstillinger sendt"
+
+msgid "LAME MP3"
+msgstr ""
+
+#, fuzzy
+msgid "LAME options"
+msgstr "n"
+
+msgid "Nero AAC"
+msgstr ""
+
+#, fuzzy
+msgid "Nero options"
+msgstr "Fejlsøgningsindstillinger"
+
+msgid "Fraunhofer AAC"
+msgstr ""
+
+#, fuzzy
+msgid "Fraunhofer options"
+msgstr "Fraunhofer-indstillinger sendt"
+
+msgid "WavPack"
+msgstr ""
+
+#, fuzzy
+msgid "WavPack options"
+msgstr "WavPack-indstillinger sendt"
+
+msgid "Opus"
+msgstr ""
+
+#, fuzzy
+msgid "Opus options"
+msgstr "Gnudb-indstillinger"
+
+msgid "WAVE"
+msgstr ""
+
+msgid "Other codec"
+msgstr ""
+
+msgid "Playlist support"
+msgstr ""
+
+#, fuzzy
+msgid "Max extra encoding threads"
+msgstr "Maksimalt antal ekstra kodningstråde"
+
+msgid "Gnudb use first hit"
+msgstr ""
+
+#, fuzzy
+msgid "MusicBrainz preferred countries"
+msgstr "Musicbrainz-foretrukken dato"
+
+#, fuzzy
+msgid "MusicBrainz preferred date"
+msgstr "Musicbrainz-foretrukken dato"
+
+#, fuzzy
+msgid "MusicBrainz use earliest date"
+msgstr "Musicbrainz-foretrukken dato"
+
+#, fuzzy
+msgid "Normal files scheme"
+msgstr "Nej"
+
+#, fuzzy
+msgid "Various files scheme"
+msgstr "Filskema for forskellige kunstnere"
+
+msgid "Image files scheme"
+msgstr ""
+
+msgid "Replace spaces with underscores"
+msgstr ""
+
+msgid "Downsize all capital letters"
+msgstr ""
+
+msgid "User Interface Type"
+msgstr ""
+
+#, fuzzy
+msgid " Preferences "
+msgstr "Indstillinger"
+
+#, fuzzy
+msgid "Change Tab"
+msgstr "n"
+
+msgid "Select Item"
+msgstr ""
+
+msgid "Edit/Toggle"
+msgstr ""
+
+#, fuzzy
+msgid "Save Settings"
+msgstr "n"
+
+msgid "Back to Disc Info"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Validation Error: 'Match all chunks' count must be less than or equal to 'Matc"
+"h erroneous chunks' count!"
+msgstr "Match fejlbehæftede stykker"
+
+#, fuzzy
+msgid "Preferences saved successfully."
+msgstr "Indstillinger"
+
+#, fuzzy
+msgid "Ripping Status"
+msgstr "Ripningsindstillinger"
+
+msgid "Ripping progress"
+msgstr ""
+
+msgid "Encoding progress"
+msgstr ""
+
+msgid "Log Output"
+msgstr ""
+
+msgid "Ripping cancelled by user."
+msgstr ""
+
+msgid "The directory %s already exists."
+msgstr ""
+
+msgid "Delete existing directory (Overwrite)"
+msgstr ""
+
+msgid "Auto rename directory (Rename)"
+msgstr ""
+
+msgid "What do you want RubyRipperRemix to do?"
+msgstr ""
+
+#, fuzzy
+msgid "Open Log File"
+msgstr "Åbn logfil"
+
+msgid "Open Destination Directory"
+msgstr ""
+
+#, fuzzy
+msgid "Return to Main Menu"
+msgstr "Returner til hovedmenuen"
+
+msgid "Choose an action:"
+msgstr ""
+
+#, fuzzy
+msgid "Log file not found!"
+msgstr "nej"
+
+#, fuzzy
+msgid "Directory not found!"
+msgstr "nej"
+
+msgid "The rip has successfully finished."
+msgstr ""
+
+msgid "The rip had some problems. Please check the summary/log."
+msgstr ""
+
+#, fuzzy
+msgid "Short Summary"
+msgstr "j"
+
+#, fuzzy
+msgid "Select Action"
+msgstr "Gnudb-indstillinger"
