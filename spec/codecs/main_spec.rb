@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
-#    Rubyripper - A secure ripper for Linux/BSD/OSX
+#    RubyRipperRemix - A secure ripper for Linux/BSD/OSX
 #    Copyright (C) 2007 - 2012 Bouke Woudstra (boukewoudstra@gmail.com)
 #
-#    This file is part of Rubyripper. Rubyripper is free software: you can
+#    This file is part of RubyRipperRemix. RubyRipperRemix is free software: you can
 #    redistribute it and/or modify it under the terms of the GNU General
 #    Public License as published by the Free Software Foundation, either
 #    version 3 of the License, or (at your option) any later version.
@@ -66,7 +66,7 @@ describe Codecs::Main do
         expect(disc).to receive(:musicbrainzDiscid).and_return nil
 
         expect(@codec.command(1)).to eq('lame -V 2 --ta "trackArtist 1" --tl "album" '\
-            '--tv TCON="genre" --ty "year" --tv TENC="Rubyripper test" --tt "trackname 1" '\
+            '--tv TCON="genre" --ty "year" --tv TENC="RubyRipperRemix test" --tt "trackname 1" '\
             '--tn 1/99 "input_1.wav" "/home/mp3/1-test.mp3"')
         expect(@codec.setTagsAfterEncoding(1)).to eq('')
       end
@@ -78,7 +78,7 @@ describe Codecs::Main do
         expect(disc).to receive(:musicbrainzDiscid).and_return nil
 
         expect(@codec.command(1)).to eq('lame -V 2 --ta "trackArtist 1" --tl "album" '\
-            '--tv TCON="genre" --ty "year" --tv TPE2="artist" --tv TENC="Rubyripper test" '\
+            '--tv TCON="genre" --ty "year" --tv TPE2="artist" --tv TENC="RubyRipperRemix test" '\
             '--tt "trackname 1" --tn 1/99 "input_1.wav" "/home/mp3/1-test.mp3"')
       end
 
@@ -89,7 +89,7 @@ describe Codecs::Main do
         expect(disc).to receive(:musicbrainzDiscid).twice.and_return 'yQnNM8eSkwrJ.9m9cLM07cRxmwg-'
 
         expect(@codec.command(1)).to eq('lame -V 2 --ta "trackArtist 1" --tl "album" '\
-            '--tv TCON="genre" --ty "year" --tv TENC="Rubyripper test" --tv "TXXX=DISCID=ABCDEFGH" '\
+            '--tv TCON="genre" --ty "year" --tv TENC="RubyRipperRemix test" --tv "TXXX=DISCID=ABCDEFGH" '\
             '--tv "TXXX=MusicBrainz Disc Id=yQnNM8eSkwrJ.9m9cLM07cRxmwg-" '\
             '--tt "trackname 1" --tn 1/99 "input_1.wav" "/home/mp3/1-test.mp3"')
       end
@@ -101,7 +101,7 @@ describe Codecs::Main do
         expect(disc).to receive(:musicbrainzDiscid).and_return nil
 
         expect(@codec.command(1)).to eq('lame -V 2 --ta "trackArtist 1" --tl "album" '\
-            '--tv TCON="genre" --ty "year" --tv TPOS=1 --tv TENC="Rubyripper test" --tt '\
+            '--tv TCON="genre" --ty "year" --tv TPOS=1 --tv TENC="RubyRipperRemix test" --tt '\
             '"trackname 1" --tn 1/99 "input_1.wav" "/home/mp3/1-test.mp3"')
       end
     end
@@ -135,7 +135,7 @@ describe Codecs::Main do
 
       expect(@codec.command(1)).to eq('oggenc -o "/home/vorbis/1-test.ogg" -q 6 -c '\
           'ARTIST="trackArtist 1" -c ALBUM="album" -c GENRE="genre" -c DATE="year" -c '\
-          '"ALBUM ARTIST"="artist" -c DISCNUMBER=1 -c ENCODER="Rubyripper test" -c '\
+          '"ALBUM ARTIST"="artist" -c DISCNUMBER=1 -c ENCODER="RubyRipperRemix test" -c '\
           'DISCID="ABCDEFGH" -c MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" '\
           '-c TITLE="trackname 1" -c TRACKNUMBER=1 -c TRACKTOTAL=99 "input_1.wav"')
       expect(@codec.setTagsAfterEncoding(1)).to eq('')
@@ -170,7 +170,7 @@ describe Codecs::Main do
 
       expect(@codec.command(1)).to eq('flac -o "/home/flac/1-test.flac" -q 6 --tag '\
           'ARTIST="trackArtist 1" --tag ALBUM="album" --tag GENRE="genre" --tag DATE="year" '\
-          '--tag "ALBUM ARTIST"="artist" --tag DISCNUMBER=1 --tag ENCODER="Rubyripper test" '\
+          '--tag "ALBUM ARTIST"="artist" --tag DISCNUMBER=1 --tag ENCODER="RubyRipperRemix test" '\
           '--tag DISCID="ABCDEFGH" --tag MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" '\
           '--tag TITLE="trackname 1" --tag TRACKNUMBER=1 --tag TRACKTOTAL=99 "input_1.wav"')
       expect(@codec.setTagsAfterEncoding(1)).to eq('')
@@ -192,7 +192,7 @@ describe Codecs::Main do
 
       expect(@codec.command(1)).to eq('flac -o "/home/flac/1-test.flac" -q 6 --tag '\
           'ARTIST="trackArtist 1" --tag ALBUM="album" --tag GENRE="genre" --tag DATE="year" '\
-          '--tag "ALBUM ARTIST"="artist" --tag DISCNUMBER=1 --tag ENCODER="Rubyripper test" '\
+          '--tag "ALBUM ARTIST"="artist" --tag DISCNUMBER=1 --tag ENCODER="RubyRipperRemix test" '\
           '--tag DISCID="ABCDEFGH" --tag MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" '\
           '--tag TRACKTOTAL=99 --cuesheet="/home/flac/test.cue" "input_1.wav"')
     end
@@ -250,7 +250,7 @@ describe Codecs::Main do
       expect(@codec.command(1)).to eq('neroAacEnc -q 1 -if "input_1.wav" -of "/home/nero/1-test.m4a"')
       expect(@codec.setTagsAfterEncoding(1)).to eq('neroAacTag "/home/nero/1-test.m4a" '\
           '-meta:artist="trackArtist 1" -meta:album="album" -meta:genre="genre" -meta:year="year" '\
-          '-meta-user:"ALBUM ARTIST"="artist" -meta:disc=1 -meta-user:ENCODER="Rubyripper test" '\
+          '-meta-user:"ALBUM ARTIST"="artist" -meta:disc=1 -meta-user:ENCODER="RubyRipperRemix test" '\
           '-meta-user:DISCID="ABCDEFGH" -meta-user:MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" '\
           '-meta:title="trackname 1" -meta:track=1 -meta:totaltracks=99')
     end
@@ -287,7 +287,7 @@ describe Codecs::Main do
 
       expect(@codec.command(1)).to eq('wavpack -w ARTIST="trackArtist 1" -w ALBUM="album" '\
           '-w GENRE="genre" -w DATE="year" -w "ALBUM ARTIST"="artist" -w DISCNUMBER=1 -w '\
-          'ENCODER="Rubyripper test" -w DISCID="ABCDEFGH" -w MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" -w '\
+          'ENCODER="RubyRipperRemix test" -w DISCID="ABCDEFGH" -w MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" -w '\
           'TRACKTOTAL=99 -w CUESHEET="/home/wavpack/test.cue" "input_1.wav" -o "/home/wavpack/1-test.wv"')
       expect(@codec.setTagsAfterEncoding(1)).to eq('')
     end
@@ -311,7 +311,7 @@ describe Codecs::Main do
 
       expect(@codec.command(1)).to eq('opusenc --bitrate 160 --artist "trackArtist 1" --comment ALBUM="album" '\
           '--comment GENRE="genre" --comment DATE="year" --comment "ALBUM ARTIST"="artist" '\
-          '--comment DISCNUMBER=1 --comment ENCODER="Rubyripper test" --comment DISCID="ABCDEFGH" '\
+          '--comment DISCNUMBER=1 --comment ENCODER="RubyRipperRemix test" --comment DISCID="ABCDEFGH" '\
           '--comment MUSICBRAINZ_DISCID="yQnNM8eSkwrJ.9m9cLM07cRxmwg-" --title "trackname 1" ' \
           '--comment TRACKNUMBER=1 --comment TRACKTOTAL=99 "input_1.wav" "/home/opus/1-test.opus"')
       expect(@codec.setTagsAfterEncoding(1)).to eq('')

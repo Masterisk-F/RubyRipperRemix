@@ -1421,7 +1421,7 @@ msgid "WARNING: No eject utility found!"
 msgstr "ADVARSEL: Intet skub ud-værktøj fundet!"
 
 msgid "RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"
-msgstr "RubyRipperRemix can't be used without cd-paranoia!"
+msgstr "RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"
 
 msgid "You won't be able to use the gtk3 interface."
 msgstr "Du vil ikke kunne bruge gtk3-grænsefladen."
