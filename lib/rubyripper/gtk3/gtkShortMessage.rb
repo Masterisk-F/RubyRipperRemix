@@ -34,7 +34,7 @@ class ShortMessage
   end
   
   def welcome
-    @display.text = _("Welcome to rubyripper %s.") % [$rr_version] + 
+    @display.text = _("Welcome to RubyRipperRemix %s.") % [$rr_version] +
         "\n\n" + scan()
   end
   

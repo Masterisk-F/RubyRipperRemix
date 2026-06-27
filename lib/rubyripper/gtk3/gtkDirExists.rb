@@ -26,7 +26,7 @@ class GtkDirExists
   attr_reader :display
 
   def initialize(gui, rubyripper, dirname)
-    @label = Gtk::Label.new(_("The directory %s already exists.\n\nWhat do you want rubyripper to do?") % [dirname])
+    @label = Gtk::Label.new(_("The directory %s already exists.\n\nWhat do you want RubyRipperRemix to do?") % [dirname])
     @label.wrap = true
     @image = Gtk::Image.new(:stock => Gtk::Stock::DIALOG_QUESTION, :size => Gtk::IconSize::DIALOG)
   

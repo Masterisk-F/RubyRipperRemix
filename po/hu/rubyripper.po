@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rubyripper 0.7.0a1\n"
+"Project-Id-Version: RubyRipperRemix 0.7.0a1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-28 19:20+0100\n"
 "Last-Translator: BleskoDev <bleskodev@ennumia.eu>\n"
@@ -25,13 +25,12 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "Módosítani szeretnéd a beállításokat? (y/n) : "
 
 #, fuzzy
-msgid "Rubyripper version %s"
+msgid "RubyRipperRemix version %s"
 msgstr ""
-"Ez a naplófájl a Rubyripper %s verziójával készült\n"
+"Ez a naplófájl a RubyRipperRemix %s verziójával készült\n"
 
-#, fuzzy
-msgid "* RUBYRIPPER MAIN MENU *"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgid "* RUBYRIPPERREMIX MAIN MENU *"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Change preferences"
@@ -50,12 +49,12 @@ msgstr "1) Kiválasztani a másolandó számokat"
 msgid "Rip the disc!"
 msgstr ""
 
-msgid "Exit rubyripper..."
+msgid "Exit RubyRipperRemix..."
 msgstr ""
 
 #, fuzzy
-msgid "Thanks for using rubyripper."
-msgstr "A rubyripper jelenlegi verziójának mutatása."
+msgid "Thanks for using RubyRipperRemix."
+msgstr "A RubyRipperRemix jelenlegi verziójának mutatása."
 
 msgid "Have a nice day!"
 msgstr ""
@@ -120,8 +119,9 @@ msgstr "Tálca betöltése"
 msgid "test"
 msgstr ""
 
-msgid "Show current version of rubyripper."
-msgstr "A rubyripper jelenlegi verziójának mutatása."
+msgid "Show current version of RubyRipperRemix."
+msgstr "A RubyRipperRemix jelenlegi verziójának mutatása."
+
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Beállítások betöltése a <FILE> fájlból."
@@ -179,9 +179,11 @@ msgstr "Év:"
 msgid "Extra disc info:"
 msgstr "Lemezinfó megtartása"
 
-#, fuzzy
 msgid "Marked as various disc? [%s]"
-msgstr "A lemezen több előadó van"
+msgstr ""
+
+msgid "Submit DiscID to MusicBrainz via : %s"
+msgstr ""
 
 msgid "EDIT METADATA"
 msgstr ""
@@ -227,15 +229,13 @@ msgstr "nem"
 msgid "n"
 msgstr "n"
 
-#, fuzzy
 msgid ""
 "Please answer %s or %s. Try again.\n"
-msgstr "y"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "Please enter an integer value. Try again.\n"
-msgstr "y"
+msgstr ""
 
 msgid ""
 "\n"
@@ -247,9 +247,8 @@ msgid ""
 "Which one do you prefer?"
 msgstr ""
 
-#, fuzzy
-msgid "RUBYRIPPER PREFERENCES"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgid "RUBYRIPPERREMIX PREFERENCES"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Secure ripping"
@@ -273,7 +272,7 @@ msgstr "99) Beállítások érintetlenül hagyása"
 
 #, fuzzy
 msgid "SECURE RIPPING PREFERENCES"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Ripping drive"
@@ -296,9 +295,8 @@ msgstr ""
 msgid "Pad missing lead-in/lead-out samples with zeroes %s"
 msgstr ""
 
-#, fuzzy
-msgid "Passing extra cdparanoia parameters"
-msgstr "9)  további cdparanoia kapcsolók : %s"
+msgid "Passing extra cd-paranoia parameters"
+msgstr ""
 
 #, fuzzy
 msgid "Match all chunks"
@@ -308,9 +306,17 @@ msgstr "Összvetés minden darabra:"
 msgid "Match erroneous chunks"
 msgstr "Összvetés a hibás darabokra:"
 
-#, fuzzy
 msgid "Maximum trials"
-msgstr "12) maximum próbálkozás : %s"
+msgstr ""
+
+msgid "AccurateRip verification %s"
+msgstr ""
+
+msgid "CTDB verification (image rip only) %s"
+msgstr ""
+
+msgid "Verify every trial (Finish early if verified successfully) %s"
+msgstr ""
 
 #, fuzzy
 msgid "Eject disc after ripping %s"
@@ -329,13 +335,11 @@ msgstr "Összvetés a hibás darabokra:"
 msgid "TOC ANALYSIS PREFERENCES"
 msgstr ""
 
-#, fuzzy
 msgid "Create a cuesheet %s"
-msgstr "cuesheet készítése"
+msgstr ""
 
-#, fuzzy
 msgid "Rip to single file %s"
-msgstr "CD másolása egyetlen fájlba"
+msgstr ""
 
 msgid "Rip hidden audio sectors %s"
 msgstr ""
@@ -374,20 +378,17 @@ msgstr ""
 msgid "FLAC options passed"
 msgstr ""
 
-#, fuzzy
 msgid "Vorbis %s"
-msgstr "Vorbis"
+msgstr ""
 
 msgid "Oggenc options passed"
 msgstr ""
 
-#, fuzzy
 msgid "LAME mp3 %s"
-msgstr "LAME mp3"
+msgstr ""
 
-#, fuzzy
 msgid "LAME options passed"
-msgstr "n"
+msgstr ""
 
 msgid "Nero AAC %s"
 msgstr ""
@@ -395,21 +396,18 @@ msgstr ""
 msgid "Nero options passed"
 msgstr ""
 
-#, fuzzy
 msgid "Fraunhofer AAC %s"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "Fraunhofer options passed"
-msgstr "n"
+msgstr ""
 
 #, fuzzy
 msgid "WavPack %s"
 msgstr "%s. szám"
 
-#, fuzzy
 msgid "WavPack options passed"
-msgstr "n"
+msgstr ""
 
 msgid "Opus %s"
 msgstr ""
@@ -526,9 +524,8 @@ msgstr ""
 msgid "Don't fetch metadata from the internet"
 msgstr ""
 
-#, fuzzy
 msgid "Use the gnudb protocol as primary resource"
-msgstr "y"
+msgstr ""
 
 msgid "Use the musicbrainz protocol as primary resource"
 msgstr ""
@@ -544,31 +541,27 @@ msgstr ""
 
 #, fuzzy
 msgid "OTHER PREFERENCES"
-msgstr "*** RUBYRIPPER BEÁLLÍTÁSOK ***"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Base directory"
 msgstr "Fő könyvtár:"
 
-#, fuzzy
 msgid "Standard file scheme"
-msgstr "15) standard séma: %s"
+msgstr ""
 
-#, fuzzy
 msgid "Various artist file scheme"
-msgstr "16) több előadó séma: %s"
+msgstr ""
 
 #, fuzzy
 msgid "Single file rip file scheme"
 msgstr "Egyetlen képfájl: "
 
-#, fuzzy
 msgid "Replace spaces with underscores %s"
-msgstr "Szóközök kicserélése aláhúzásjelre a fájlnevekben"
+msgstr ""
 
-#, fuzzy
 msgid "Downsize all capital letters in file names %s"
-msgstr "Nagybetűk cseréje kisbetűre a fájlnevekben"
+msgstr ""
 
 #, fuzzy
 msgid "Log file viewer"
@@ -578,13 +571,11 @@ msgstr "Naplófájl olvasó: "
 msgid "File manager"
 msgstr "Fájlkezelő: "
 
-#, fuzzy
 msgid "Verbose mode %s"
-msgstr "Részletes mód"
+msgstr ""
 
-#, fuzzy
 msgid "Debug mode %s"
-msgstr "Hibakeresési mód"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -602,13 +593,11 @@ msgstr "Tömörítők"
 msgid "Various Artist"
 msgstr "Több előadó:"
 
-#, fuzzy
 msgid "New naming scheme (q to quit)"
-msgstr "Új %s elnevezési séma (q a kilépéshez) : "
+msgstr ""
 
-#, fuzzy
 msgid "Example file name: "
-msgstr "Egy fájlnév minta: %s.ext"
+msgstr ""
 
 msgid "It's not possible to select tracks for image rips"
 msgstr ""
@@ -638,11 +627,10 @@ msgid ""
 "\n"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "No pregap, silence, pre-emphasis or data track detected\n"
 "\n"
-msgstr "n"
+msgstr ""
 
 msgid ""
 "Silence detected for disc : %s sectors\n"
@@ -670,23 +658,20 @@ msgstr ""
 msgid "The device %s doesn't exist on your system!"
 msgstr "A %s eszköz nem létezik a rendszeren!"
 
-#, fuzzy
 msgid ""
 "No read permission for drive %s!\n"
 "This is required to scan the disc."
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "No write permission for drive %s!\n"
 "This is required to scan the disc."
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "No read + write permissions for drive %s!\n"
 "These are required to rip the disc."
-msgstr "n"
+msgstr ""
 
 msgid "Please select at least one track."
 msgstr "Legalább egy számot válassz ki."
@@ -731,11 +716,11 @@ msgstr ""
 msgid ""
 "The directory %s already exists.\n"
 "\n"
-"What do you want rubyripper to do?"
+"What do you want RubyRipperRemix to do?"
 msgstr ""
 "A kimeneti mappa %s\n"
 "\n"
-"már létezik. Mit tegyen a rubyripper?"
+"már létezik. Mit tegyen a RubyRipperRemix?"
 
 msgid "Cancel rip"
 msgstr "Másolás leállítása"
@@ -890,7 +875,7 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Cdparanoia can\\'t handle offsets \\\n"
+"Libcdio-paranoia (cd-paranoia) can\\'t handle offsets \\\n"
 "larger than 580 for \n"
 "first (negative offset) and last (positive offset) \\\n"
 "track.\n"
@@ -913,14 +898,26 @@ msgstr "Összvetés a hibás darabokra:"
 msgid "Maximum trials (0 = unlimited):"
 msgstr "Maximum próbálkozás (0 = végtelen):"
 
+msgid "AccurateRip verification"
+msgstr ""
+
+msgid "CTDB verification (image rip only)"
+msgstr ""
+
+msgid "CUETools Database verification. Requires ctdb-cli to be installed."
+msgstr ""
+
+msgid "Verify every trial (finish early on match)"
+msgstr ""
+
 msgid "times"
 msgstr "alkalommal"
 
 msgid "Ripping options"
 msgstr "Másolási beállítások"
 
-msgid "Pass cdparanoia options:"
-msgstr "cdparanoia kapcsolók:"
+msgid "Pass cd-paranoia options:"
+msgstr "cd-paranoia kapcsolók:"
 
 msgid "Eject cd when finished"
 msgstr "CD kiadása, ha kész"
@@ -937,8 +934,9 @@ msgstr "Biztonságos másolás"
 msgid "Rip hidden audio sectors"
 msgstr ""
 
-msgid "Uncheck this if cdparanoia crashes with your ripping drive."
-msgstr ""
+#, fuzzy
+msgid "Uncheck this if cd-paranoia crashes with your ripping drive."
+msgstr "nem"
 
 msgid ""
 "A hidden track will rip to a seperate file if used in track modus.\n"
@@ -1094,9 +1092,8 @@ msgstr "Egyetlen képfájl: "
 msgid "Show options for \"File naming scheme\""
 msgstr "Opciók mutatása a \"\"Elnevezési sémá\"-hoz"
 
-#, fuzzy
 msgid "Track"
-msgstr "%s. szám"
+msgstr ""
 
 #, fuzzy
 msgid "Various artist"
@@ -1132,13 +1129,11 @@ msgstr "Hibakeresési mód"
 msgid "Debug options"
 msgstr "Hibakeresési beállítások"
 
-#, fuzzy
 msgid "Encoding progress %s %%"
-msgstr "Tömörítés folyamatban %s %"
+msgstr ""
 
-#, fuzzy
 msgid "Ripping progress %s %%"
-msgstr "Másolás folyamatban %s %"
+msgstr ""
 
 msgid "<b>Ripping status</b>"
 msgstr "<b>Másolás állapota</b>"
@@ -1146,13 +1141,10 @@ msgstr "<b>Másolás állapota</b>"
 msgid "Not yet started (0%)"
 msgstr "Még nem indult el (0%)"
 
-#, fuzzy
 msgid "...Scanning drive %s for an audio disc."
 msgstr ""
-"Üdvözöl a rubyripper %s.\n"
-"Audio lemez keresése a %s meghajtóban..."
 
-msgid "Welcome to rubyripper %s."
+msgid "Welcome to RubyRipperRemix %s."
 msgstr ""
 
 #, fuzzy
@@ -1171,9 +1163,8 @@ msgstr ""
 msgid "Opening tray of drive %s."
 msgstr "A %s meghajtó tálcájának kinyitása"
 
-#, fuzzy
 msgid "Closing tray of the drive."
-msgstr "A %s meghajtó tálcájának kinyitása"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -1221,9 +1212,8 @@ msgstr ""
 msgid "All chunks matched!"
 msgstr "Mind"
 
-#, fuzzy
 msgid "Corrected all sector mismatches! (%s matches found for each chunk)"
-msgstr "n"
+msgstr ""
 
 msgid ""
 "Disc Image\n"
@@ -1236,10 +1226,9 @@ msgid ""
 "\n"
 msgstr "%s. szám"
 
-#, fuzzy
 msgid ""
 "File name %s\n"
-msgstr "Elnevezési séma"
+msgstr ""
 
 msgid ""
 "Trial %s: %s seconds (%sx)\n"
@@ -1248,9 +1237,8 @@ msgstr ""
 msgid "Peak level %.1f %%"
 msgstr ""
 
-#, fuzzy
 msgid "Trial %s (Copy) CRC %s"
-msgstr "y"
+msgstr ""
 
 msgid "Trial %s (Test) CRC %s"
 msgstr ""
@@ -1290,11 +1278,8 @@ msgid ""
 msgstr ""
 "Minden darab legalább %s alkalommal volt összevetve.\n"
 
-#, fuzzy
 msgid "Chunks that differed after %s trials,"
 msgstr ""
-"A %s próbálkozás után is különböző darabokat\n"
-"%s alkalommal próbáltam összevetni.\n"
 
 #, fuzzy
 msgid ""
@@ -1362,7 +1347,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Rubyripper extraction logfile from:\n"
+"RubyRipperRemix extraction logfile from:\n"
 "%s\n"
 "\n"
 msgstr ""
@@ -1377,20 +1362,14 @@ msgstr ""
 msgid "Used ripper"
 msgstr ""
 
-#, fuzzy
 msgid "Selected options"
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "Matches required for all chunks"
 msgstr ""
-"Szükséges egyezés minden darabhoz: %s\n"
 
-#, fuzzy
 msgid "Matches required for erroneous chunks"
 msgstr ""
-"Szükséges egyezés a hibás darabokhoz: %s\n"
-"\n"
 
 msgid "Read offset correction"
 msgstr ""
@@ -1436,9 +1415,8 @@ msgstr ""
 msgid "Start"
 msgstr ""
 
-#, fuzzy
 msgid "Length"
-msgstr "Hossz (%s)"
+msgstr ""
 
 msgid "Start sector"
 msgstr ""
@@ -1458,12 +1436,11 @@ msgstr ""
 msgid "Copy finished"
 msgstr ""
 
-#, fuzzy
 msgid ""
-"Cdparanoia doesn't output WAVE files.\n"
+"Libcdio-paranoia (cd-paranoia) doesn't output WAVE files.\n"
 "Check your settings please."
 msgstr ""
-"A cdparanoia nem készít wav fájlokat.\n"
+"A cd-paranoia nem készít wav fájlokat.\n"
 "Ellenőrizd a beállításokat."
 
 #, fuzzy
@@ -1474,9 +1451,8 @@ msgstr ""
 msgid "Sector mismatches at the following times, requiring extra trials:"
 msgstr ""
 
-#, fuzzy
 msgid "Drive has been spinning for more than 30 minutes."
-msgstr "n"
+msgstr ""
 
 msgid "Taking a timeout of 2 minutes to protect the hardware."
 msgstr ""
@@ -1485,29 +1461,19 @@ msgstr ""
 msgid "WARNING: No eject utility found!"
 msgstr "Az eject program nem található!"
 
-#, fuzzy
-msgid "Rubyripper can't be used without cdparanoia!"
+msgid "RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"
 msgstr ""
-"Használt másoló: cdparanoia %s\n"
 
-#, fuzzy
 msgid "You won't be able to use the gtk3 interface."
-msgstr "n"
+msgstr ""
 
 msgid "You won't be able to use translations."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "You won't have accurate Gnudb string \\\n"
 "calculation unless %s is installed."
-msgstr "n"
-
-#, fuzzy
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr "n"
+msgstr ""
 
 msgid "Your disc tray can not be opened after ripping"
 msgstr ""
@@ -1518,20 +1484,17 @@ msgstr ""
 msgid "You won't be able to encode in vorbis."
 msgstr ""
 
-#, fuzzy
 msgid "You won't be able to encode in LAME mp3."
-msgstr "n"
+msgstr ""
 
-#, fuzzy
 msgid "You won't be able to replaygain WAVE files."
-msgstr "y"
+msgstr ""
 
 msgid "You won't be able to replaygain vorbis files."
 msgstr ""
 
-#, fuzzy
 msgid "You won't be able to replaygain LAME mp3 files."
-msgstr "y"
+msgstr ""
 
 msgid "You won't be able to normalize audio files."
 msgstr ""
@@ -1543,6 +1506,9 @@ msgid "Cd-info helps to detect data tracks."
 msgstr ""
 
 msgid "Show rights in case of problems"
+msgstr ""
+
+msgid "You won't be able to perform CTDB verification."
 msgstr ""
 
 msgid ""
@@ -1557,3 +1523,330 @@ msgid ""
 "CHECKING OPTIONAL DEPENDENCIES\n"
 "\n"
 msgstr ""
+
+#, fuzzy
+msgid "Disc Info"
+msgstr "Lemezinfó"
+
+msgid "Rip"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Edit Metadata"
+msgstr ""
+
+msgid "Select Tracks"
+msgstr ""
+
+#, fuzzy
+msgid "Edit Disc Info"
+msgstr "2) Szerkeszteni a lemez adatait"
+
+msgid "Select field to edit:"
+msgstr ""
+
+#, fuzzy
+msgid "Edit Track Info"
+msgstr "3) Szerkeszteni a szám adatait"
+
+msgid "Select track to edit:"
+msgstr ""
+
+msgid "Select Tracks to Rip"
+msgstr ""
+
+msgid "Use Space to toggle, Enter to confirm:"
+msgstr ""
+
+#, fuzzy
+msgid "Goodbye!"
+msgstr "y"
+
+msgid "Scanning drive %s for an audio disc..."
+msgstr ""
+
+msgid "Press [F2] to start scanning the drive."
+msgstr ""
+
+msgid "No disc found in %s!"
+msgstr ""
+
+msgid ""
+"Please insert a disc and push 'Scan drive'.\n"
+"\n"
+"The cdrom drive can be set in 'Preferences'."
+msgstr ""
+
+#, fuzzy
+msgid "An unknown error occurred."
+msgstr "nem"
+
+msgid "Open/Close Tray"
+msgstr ""
+
+msgid "Multiple MusicBrainz releases found. Which one would you prefer?"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+#, fuzzy
+msgid "Country"
+msgstr "y"
+
+msgid "Barcode"
+msgstr ""
+
+#, fuzzy
+msgid "Unknown country"
+msgstr "Ismeretlen"
+
+#, fuzzy
+msgid "Multiple Gnudb hits found. Which one would you prefer?"
+msgstr "Gnudb"
+
+msgid "Select release:"
+msgstr ""
+
+msgid "CD-ROM Device"
+msgstr ""
+
+msgid "CD-ROM Offset"
+msgstr ""
+
+msgid "Pad missing samples with zeroes"
+msgstr ""
+
+#, fuzzy
+msgid "Match all chunks count"
+msgstr "Összvetés minden darabra:"
+
+#, fuzzy
+msgid "Match erroneous chunks count"
+msgstr "Összvetés a hibás darabokra:"
+
+#, fuzzy
+msgid "Max trials (0=unlimited)"
+msgstr "Maximum próbálkozás (0 = végtelen):"
+
+msgid "AccurateRip validation"
+msgstr ""
+
+msgid "CTDB verification (image only)"
+msgstr ""
+
+msgid "Verify every trial"
+msgstr ""
+
+msgid "Extra cd-paranoia parameters"
+msgstr ""
+
+msgid "Eject on completion"
+msgstr ""
+
+msgid "Only keep log when errors"
+msgstr ""
+
+#, fuzzy
+msgid "Create a cuesheet"
+msgstr "cuesheet készítése"
+
+#, fuzzy
+msgid "Rip to single file (Image)"
+msgstr "CD másolása egyetlen fájlba"
+
+msgid "Min seconds to be hidden track"
+msgstr ""
+
+msgid "Pre-emphasis handling"
+msgstr ""
+
+msgid "FLAC"
+msgstr ""
+
+#, fuzzy
+msgid "FLAC options"
+msgstr "n"
+
+#, fuzzy
+msgid "Vorbis"
+msgstr "Vorbis"
+
+#, fuzzy
+msgid "Oggenc options"
+msgstr "n"
+
+msgid "LAME MP3"
+msgstr ""
+
+#, fuzzy
+msgid "LAME options"
+msgstr "n"
+
+msgid "Nero AAC"
+msgstr ""
+
+#, fuzzy
+msgid "Nero options"
+msgstr "Hibakeresési beállítások"
+
+#, fuzzy
+msgid "Fraunhofer AAC"
+msgstr "n"
+
+msgid "Fraunhofer options"
+msgstr ""
+
+msgid "WavPack"
+msgstr ""
+
+msgid "WavPack options"
+msgstr ""
+
+msgid "Opus"
+msgstr ""
+
+#, fuzzy
+msgid "Opus options"
+msgstr "Gnudb beállítások"
+
+msgid "WAVE"
+msgstr ""
+
+#, fuzzy
+msgid "Other codec"
+msgstr "Egyéb"
+
+msgid "Playlist support"
+msgstr ""
+
+msgid "Max extra encoding threads"
+msgstr ""
+
+msgid "Gnudb use first hit"
+msgstr ""
+
+msgid "MusicBrainz preferred countries"
+msgstr ""
+
+msgid "MusicBrainz preferred date"
+msgstr ""
+
+msgid "MusicBrainz use earliest date"
+msgstr ""
+
+msgid "Normal files scheme"
+msgstr ""
+
+msgid "Various files scheme"
+msgstr ""
+
+msgid "Image files scheme"
+msgstr ""
+
+#, fuzzy
+msgid "Replace spaces with underscores"
+msgstr "Szóközök kicserélése aláhúzásjelre a fájlnevekben"
+
+msgid "Downsize all capital letters"
+msgstr ""
+
+msgid "User Interface Type"
+msgstr ""
+
+#, fuzzy
+msgid " Preferences "
+msgstr "Beállítások"
+
+#, fuzzy
+msgid "Change Tab"
+msgstr "n"
+
+msgid "Select Item"
+msgstr ""
+
+msgid "Edit/Toggle"
+msgstr ""
+
+#, fuzzy
+msgid "Save Settings"
+msgstr "n"
+
+msgid "Back to Disc Info"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Validation Error: 'Match all chunks' count must be less than or equal to 'Matc"
+"h erroneous chunks' count!"
+msgstr "Összvetés a hibás darabokra:"
+
+#, fuzzy
+msgid "Preferences saved successfully."
+msgstr "Beállítások"
+
+#, fuzzy
+msgid "Ripping Status"
+msgstr "Másolási beállítások"
+
+msgid "Ripping progress"
+msgstr ""
+
+msgid "Encoding progress"
+msgstr ""
+
+msgid "Log Output"
+msgstr ""
+
+msgid "Ripping cancelled by user."
+msgstr ""
+
+msgid "The directory %s already exists."
+msgstr ""
+
+msgid "Delete existing directory (Overwrite)"
+msgstr ""
+
+msgid "Auto rename directory (Rename)"
+msgstr ""
+
+msgid "What do you want RubyRipperRemix to do?"
+msgstr ""
+
+#, fuzzy
+msgid "Open Log File"
+msgstr "Naplófájl megnyitása"
+
+msgid "Open Destination Directory"
+msgstr ""
+
+msgid "Return to Main Menu"
+msgstr ""
+
+msgid "Choose an action:"
+msgstr ""
+
+#, fuzzy
+msgid "Log file not found!"
+msgstr "nem"
+
+#, fuzzy
+msgid "Directory not found!"
+msgstr "nem"
+
+msgid "The rip has successfully finished."
+msgstr ""
+
+msgid "The rip had some problems. Please check the summary/log."
+msgstr ""
+
+#, fuzzy
+msgid "Short Summary"
+msgstr "y"
+
+#, fuzzy
+msgid "Select Action"
+msgstr "n"
+

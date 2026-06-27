@@ -106,13 +106,13 @@ private
   # fill the Hash with consequences
   def setConsequence
     @consequence = {
-    'cd-paranoia' => _("Rubyripper can't be used without libcdio-paranoia (cd-paranoia)!"),
+    'cd-paranoia' => _("RubyRipperRemix can't be used without libcdio-paranoia (cd-paranoia)!"),
       'ruby-gtk3' => _("You won't be able to use the gtk3 interface."),
       'ruby-gettext' => _("You won't be able to use translations."),
       'discid' => _("You won't have accurate Gnudb string \
-calculation unless %s is installed.") % ['Cd-discid'],
-      'cd-discid' => _("You won't have accurate Gnnudb string \
 calculation unless %s is installed.") % ['Discid'],
+      'cd-discid' => _("You won't have accurate Gnudb string \
+calculation unless %s is installed.") % ['Cd-discid'],
       'eject' => _("Your disc tray can not be opened after ripping"),
       'flac' => _("You won't be able to encode in FLAC."),
       'vorbis' => _("You won't be able to encode in vorbis."),
@@ -214,7 +214,7 @@ calculation unless %s is installed.") % ['Discid'],
   def forceDepsRuntime
     if not @deps['cd-paranoia']
       puts "Libcdio-paranoia (cd-paranoia) not found on your system."
-      puts "This is required to run rubyripper. Exiting..."
+      puts "This is required to run RubyRipperRemix. Exiting..."
       exit()
     end
   end

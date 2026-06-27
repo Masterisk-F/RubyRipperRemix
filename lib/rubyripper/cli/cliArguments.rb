@@ -42,9 +42,9 @@ private
   # First define the different options
   def setParseOptions
     @opts = OptionParser.new(banner = nil, width = 20, indent = ' ' * 2) do |opts|
-      opts.on("-V", "--version", _("Show current version of rubyripper.")) do
+      opts.on("-V", "--version", _("Show current version of RubyRipperRemix.")) do
         @options['version'] = true
-        @out.puts _("Rubyripper version %s") % [$rr_version]
+        @out.puts _("RubyRipperRemix version %s") % [$rr_version]
       end
 
       opts.on("-f", "--file <FILE>", _("Load configuration settings from file <FILE>.")) do |f|

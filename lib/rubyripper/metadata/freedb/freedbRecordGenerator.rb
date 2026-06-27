@@ -46,7 +46,7 @@ class FreedbRecordGenerator
     result << "#\n"
     # revision and client 
     result << "# Revision: #{revision}\n"
-    result << "# Submitted via: rubyripper v0.7\n"
+    result << "# Submitted via: RubyRipperRemix v0.7\n"
     result << "#\n"
     # disc info
     result << "DISCID=#{disc.freedbDiscid}\n"

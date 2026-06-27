@@ -63,7 +63,7 @@ private
   def queryFreedbForMatches()
     query = @network.path + "?cmd=cddb+query+" + @network.encode("#{@freedbString}") +
 "&hello=" + @network.encode("#{@prefs.username} #{@prefs.hostname} \
-rubyripper #{$rr_version}") + "&proto=6"
+RubyRipperRemix #{$rr_version}") + "&proto=6"
 
     # http requests return all output at once, even if multiple lines
     return @network.get(query)
@@ -118,7 +118,7 @@ rubyripper #{$rr_version}") + "&proto=6"
   def getRecord(category, discid)
     query = "#{@network.path}?cmd=cddb+read+" + @network.encode("#{category} #{discid}") +
 "&hello=" + CGI.escape("#{@prefs.username} #{@prefs.hostname} \
-rubyripper #{$rr_version}") + "&proto=6"
+RubyRipperRemix #{$rr_version}") + "&proto=6"
 
     reply = @network.get(query)
 

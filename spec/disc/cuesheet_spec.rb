@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
-#    Rubyripper - A secure ripper for Linux/BSD/OSX
+#    RubyRipperRemix - A secure ripper for Linux/BSD/OSX
 #    Copyright (C) 2007 - 2010 Bouke Woudstra (boukewoudstra@gmail.com)
 #
-#    This file is part of Rubyripper. Rubyripper is free software: you can
+#    This file is part of RubyRipperRemix. RubyRipperRemix is free software: you can
 #    redistribute it and/or modify it under the terms of the GNU General
 #    Public License as published by the Free Software Foundation, either
 #    version 3 of the License, or (at your option) any later version.
@@ -74,7 +74,7 @@ describe Cuesheet do
                                 'REM DISCID AAAA1234',
                                 'REM FREEDB_QUERY "This is a freedb string"',
                                 'REM MUSICBRAINZ_DISCID SEPOa6RCm56Luhh2o_2KFO0Mq4A-',
-                                'REM COMMENT "Rubyripper test"',
+                                'REM COMMENT "RubyRipperRemix test"',
                                 'CATALOG 4562494353452',
                                 'PERFORMER "Iron Maiden"',
                                 'TITLE "Number of the Beast"'])

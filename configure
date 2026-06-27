@@ -99,7 +99,7 @@ def update_po
     updatePoAndMoTask = GetText::Tools::Task.define do |task|
       task.domain = 'rubyripper'
       task.files = Dir.glob("lib/**/*.rb") + Dir.glob("bin/*")
-      task.package_name = 'Rubyripper'
+      task.package_name = 'RubyRipperRemix'
       task.package_version = "#{$rr_version}"
       task.xgettext_options = ["--copyright-holder", "BleskoDev",
                                "--copyright-year", "2021",
@@ -114,7 +114,7 @@ def update_mo
     updateMoTask = GetText::Tools::Task.define do |task|
       task.domain = 'rubyripper'
       task.files = Dir.glob("lib/**/*.rb") + Dir.glob("bin/*")
-      task.package_name = 'Rubyripper'
+      task.package_name = 'RubyRipperRemix'
       task.package_version = "#{$rr_version}"
       task.enable_po = false
     end
