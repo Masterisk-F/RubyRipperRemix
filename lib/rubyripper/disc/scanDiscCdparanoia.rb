@@ -47,7 +47,7 @@ class ScanDiscCdparanoia
 
   # scan the disc for input and return the object
   def scan
-    return true if @status == 'ok'
+    restoreStatus()
     if @perm.problems?(@prefs.cdrom)
       updateStatus(@perm.error)
     else
