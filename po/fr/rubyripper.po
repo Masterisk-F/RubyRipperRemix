@@ -1441,11 +1441,6 @@ msgid ""
 "calculation unless %s is installed."
 msgstr "Sans l'installation de %s, vous n'aurez pas de calcul de chaînes Gnudb précis."
 
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr "Sans l'installation de %s, vous n'aurez pas de calcul de chaînes Gnudb précis."
-
 msgid "Your disc tray can not be opened after ripping"
 msgstr "Le plateau de votre lecteur ne peut pas être ouvert après l'extraction"
 
@@ -1855,3 +1850,4 @@ msgstr "o"
 #, fuzzy
 msgid "Select Action"
 msgstr "Les options séléctionées"
+

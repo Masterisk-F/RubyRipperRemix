@@ -1437,11 +1437,6 @@ msgid ""
 "calculation unless %s is installed."
 msgstr "Du vil ikke have præcis Gnudb-strengberegning med mindre %s er installeret."
 
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr "Du vil ikke have præcis Gnudb-strengberegning med mindre %s er installeret."
-
 msgid "Your disc tray can not be opened after ripping"
 msgstr "Din skuffe kan ikke åbnes efter udtræk"
 
@@ -1836,3 +1831,4 @@ msgstr "j"
 #, fuzzy
 msgid "Select Action"
 msgstr "Gnudb-indstillinger"
+

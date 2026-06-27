@@ -1835,15 +1835,9 @@ msgstr ""
 msgid "You won't be able to use translations."
 msgstr ""
 
-#: ../lib/rubyripper/system/dependency.rb:112
+#: ../lib/rubyripper/system/dependency.rb:112 ../lib/rubyripper/system/dependency.rb:114
 msgid ""
 "You won't have accurate Gnudb string \\\n"
-"calculation unless %s is installed."
-msgstr ""
-
-#: ../lib/rubyripper/system/dependency.rb:114
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
 "calculation unless %s is installed."
 msgstr ""
 

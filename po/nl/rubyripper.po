@@ -1451,14 +1451,6 @@ msgstr ""
 "U heeft geen accurate Gnudb sleutel calculatie beschikbaar tenzij %s is geïnst"
 "alleerd."
 
-#, fuzzy
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr ""
-"U heeft geen accurate Gnudb sleutel calculatie beschikbaar tenzij %s is geïnst"
-"alleerd."
-
 msgid "Your disc tray can not be opened after ripping"
 msgstr "Uw cdrom lade kan niet worden geopend na het rippen"
 
@@ -1852,3 +1844,4 @@ msgstr "j"
 #, fuzzy
 msgid "Select Action"
 msgstr "n"
+

@@ -30,7 +30,7 @@ msgstr ""
 "Das Protokoll wurde erstellt von RubyRipperRemix, Version %s\n"
 
 msgid "* RUBYRIPPERREMIX MAIN MENU *"
-msgstr "*** RUBYRIPPERREMIXREMIX EINSTELLUNGEN ***"
+msgstr "*** RUBYRIPPERREMIX EINSTELLUNGEN ***"
 
 #, fuzzy
 msgid "Change preferences"
@@ -280,7 +280,7 @@ msgid ""
 msgstr ""
 
 msgid "RUBYRIPPERREMIX PREFERENCES"
-msgstr "*** RUBYRIPPERREMIXREMIX EINSTELLUNGEN ***"
+msgstr "*** RUBYRIPPERREMIX EINSTELLUNGEN ***"
 
 #, fuzzy
 msgid "Secure ripping"
@@ -1534,11 +1534,6 @@ msgid ""
 "calculation unless %s is installed."
 msgstr ""
 
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr ""
-
 msgid "Your disc tray can not be opened after ripping"
 msgstr ""
 
@@ -1914,3 +1909,4 @@ msgstr "j"
 #, fuzzy
 msgid "Select Action"
 msgstr "n"
+

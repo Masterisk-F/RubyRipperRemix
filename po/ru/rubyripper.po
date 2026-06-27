@@ -1548,11 +1548,6 @@ msgid ""
 "calculation unless %s is installed."
 msgstr ""
 
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr ""
-
 msgid "Your disc tray can not be opened after ripping"
 msgstr "Не открывать лоток для диска после копирования"
 
@@ -1967,3 +1962,4 @@ msgstr "д"
 #, fuzzy
 msgid "Select Action"
 msgstr "н"
+

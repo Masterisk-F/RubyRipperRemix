@@ -30,7 +30,7 @@ msgstr ""
 "Ez a naplófájl a RubyRipperRemix %s verziójával készült\n"
 
 msgid "* RUBYRIPPERREMIX MAIN MENU *"
-msgstr "*** RUBYRIPPERREMIXREMIX BEÁLLÍTÁSOK ***"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Change preferences"
@@ -252,7 +252,7 @@ msgid ""
 msgstr ""
 
 msgid "RUBYRIPPERREMIX PREFERENCES"
-msgstr "*** RUBYRIPPERREMIXREMIX BEÁLLÍTÁSOK ***"
+msgstr "*** RUBYRIPPERREMIX BEÁLLÍTÁSOK ***"
 
 #, fuzzy
 msgid "Secure ripping"
@@ -1479,11 +1479,6 @@ msgid ""
 "calculation unless %s is installed."
 msgstr ""
 
-msgid ""
-"You won't have accurate Gnnudb string \\\n"
-"calculation unless %s is installed."
-msgstr ""
-
 msgid "Your disc tray can not be opened after ripping"
 msgstr ""
 
@@ -1858,3 +1853,4 @@ msgstr "y"
 #, fuzzy
 msgid "Select Action"
 msgstr "n"
+

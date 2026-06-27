@@ -110,9 +110,9 @@ private
       'ruby-gtk3' => _("You won't be able to use the gtk3 interface."),
       'ruby-gettext' => _("You won't be able to use translations."),
       'discid' => _("You won't have accurate Gnudb string \
-calculation unless %s is installed.") % ['Cd-discid'],
-      'cd-discid' => _("You won't have accurate Gnnudb string \
 calculation unless %s is installed.") % ['Discid'],
+      'cd-discid' => _("You won't have accurate Gnudb string \
+calculation unless %s is installed.") % ['Cd-discid'],
       'eject' => _("Your disc tray can not be opened after ripping"),
       'flac' => _("You won't be able to encode in FLAC."),
       'vorbis' => _("You won't be able to encode in vorbis."),
