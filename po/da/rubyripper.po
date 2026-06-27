@@ -30,7 +30,7 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "Ønsker du at ændre din opsætning? (j/n): "
 
 #, fuzzy
-msgid "RubyripperRemix version %s"
+msgid "RubyRipperRemix version %s"
 msgstr "RubyRipperRemix, version %s"
 
 msgid "* RUBYRIPPERREMIX MAIN MENU *"
@@ -120,9 +120,6 @@ msgstr "test"
 
 msgid "Show current version of RubyRipperRemix."
 msgstr "Vis aktuel version af RubyRipperRemix."
-
-msgid "RubyRipperRemix version %s"
-msgstr "RubyRipperRemix, version %s"
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Indlæs konfigurationsopsætning fra fil <FIl>."

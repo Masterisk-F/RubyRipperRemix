@@ -25,7 +25,7 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "Wilt u de instellingen veranderen? (j/n) : "
 
 #, fuzzy
-msgid "RubyripperRemix version %s"
+msgid "RubyRipperRemix version %s"
 msgstr "RubyRipperRemix versie %s"
 
 msgid "* RUBYRIPPERREMIX MAIN MENU *"
@@ -114,9 +114,6 @@ msgstr "test"
 
 msgid "Show current version of RubyRipperRemix."
 msgstr "Laad huidige versie van RubyRipperRemix zien."
-
-msgid "RubyRipperRemix version %s"
-msgstr "RubyRipperRemix versie %s"
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Laad configuratie instellingen uit bestand <BESTAND>."

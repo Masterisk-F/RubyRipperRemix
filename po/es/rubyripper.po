@@ -27,7 +27,7 @@ msgid "Do you want to change your settings? (y/n) : "
 msgstr "¿Desea cambiar sus preferencias? (s/n) :"
 
 #, fuzzy
-msgid "RubyripperRemix version %s"
+msgid "RubyRipperRemix version %s"
 msgstr ""
 "Este log ha sido creado por RubyRipperRemix, versión %s\n"
 
@@ -124,10 +124,6 @@ msgstr ""
 msgid "Show current version of RubyRipperRemix."
 msgstr "Mostrar versión actual de RubyRipperRemix"
 
-#, fuzzy
-msgid "RubyRipperRemix version %s"
-msgstr ""
-"Este log ha sido creado por RubyRipperRemix, versión %s\n"
 
 msgid "Load configuration settings from file <FILE>."
 msgstr "Cargar configuración desde archivo <FILE>."
