@@ -122,4 +122,23 @@ describe Disc do
       expect(disc.musicbrainz_failed).to eq(false)
     end
   end
+  context "When scanning again" do
+    it "should recreate scanner instances on second scan" do
+      cdpar_instance_0 = double('ScanDiscCdparanoia').as_null_object
+      cdpar_instance_1 = double('ScanDiscCdparanoia').as_null_object
+      cdpar_instance_2 = double('ScanDiscCdparanoia').as_null_object
+      
+      expect(ScanDiscCdparanoia).to receive(:new).and_return(cdpar_instance_0, cdpar_instance_1, cdpar_instance_2)
+      
+      disc_without_mocks = Disc.new(nil, freedb, musicbrainz, deps, prefs)
+      
+      expect(cdpar_instance_1).to receive(:scan).once
+      expect(cdpar_instance_1).to receive(:status).and_return(false)
+      disc_without_mocks.scan(nil)
+      
+      expect(cdpar_instance_2).to receive(:scan).once
+      expect(cdpar_instance_2).to receive(:status).and_return(false)
+      disc_without_mocks.scan(nil)
+    end
+  end
 end
