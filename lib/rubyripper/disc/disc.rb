@@ -26,6 +26,7 @@ class Disc
 attr_reader :metadata, :cdrdao, :musicbrainz_failed
 
   def initialize(cdpar=nil, freedb=nil, musicbrainz=nil, deps=nil, prefs=nil)
+    @cdpar_mock = cdpar
     @cdparanoia = cdpar ? cdpar : ScanDiscCdparanoia.new()
     @calcFreedbID = freedb ? freedb : CalcFreedbID.new(self)
     @calcMusicbrainzID = musicbrainz ? musicbrainz : CalcMusicbrainzID.new(self)
@@ -35,6 +36,11 @@ attr_reader :metadata, :cdrdao, :musicbrainz_failed
   
   # scan the disc for a drive
   def scan(metadata=nil)
+    @cdparanoia = @cdpar_mock ? @cdpar_mock : ScanDiscCdparanoia.new()
+    @scanner = nil
+    @cdrdao = nil
+    @cuesheet = nil
+    
     @cdparanoia.scan()
     if @cdparanoia.status == 'ok'
       setMetadata(metadata)

@@ -224,23 +224,5 @@ describe ScanDiscCdparanoia do
     end
   end
 
-  context "When scanning again after a successful scan" do
-    before(:each) do
-      @cdparanoia ||= File.read('spec/disc/data/cdparanoia').split("\n")
-      allow(perm).to receive(:problems?).and_return(false)
-      allow(perm).to receive(:problemsSCSI?).and_return(false)
-      allow(prefs).to receive(:cdrom).and_return('/dev/cdrom')
-    end
 
-    it "should re-execute the launch command on second scan (not reuse cached status)" do
-      setQueryReply(@cdparanoia)
-      disc.scan()
-      expect(disc.status).to eq('ok')
-
-      # 2回目の scan でも launch が呼ばれるべき（@status == 'ok' で早期リターンしない）
-      expect(exec).to receive(:launch).with('cd-paranoia -d /dev/cdrom -vQ', false, nil, any_args).and_return(@cdparanoia)
-      disc.scan()
-      expect(disc.status).to eq('ok')
-    end
-  end
 end

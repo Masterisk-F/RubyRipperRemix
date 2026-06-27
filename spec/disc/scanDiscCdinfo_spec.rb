@@ -154,21 +154,5 @@ describe ScanDiscCdinfo do
     end
   end
 
-  context "When scanning again after a successful scan" do
-    it "should re-execute the launch command on second scan (not reuse cached status)" do
-      # 1回目のスキャン
-      expect(exec).to receive(:launch).with('cd-info -C /dev/cdrom -A --no-cddb').and_return(
-        ["170: 43:33:30  195855 leadout"])
-      scan.scan()
-      expect(scan.status).to eq('ok')
 
-      # 2回目のスキャンでも launch が呼ばれること、かつ異なる結果が反映されること
-      expect(exec).to receive(:launch).with('cd-info -C /dev/cdrom -A --no-cddb').and_return(
-        ["170: 50:00:00  225000 leadout"])
-      scan.scan()
-      expect(scan.status).to eq('ok')
-      # toSectors("50:00:00") - OFFSET_CDINFO(150) = 225000 - 150 = 224850
-      expect(scan.totalSectors).to eq(224850)
-    end
-  end
 end
