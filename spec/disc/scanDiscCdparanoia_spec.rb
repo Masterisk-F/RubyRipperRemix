@@ -223,6 +223,4 @@ describe ScanDiscCdparanoia do
       expect(disc.totalSectors).to eq(162919)
     end
   end
-
-
 end

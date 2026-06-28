@@ -57,8 +57,11 @@ class CliDisc
 private
   def discReady? ; @cd.status == 'ok' ; end
 
-  # read the disc contents
-  def refreshDisc ; @cd.scan() ; end
+  # read the disc contents. Recreate Disc to get fresh scanner & calculator state.
+  def refreshDisc
+    @cd = Disc.new()
+    @cd.scan()
+  end
 
   # show the contents of the audio disc
   def showDisc

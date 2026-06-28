@@ -26,9 +26,6 @@ class Disc
 attr_reader :metadata, :cdrdao, :musicbrainz_failed
 
   def initialize(cdpar=nil, freedb=nil, musicbrainz=nil, deps=nil, prefs=nil)
-    # @has_mock flag is a workaround for RSpec tests that inject a mock instance.
-    # It ensures the mock isn't overwritten by a new instance during a rescan.
-    @has_mock = !cdpar.nil?
     @cdparanoia = cdpar ? cdpar : ScanDiscCdparanoia.new()
     @calcFreedbID = freedb ? freedb : CalcFreedbID.new(self)
     @calcMusicbrainzID = musicbrainz ? musicbrainz : CalcMusicbrainzID.new(self)
@@ -38,12 +35,6 @@ attr_reader :metadata, :cdrdao, :musicbrainz_failed
   
   # scan the disc for a drive
   def scan(metadata=nil)
-    # Recreate the scanner instance to clear any previous state, unless a mock was injected for testing
-    @cdparanoia = ScanDiscCdparanoia.new() unless @has_mock
-    @scanner = nil
-    @cdrdao = nil
-    @cuesheet = nil
-    
     @cdparanoia.scan()
     if @cdparanoia.status == 'ok'
       setMetadata(metadata)

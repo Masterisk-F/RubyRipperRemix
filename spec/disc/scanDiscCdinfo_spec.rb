@@ -153,6 +153,4 @@ describe ScanDiscCdinfo do
       expect(scan.tracks).to eq(1)
     end
   end
-
-
 end
