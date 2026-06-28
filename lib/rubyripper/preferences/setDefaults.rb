@@ -110,6 +110,7 @@ module Preferences
       @data.browser = @deps.browser
       @data.verbose = false
       @data.debug = false
+      @data.uiType = 'tui'
     end
   end
 end

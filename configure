@@ -49,6 +49,7 @@ end
 
 $GTK3 = false
 $CLI = false
+$TUI = false
 $LANG = []
 $LANG_SUPPORT = ["nl", "de", "fr", "hu", "ru", "es", "se", "bg", "it", "da"]
 
@@ -79,6 +80,7 @@ if ARGV.include?('--help') || ARGV.include?('-h') || ARGV.length == 0
   puts ""
   puts "--enable-gtk3  (install the gtk3 frontend)"
   puts "--enable-cli  (install the cli frontend)"
+  puts "--enable-tui  (install the terminal ui frontend)"
   puts "--enable-lang-all  (install all locale files)"
   puts "--enable-lang=<xx>  (install specific locale file, separate with a comma)"
   puts ""
@@ -134,6 +136,8 @@ ARGV.each do |argument|
     $GTK3 = true
   elsif argument == '--enable-cli'
     $CLI = true
+  elsif argument == '--enable-tui'
+    $TUI = true
   elsif argument == '--enable-lang-all'
     $LANG=$LANG_SUPPORT
   elsif argument[0,14] == '--enable-lang='
@@ -145,7 +149,7 @@ ARGV.each do |argument|
   end
 end
 
-unless ($GTK3 || $CLI)
+unless ($GTK3 || $CLI || $TUI)
   puts "You have to choose at least one frontend you want to install!"
   puts ""
   exit()
@@ -179,6 +183,10 @@ if $CLI
   makefile.puts "\t#{$INSTALL} -m 755 -D bin/rubyripper_cli $(prefix)$(DESTDIR)$(BINDIR)/rrr"
 end
 
+if $TUI
+  makefile.puts "\t#{$INSTALL} -m 755 -D bin/rubyripper_tui $(prefix)$(DESTDIR)$(BINDIR)/rrr_tui"
+end
+
 $LANG.each do |lang|
   makefile.puts "\t#{$INSTALL} -m 644 locale/#{lang}/LC_MESSAGES/rubyripper.mo $(prefix)$(DESTDIR)#{$PREFIX}#{$LOCALE}/#{lang}/LC_MESSAGES/rubyripper.mo"
 end
@@ -196,6 +204,10 @@ end
 
 if $CLI
   makefile.puts "\trm -f $(prefix)$(DESTDIR)$(BINDIR)/rrr"
+end
+
+if $TUI
+  makefile.puts "\trm -f $(prefix)$(DESTDIR)$(BINDIR)/rrr_tui"
 end
 
 $LANG.each do |lang|
@@ -226,6 +238,7 @@ puts ""
 
 if $GTK3 == true; puts "Gtk3 frontend will be installed" end
 if $CLI == true; puts "Cli frontend will be installed" end
+if $TUI == true; puts "TUI frontend will be installed" end
 unless $LANG.empty?; puts "Languages to be installed: #{$LANG.join(', ')}" end
 
 puts ""

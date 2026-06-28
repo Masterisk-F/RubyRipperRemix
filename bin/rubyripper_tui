@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+#    Rubyripper - A secure ripper for Linux/BSD/OSX
+#    Copyright (C) 2007 - 2011  Bouke Woudstra (boukewoudstra@gmail.com)
+#
+#    This file is part of Rubyripper. Rubyripper is free software: you can
+#    redistribute it and/or modify it under the terms of the GNU General
+#    Public License as published by the Free Software Foundation, either
+#    version 3 of the License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+# Put the local lib directory on top of the ruby default lib search path
+# Try to resolve isolated path relative to the script, or fallback to standard locations
+script_dir = File.dirname(File.expand_path(__FILE__))
+possible_paths = [
+  File.expand_path('../lib/rubyripperremix/lib', script_dir),       # /usr/bin -> /usr/lib/rubyripperremix/lib
+  File.expand_path('../../lib/rubyripperremix/lib', script_dir),    # /usr/local/bin -> /usr/local/lib/rubyripperremix/lib
+  File.expand_path('../lib', script_dir)                            # Source fallback
+]
+
+possible_paths.each do |path|
+  if File.directory?(path)
+    $:.insert(0, path)
+    break
+  end
+end
+
+# Try to find the rubyripper lib files
+begin
+  require 'rubyripper/base'
+  require 'rubyripper/tui/tuiApp'
+rescue LoadError
+  puts 'The RubyRipperRemix lib files can\'t be found!'
+  puts 'Perhaps you need to add the directory to the RUBYLIB variable?'
+  exit()
+end
+
+if __FILE__ == $0
+  app = TUIApp.new
+  app.start
+end
