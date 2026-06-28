@@ -22,7 +22,7 @@ describe ScanDiscCdparanoia do
   def setQueryReply(reply, command=nil)
     allow(prefs).to receive('testdisc').and_return false
     command ||= 'cd-paranoia -d /dev/cdrom -vQ'
-    allow(exec).to receive(:launch).with(command).and_return reply
+    allow(exec).to receive(:launch).with(command, false, nil, any_args).and_return reply
   end
 
   let(:exec) {double('Execute').as_null_object}
