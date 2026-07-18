@@ -130,7 +130,7 @@ private
         @out.puts _("Thanks for using RubyRipperRemix.")
         @out.puts _("Have a nice day!")
       when 1 then @cliPrefs.show()
-      when 2 then @cliDisc.show()
+      when 2 then @cliDisc.show() ; @cliTracklist = CliTracklist.new(@cliDisc, @out, @int)
       when 3 then @cliDisc.changeMetadata()
       when 4 then @cliTracklist.show()
       when 5 then startRip()
