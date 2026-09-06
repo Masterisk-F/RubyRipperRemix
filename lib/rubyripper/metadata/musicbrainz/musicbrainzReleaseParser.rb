@@ -26,6 +26,9 @@ attr_reader :status, :md
   WEB_SERVICE_BASE_URI = 'https://musicbrainz.org/ws/2/'
   VARIOUS_ARTISTS_ID = '89ad4ac3-39f7-470e-963a-56509c546377'
   MMD_NAMESPACE = 'http://musicbrainz.org/ns/mmd-2.0#'
+  # Cap track-artist genre lookups to avoid N sequential API requests on compilation CDs
+  # where each track may have a different artist. Total lookups per release: release-group (1) + album-artist (1) + this cap.
+  MAX_TRACK_ARTIST_GENRE_LOOKUPS = 2
 
   def initialize(md=nil, network=nil, prefs=nil)
     @md = md ? md : Metadata::Data.new()
@@ -83,7 +86,17 @@ private
     # NOTE: We ignore release tags for now, as the API appears broken(??)
     seenArtists = Set.new
     ['release-group', 'artist-credit/name-credit/artist', 'medium-list/medium/track-list/track/recording/artist-credit/name-credit/artist'].each do |xpath|
+      is_track_artist = (xpath == 'medium-list/medium/track-list/track/recording/artist-credit/name-credit/artist')
       objects = REXML::XPath::match(@musicbrainzRelease, xpath)
+
+      if is_track_artist
+        objects = objects.reject { |o| seenArtists.include?(o.attributes['id']) }
+                         .group_by { |o| o.attributes['id'] }
+                         .values
+                         .max_by(MAX_TRACK_ARTIST_GENRE_LOOKUPS, &:size)
+                         .map(&:first)
+      end
+
       objects.each do |object|
         # Retrieve the XML for the object.
         id = object.attributes['id']
@@ -92,14 +105,18 @@ private
             xpath = 'artist'
           end
           lookupPath = "#{xpath}/#{id}?inc=tags"
-          objectDoc = REXML::Document.new(@network.get(File::expand_path(lookupPath, @network.path)))
-          tags = REXML::XPath::match(objectDoc, "//tag").sort {|x,y| y.attributes['count'].to_i <=> x.attributes['count'].to_i or x.elements['name'].text <=> y.elements['name'].text}
-          tags.collect! {|tag| tagMap[tag.elements['name'].text]}
-          tags.each do |tag|
-            if possible_lame_tags.include?(tag.upcase)
-              tag = tag.split(/\b/).collect {|word| word.capitalize}
-              return tag.join('')
+          begin
+            objectDoc = REXML::Document.new(@network.get(File::expand_path(lookupPath, @network.path)))
+            tags = REXML::XPath::match(objectDoc, "//tag").sort {|x,y| y.attributes['count'].to_i <=> x.attributes['count'].to_i or x.elements['name'].text <=> y.elements['name'].text}
+            tags.collect! {|tag| tagMap[tag.elements['name'].text]}
+            tags.each do |tag|
+              if possible_lame_tags.include?(tag.upcase)
+                tag = tag.split(/\b/).collect {|word| word.capitalize}
+                return tag.join('')
+              end
             end
+          rescue REXML::ParseException => e
+            puts "DEBUG: Failed to parse XML for genre lookup: #{e.message}" if @prefs.debug
           end
           if xpath == 'artist'
             seenArtists << id

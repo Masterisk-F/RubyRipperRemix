@@ -182,12 +182,28 @@ describe MusicBrainzReleaseParser do
         expect(parser.md.getVarArtist(14)).to eq('Grizzly Bear / Feist')
       end
 
-      it "should rely on the track artists to pick the genre" do
-        expect(http).to receive(:get).with('/ws/2/artist/1270af14-9c17-4400-8ebb-3f0ac40dcfb0?inc=tags').and_return File.read('spec/metadata/musicbrainz/data/artistTags.xml')
+      it "should rely on the most frequent track artists to pick the genre" do
+        expect(http).to receive(:get).with('/ws/2/artist/59a7fbcb-ff74-494d-abd0-9c82359040c9?inc=tags').and_return File.read('spec/metadata/musicbrainz/data/artistTags.xml')
         parser.parse(readRelease('spec/metadata/musicbrainz/data/variousArtists.xml'),
                      'c.J3z3pava1oPzXD0K2e9q48lJc-', 'c70ecd0f')
 
         expect(parser.md.genre).to eq('Rock')
+      end
+
+      it "should limit track artist genre lookups to at most 2 artists" do
+        artist_lookups = 0
+        allow(http).to receive(:get) do |path|
+          artist_lookups += 1 if path.start_with?('/ws/2/artist/')
+          File.read('spec/metadata/musicbrainz/data/noTags.xml')
+        end
+
+        parser.parse(readRelease('spec/metadata/musicbrainz/data/variousArtists.xml'),
+                     'c.J3z3pava1oPzXD0K2e9q48lJc-', 'c70ecd0f')
+
+        max = MusicBrainzReleaseParser::MAX_TRACK_ARTIST_GENRE_LOOKUPS
+        # 1 album artist (Various Artists) + at most N track artists (vs 16 previously)
+        expect(artist_lookups).to be <= max + 1
+        expect(parser.md.genre).to eq('Unknown')
       end
     end
 
