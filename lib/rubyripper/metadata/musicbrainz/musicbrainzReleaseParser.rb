@@ -82,8 +82,21 @@ private
 
     # NOTE: We ignore release tags for now, as the API appears broken(??)
     seenArtists = Set.new
+    max_track_artist_lookups = 2
     ['release-group', 'artist-credit/name-credit/artist', 'medium-list/medium/track-list/track/recording/artist-credit/name-credit/artist'].each do |xpath|
+      is_track_artist = (xpath == 'medium-list/medium/track-list/track/recording/artist-credit/name-credit/artist')
       objects = REXML::XPath::match(@musicbrainzRelease, xpath)
+
+      if is_track_artist
+        target_ids = objects.map { |o| o.attributes['id'] }
+                            .tally
+                            .sort_by { |_id, count| -count }
+                            .map(&:first)
+                            .reject { |id| seenArtists.include?(id) }
+                            .first(max_track_artist_lookups)
+        objects = target_ids.filter_map { |id| objects.find { |o| o.attributes['id'] == id } }
+      end
+
       objects.each do |object|
         # Retrieve the XML for the object.
         id = object.attributes['id']
@@ -92,14 +105,18 @@ private
             xpath = 'artist'
           end
           lookupPath = "#{xpath}/#{id}?inc=tags"
-          objectDoc = REXML::Document.new(@network.get(File::expand_path(lookupPath, @network.path)))
-          tags = REXML::XPath::match(objectDoc, "//tag").sort {|x,y| y.attributes['count'].to_i <=> x.attributes['count'].to_i or x.elements['name'].text <=> y.elements['name'].text}
-          tags.collect! {|tag| tagMap[tag.elements['name'].text]}
-          tags.each do |tag|
-            if possible_lame_tags.include?(tag.upcase)
-              tag = tag.split(/\b/).collect {|word| word.capitalize}
-              return tag.join('')
+          begin
+            objectDoc = REXML::Document.new(@network.get(File::expand_path(lookupPath, @network.path)))
+            tags = REXML::XPath::match(objectDoc, "//tag").sort {|x,y| y.attributes['count'].to_i <=> x.attributes['count'].to_i or x.elements['name'].text <=> y.elements['name'].text}
+            tags.collect! {|tag| tagMap[tag.elements['name'].text]}
+            tags.each do |tag|
+              if possible_lame_tags.include?(tag.upcase)
+                tag = tag.split(/\b/).collect {|word| word.capitalize}
+                return tag.join('')
+              end
             end
+          rescue REXML::ParseException => e
+            puts "DEBUG: Failed to parse XML for genre lookup: #{e.message}" if @prefs.debug
           end
           if xpath == 'artist'
             seenArtists << id
