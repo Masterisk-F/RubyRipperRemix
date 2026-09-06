@@ -200,8 +200,9 @@ describe MusicBrainzReleaseParser do
         parser.parse(readRelease('spec/metadata/musicbrainz/data/variousArtists.xml'),
                      'c.J3z3pava1oPzXD0K2e9q48lJc-', 'c70ecd0f')
 
-        # 1 album artist (Various Artists) + at most 2 track artists = 3 total artist lookups (vs 16 previously)
-        expect(artist_lookups).to be <= 3
+        max = MusicBrainzReleaseParser::MAX_TRACK_ARTIST_GENRE_LOOKUPS
+        # 1 album artist (Various Artists) + at most N track artists (vs 16 previously)
+        expect(artist_lookups).to be <= max + 1
         expect(parser.md.genre).to eq('Unknown')
       end
     end

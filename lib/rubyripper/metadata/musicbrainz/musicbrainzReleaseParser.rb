@@ -26,6 +26,9 @@ attr_reader :status, :md
   WEB_SERVICE_BASE_URI = 'https://musicbrainz.org/ws/2/'
   VARIOUS_ARTISTS_ID = '89ad4ac3-39f7-470e-963a-56509c546377'
   MMD_NAMESPACE = 'http://musicbrainz.org/ns/mmd-2.0#'
+  # Cap track-artist genre lookups to avoid N sequential API requests on compilation CDs
+  # where each track may have a different artist. Worst-case requests: 2 (album) + this cap.
+  MAX_TRACK_ARTIST_GENRE_LOOKUPS = 2
 
   def initialize(md=nil, network=nil, prefs=nil)
     @md = md ? md : Metadata::Data.new()
@@ -82,7 +85,6 @@ private
 
     # NOTE: We ignore release tags for now, as the API appears broken(??)
     seenArtists = Set.new
-    max_track_artist_lookups = 2
     ['release-group', 'artist-credit/name-credit/artist', 'medium-list/medium/track-list/track/recording/artist-credit/name-credit/artist'].each do |xpath|
       is_track_artist = (xpath == 'medium-list/medium/track-list/track/recording/artist-credit/name-credit/artist')
       objects = REXML::XPath::match(@musicbrainzRelease, xpath)
@@ -91,7 +93,7 @@ private
         objects = objects.reject { |o| seenArtists.include?(o.attributes['id']) }
                          .group_by { |o| o.attributes['id'] }
                          .values
-                         .max_by(max_track_artist_lookups, &:size)
+                         .max_by(MAX_TRACK_ARTIST_GENRE_LOOKUPS, &:size)
                          .map(&:first)
       end
 
