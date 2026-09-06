@@ -27,7 +27,7 @@ attr_reader :status, :md
   VARIOUS_ARTISTS_ID = '89ad4ac3-39f7-470e-963a-56509c546377'
   MMD_NAMESPACE = 'http://musicbrainz.org/ns/mmd-2.0#'
   # Cap track-artist genre lookups to avoid N sequential API requests on compilation CDs
-  # where each track may have a different artist. Worst-case requests: 2 (album) + this cap.
+  # where each track may have a different artist. Total lookups per release: release-group (1) + album-artist (1) + this cap.
   MAX_TRACK_ARTIST_GENRE_LOOKUPS = 2
 
   def initialize(md=nil, network=nil, prefs=nil)
