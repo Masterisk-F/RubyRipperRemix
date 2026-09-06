@@ -88,13 +88,11 @@ private
       objects = REXML::XPath::match(@musicbrainzRelease, xpath)
 
       if is_track_artist
-        target_ids = objects.map { |o| o.attributes['id'] }
-                            .tally
-                            .sort_by { |_id, count| -count }
-                            .map(&:first)
-                            .reject { |id| seenArtists.include?(id) }
-                            .first(max_track_artist_lookups)
-        objects = target_ids.filter_map { |id| objects.find { |o| o.attributes['id'] == id } }
+        objects = objects.reject { |o| seenArtists.include?(o.attributes['id']) }
+                         .group_by { |o| o.attributes['id'] }
+                         .values
+                         .max_by(max_track_artist_lookups, &:size)
+                         .map(&:first)
       end
 
       objects.each do |object|
