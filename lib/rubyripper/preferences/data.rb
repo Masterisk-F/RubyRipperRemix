@@ -225,6 +225,9 @@ module Preferences
     # Debug modus
     attr_accessor :debug
 
+    # User interface type: 'tui' || 'cli'
+    attr_accessor :uiType
+
     # TEST DATA
     attr_accessor :testdisc
   end
